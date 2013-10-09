@@ -6,6 +6,10 @@
 *.user
 *.sln.docstates
 
+# Test data
+
+shp_map/
+
 # Build results
 
 [Dd]ebug/
