@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="szkolkarz" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPCHAN\CHRUPEK;Initial Catalog=szkolkarz;Integrated Security=True" SettingsObjectName="szkolkarz.Properties.Settings" SettingsPropertyName="szkolkarzConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TAPES" Member="TAPEs">
+    <Type Name="TAPE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Member="TAPE_ID" Type="System.String" CanBeNull="false" />
+      <Column Member="YEAR" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
