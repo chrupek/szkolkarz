@@ -5,7 +5,7 @@ namespace szkolkarz
         int id;
         int tape_id;
         string year;
-        string article;
+        string plant;
     }
 }
 namespace szkolkarz.core
