@@ -30,13 +30,19 @@ namespace szkolkarz.core
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertTAPE(TAPE instance);
-    partial void UpdateTAPE(TAPE instance);
-    partial void DeleteTAPE(TAPE instance);
+    partial void InsertAUDIT_LOG(AUDIT_LOG instance);
+    partial void UpdateAUDIT_LOG(AUDIT_LOG instance);
+    partial void DeleteAUDIT_LOG(AUDIT_LOG instance);
+    partial void InsertADM_SOWN_LOG(ADM_SOWN_LOG instance);
+    partial void UpdateADM_SOWN_LOG(ADM_SOWN_LOG instance);
+    partial void DeleteADM_SOWN_LOG(ADM_SOWN_LOG instance);
+    partial void InsertERROR_LOG(ERROR_LOG instance);
+    partial void UpdateERROR_LOG(ERROR_LOG instance);
+    partial void DeleteERROR_LOG(ERROR_LOG instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::szkolkarz.Properties.Settings.Default.szkolkarzConnectionString, mappingSource)
+				base(global::szkolkarz.Properties.Settings.Default.szkolkarzConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -65,26 +71,46 @@ namespace szkolkarz.core
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<TAPE> TAPEs
+		public System.Data.Linq.Table<AUDIT_LOG> AUDIT_LOGs
 		{
 			get
 			{
-				return this.GetTable<TAPE>();
+				return this.GetTable<AUDIT_LOG>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ADM_SOWN_LOG> ADM_SOWN_LOGs
+		{
+			get
+			{
+				return this.GetTable<ADM_SOWN_LOG>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ERROR_LOG> ERROR_LOGs
+		{
+			get
+			{
+				return this.GetTable<ERROR_LOG>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TAPES")]
-	public partial class TAPE : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AUDIT_LOG")]
+	public partial class AUDIT_LOG : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _ID;
 		
-		private string _TAPE_ID;
+		private string _USER;
 		
-		private string _YEAR;
+		private string _ACTION;
+		
+		private string _MESSAGE;
+		
+		private System.Data.Linq.Binary _TIME_STAMP;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -92,18 +118,22 @@ namespace szkolkarz.core
     partial void OnCreated();
     partial void OnIDChanging(int value);
     partial void OnIDChanged();
-    partial void OnTAPE_IDChanging(string value);
-    partial void OnTAPE_IDChanged();
-    partial void OnYEARChanging(string value);
-    partial void OnYEARChanged();
+    partial void OnUSERChanging(string value);
+    partial void OnUSERChanged();
+    partial void OnACTIONChanging(string value);
+    partial void OnACTIONChanged();
+    partial void OnMESSAGEChanging(string value);
+    partial void OnMESSAGEChanged();
+    partial void OnTIME_STAMPChanging(System.Data.Linq.Binary value);
+    partial void OnTIME_STAMPChanged();
     #endregion
 		
-		public TAPE()
+		public AUDIT_LOG()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true, UpdateCheck=UpdateCheck.Never)]
 		public int ID
 		{
 			get
@@ -123,8 +153,162 @@ namespace szkolkarz.core
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TAPE_ID", CanBeNull=false)]
-		public string TAPE_ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[USER]", Storage="_USER", DbType="NVarChar(50) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string USER
+		{
+			get
+			{
+				return this._USER;
+			}
+			set
+			{
+				if ((this._USER != value))
+				{
+					this.OnUSERChanging(value);
+					this.SendPropertyChanging();
+					this._USER = value;
+					this.SendPropertyChanged("USER");
+					this.OnUSERChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACTION", DbType="NVarChar(15) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string ACTION
+		{
+			get
+			{
+				return this._ACTION;
+			}
+			set
+			{
+				if ((this._ACTION != value))
+				{
+					this.OnACTIONChanging(value);
+					this.SendPropertyChanging();
+					this._ACTION = value;
+					this.SendPropertyChanged("ACTION");
+					this.OnACTIONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MESSAGE", DbType="NVarChar(1000) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string MESSAGE
+		{
+			get
+			{
+				return this._MESSAGE;
+			}
+			set
+			{
+				if ((this._MESSAGE != value))
+				{
+					this.OnMESSAGEChanging(value);
+					this.SendPropertyChanging();
+					this._MESSAGE = value;
+					this.SendPropertyChanged("MESSAGE");
+					this.OnMESSAGEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIME_STAMP", AutoSync=AutoSync.Always, DbType="rowversion NOT NULL", CanBeNull=false, IsDbGenerated=true, IsVersion=true, UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary TIME_STAMP
+		{
+			get
+			{
+				return this._TIME_STAMP;
+			}
+			set
+			{
+				if ((this._TIME_STAMP != value))
+				{
+					this.OnTIME_STAMPChanging(value);
+					this.SendPropertyChanging();
+					this._TIME_STAMP = value;
+					this.SendPropertyChanged("TIME_STAMP");
+					this.OnTIME_STAMPChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ADM_SOWN_LOG")]
+	public partial class ADM_SOWN_LOG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private long _ID;
+		
+		private int _TAPE_ID;
+		
+		private System.DateTime _YEAR;
+		
+		private string _PLANT;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(long value);
+    partial void OnIDChanged();
+    partial void OnTAPE_IDChanging(int value);
+    partial void OnTAPE_IDChanged();
+    partial void OnYEARChanging(System.DateTime value);
+    partial void OnYEARChanged();
+    partial void OnPLANTChanging(string value);
+    partial void OnPLANTChanged();
+    #endregion
+		
+		public ADM_SOWN_LOG()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TAPE_ID", DbType="Int NOT NULL")]
+		public int TAPE_ID
 		{
 			get
 			{
@@ -143,8 +327,8 @@ namespace szkolkarz.core
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_YEAR", CanBeNull=false)]
-		public string YEAR
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_YEAR", DbType="SmallDateTime NOT NULL")]
+		public System.DateTime YEAR
 		{
 			get
 			{
@@ -159,6 +343,160 @@ namespace szkolkarz.core
 					this._YEAR = value;
 					this.SendPropertyChanged("YEAR");
 					this.OnYEARChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PLANT", DbType="NVarChar(100)")]
+		public string PLANT
+		{
+			get
+			{
+				return this._PLANT;
+			}
+			set
+			{
+				if ((this._PLANT != value))
+				{
+					this.OnPLANTChanging(value);
+					this.SendPropertyChanging();
+					this._PLANT = value;
+					this.SendPropertyChanged("PLANT");
+					this.OnPLANTChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ERROR_LOG")]
+	public partial class ERROR_LOG : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _USER;
+		
+		private string _MESSAGE;
+		
+		private System.Data.Linq.Binary _TIME_STAMP;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnUSERChanging(string value);
+    partial void OnUSERChanged();
+    partial void OnMESSAGEChanging(string value);
+    partial void OnMESSAGEChanged();
+    partial void OnTIME_STAMPChanging(System.Data.Linq.Binary value);
+    partial void OnTIME_STAMPChanged();
+    #endregion
+		
+		public ERROR_LOG()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true, UpdateCheck=UpdateCheck.Never)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[USER]", Storage="_USER", DbType="NVarChar(50) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public string USER
+		{
+			get
+			{
+				return this._USER;
+			}
+			set
+			{
+				if ((this._USER != value))
+				{
+					this.OnUSERChanging(value);
+					this.SendPropertyChanging();
+					this._USER = value;
+					this.SendPropertyChanged("USER");
+					this.OnUSERChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MESSAGE", DbType="NVarChar(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public string MESSAGE
+		{
+			get
+			{
+				return this._MESSAGE;
+			}
+			set
+			{
+				if ((this._MESSAGE != value))
+				{
+					this.OnMESSAGEChanging(value);
+					this.SendPropertyChanging();
+					this._MESSAGE = value;
+					this.SendPropertyChanged("MESSAGE");
+					this.OnMESSAGEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIME_STAMP", AutoSync=AutoSync.Always, DbType="rowversion NOT NULL", CanBeNull=false, IsDbGenerated=true, IsVersion=true, UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary TIME_STAMP
+		{
+			get
+			{
+				return this._TIME_STAMP;
+			}
+			set
+			{
+				if ((this._TIME_STAMP != value))
+				{
+					this.OnTIME_STAMPChanging(value);
+					this.SendPropertyChanging();
+					this._TIME_STAMP = value;
+					this.SendPropertyChanged("TIME_STAMP");
+					this.OnTIME_STAMPChanged();
 				}
 			}
 		}

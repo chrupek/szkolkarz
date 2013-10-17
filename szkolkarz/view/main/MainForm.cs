@@ -14,14 +14,14 @@ namespace szkolkarz.forms.main
 {
     public partial class MainForm : Form
     {
-        Controller appController;
+        DBController appController;
 
         public MainForm()
         {
             
             InitializeComponent();
             customizeToolStrip();
-            appController = new Controller();
+            appController = new DBController();
             appController.createConnection();
 
         }
@@ -88,14 +88,17 @@ namespace szkolkarz.forms.main
             try
             {
                 featureList = selection.ToFeatureList();
+                appController.getSownHistory(featureList[0].ToString());
+                /*
                 for (int i = 0; i < selection.Count; i++)
                 {
-                   Console.WriteLine(featureList[i].Fid.ToString() + " FID"); //FID
+  
+                    Console.WriteLine(featureList[i].Fid.ToString() + " FID"); //FID
+                    Console.WriteLine(featureList[i].DataRow.ItemArray.GetValue(0).ToString() + " ATTRIBUTE"); //attribute 
 
-                   Console.WriteLine(featureList[i].DataRow.ItemArray.GetValue(0).ToString() + " ATTRIBUTE"); //attribute
                 }
 
-
+                */
 
             }
             catch

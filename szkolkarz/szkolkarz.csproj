@@ -173,7 +173,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="core\Controller.cs" />
+    <Compile Include="core\DBController.cs" />
     <Compile Include="core\szkolkarzData.cs">
       <DependentUpon>szkolkarzData.dbml</DependentUpon>
     </Compile>
@@ -183,6 +183,7 @@
       <DependentUpon>szkolkarzData.dbml</DependentUpon>
     </Compile>
     <Compile Include="core\DBConnection.cs" />
+    <Compile Include="core\utils\Queries.cs" />
     <Compile Include="view\main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +224,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="szkolkarzClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="view\about\" />

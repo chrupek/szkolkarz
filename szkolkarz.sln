@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szkolkarz", "szkolkarz\szkolkarz.csproj", "{7D70D639-1C8A-42C1-9D40-74DE2DB74F31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSzkolkarz", "TestSzkolkarz\TestSzkolkarz.csproj", "{3E2723BE-378E-4146-81C7-0EAAC8200029}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20637E8C-E6DC-4EB8-94A7-84A718A8F89D}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		szkolkarz.vsmdi = szkolkarz.vsmdi
+		szkolkarz\szkolkarzClassDiagram.cd = szkolkarz\szkolkarzClassDiagram.cd
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = szkolkarz.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -19,6 +32,12 @@ Global
 		{7D70D639-1C8A-42C1-9D40-74DE2DB74F31}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7D70D639-1C8A-42C1-9D40-74DE2DB74F31}.Release|x86.ActiveCfg = Release|x86
 		{7D70D639-1C8A-42C1-9D40-74DE2DB74F31}.Release|x86.Build.0 = Release|x86
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2723BE-378E-4146-81C7-0EAAC8200029}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

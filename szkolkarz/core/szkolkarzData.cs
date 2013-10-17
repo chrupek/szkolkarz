@@ -1,15 +1,20 @@
-namespace szkolkarz
-{
-    partial class TAPE
-    {
-        int id;
-        int tape_id;
-        string year;
-        string plant;
-    }
-}
 namespace szkolkarz.core
 {
+    partial class ERROR_LOG
+    {
+
+    }
+
+    partial class ADM_SOWN_LOG
+    {
+
+    }
+
+    partial class AUDIT_LOG
+    {
+
+    }
+
     partial class szkolkarzData
     {
     }

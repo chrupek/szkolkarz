@@ -32,5 +32,16 @@ namespace szkolkarz.Properties {
                 return ((string)(this["szkolkarzConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CHRUPEK-PC\\CHRUPEK_SERVER;Initial Catalog=szkolkarz;Integrated Securi" +
+            "ty=True")]
+        public string szkolkarzConnectionString1 {
+            get {
+                return ((string)(this["szkolkarzConnectionString1"]));
+            }
+        }
     }
 }

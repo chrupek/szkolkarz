@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 
 namespace szkolkarz.core
 {
-    class Controller
+    class DBController
     {
         DBConnection dbConnection = new DBConnection();
+        utils.Queries queries = new utils.Queries();
 
         public void createConnection()
         {
@@ -16,9 +18,11 @@ namespace szkolkarz.core
             dbConnection.openConnection();
         }
 
-        public void getDBData(int rowID)
+        public void getSownHistory(string rowID)
         {
-
+            string query = queries.getSelectAllSownAfterId()+rowID;
+            SqlDataReader result = dbConnection.executeQuery(query);
+            // TODO
         }
     }
 }
