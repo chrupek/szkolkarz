@@ -9,7 +9,7 @@ namespace szkolkarz.core
     class DBController
     {
         DBConnection dbConnection = new DBConnection();
-        utils.Queries queries = new utils.Queries();
+        utils.predefinedQueries queries = new utils.predefinedQueries();
 
         public void createConnection()
         {

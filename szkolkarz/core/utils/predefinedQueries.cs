@@ -5,7 +5,7 @@ using System.Text;
 
 namespace szkolkarz.core.utils
 {
-    class Queries
+    class predefinedQueries
     {
         static string selectAllSownAfterId = @"SELECT * FROM ADM_SOWN_LOG WHERE ID = ";
         
