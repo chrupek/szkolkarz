@@ -18,11 +18,18 @@ namespace szkolkarz.core
             dbConnection.openConnection();
         }
 
-        public void getSownHistory(string rowID)
+        public List<ADM_SOWN_LOG> getSownHistory(string rowID)
         {
+            List<ADM_SOWN_LOG> sownsLog = new List<ADM_SOWN_LOG>();
             string query = queries.getSelectAllSownAfterId()+rowID;
-            SqlDataReader result = dbConnection.executeQuery(query);
-            // TODO
+            SqlDataReader queryResult = dbConnection.executeQuery(query);
+
+            if (queryResult == null)
+            {
+                return null;
+            }
+
+            return sownsLog;
         }
     }
 }
