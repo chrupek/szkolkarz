@@ -24,9 +24,10 @@ namespace szkolkarz.core
             string query = queries.getSelectAllSownAfterId()+rowID;
             SqlDataReader queryResult = dbConnection.executeQuery(query);
 
-            if (queryResult == null)
+            ADM_SOWN_LOG asl = new ADM_SOWN_LOG();
+            while (queryResult.HasRows)
             {
-                return null;
+                sownsLog = queryResult.Cast<ADM_SOWN_LOG>();
             }
 
             return sownsLog;

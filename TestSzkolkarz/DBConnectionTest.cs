@@ -72,7 +72,7 @@ namespace TestSzkolkarz
         public void DBConnectionConstructorTest()
         {
             DBConnection target = new DBConnection();
-            Assert.Inconclusive("TODO: Implement code to verify target");
+            Assert.Equals(false, target.isOpen);
         }
 
         /// <summary>
@@ -81,9 +81,9 @@ namespace TestSzkolkarz
         [TestMethod()]
         public void openConnectionTest()
         {
-            DBConnection target = new DBConnection(); // TODO: Initialize to an appropriate value
+            DBConnection target = new DBConnection();
             target.openConnection();
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.Equals(true, target.isOpen);
         }
 
         /// <summary>
@@ -92,13 +92,12 @@ namespace TestSzkolkarz
         [TestMethod()]
         public void executeQueryTest()
         {
-            DBConnection target = new DBConnection(); // TODO: Initialize to an appropriate value
-            string query = string.Empty; // TODO: Initialize to an appropriate value
+            DBConnection target = new DBConnection();
+            string query = @"SELECT * FROM ADM_SOWN_LOG WHERE ID = 1";
             SqlDataReader expected = null; // TODO: Initialize to an appropriate value
             SqlDataReader actual;
             actual = target.executeQuery(query);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
         }
 
         /// <summary>
@@ -107,9 +106,9 @@ namespace TestSzkolkarz
         [TestMethod()]
         public void closeConnectionTest()
         {
-            DBConnection target = new DBConnection(); // TODO: Initialize to an appropriate value
+            DBConnection target = new DBConnection();
             target.closeConnection();
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.Equals(false, target.isOpen);
         }
     }
 }

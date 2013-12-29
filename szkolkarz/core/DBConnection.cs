@@ -19,36 +19,13 @@ namespace szkolkarz.core
             isOpen = false;
         }
 
-
-        public void openConnection()
-        {
-           string connectionString = ConfigurationManager.ConnectionStrings["DbAdress"].ConnectionString;
-
-            using (connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-                    isOpen = true;
-                }
-                catch (SqlException e)
-                {
-                    Console.WriteLine(e.StackTrace);
-                    System.Windows.Forms.MessageBox.Show("Could not connect to data base!", "ERROR",
-                        System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                    throw;
-                }
-            }
-           
-        }
-
         public SqlDataReader executeQuery(String query)
         {
-            if (!isOpen)
-                openConnection();
+            openConnection();
 
             SqlDataReader reader;
-            try{
+            try
+            {
                 using (var command = new SqlCommand(query, connection))
 
                 using (reader = command.ExecuteReader())
@@ -61,17 +38,44 @@ namespace szkolkarz.core
                 Console.WriteLine(e.StackTrace);
                 System.Windows.Forms.MessageBox.Show("Sql command exceution faild", "ERROR",
                     System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
-                throw;
+                return ExceptionHandler(out reader);
+            }
+        }
+
+        private static SqlDataReader ExceptionHandler(out SqlDataReader reader)
+        {
+            reader = new SqlDataReader();
+            reader.Close();
+            return reader;
+        }
+
+        public void openConnection()
+        {
+            if (!isOpen)
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["DbAdress"].ConnectionString;
+                using (connection = new SqlConnection(connectionString))
+                {
+                    try
+                    {
+                        connection.Open();
+                        isOpen = true;
+                    }
+                    catch (SqlException e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                        System.Windows.Forms.MessageBox.Show("Could not connect to data base!", "ERROR",
+                            System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                    }
+                }
             }
         }
 
         public void closeConnection()
         {
-            if (isOpen)
-            {
-                connection.Close();
-                isOpen = false;
-            }
+            connection.Close();
+            isOpen = false;
         }
+
     }
 }
