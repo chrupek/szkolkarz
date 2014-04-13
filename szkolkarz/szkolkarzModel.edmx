@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="szkolkarzModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="szkolkarzModelStoreContainer">
+          <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.Store.ADM_PLANTS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.Store.ADM_SOWN_LOG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.Store.SEC_AUDIT_LOG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.Store.SEC_ERROR_LOG" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ADM_SOWN_LOG" Association="szkolkarzModel.Store.FK_ADM_SOWN_LOG">
+            <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
+            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADM_PLANTS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="PLANT" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="PRODUCTION_NO" Type="nchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="ADM_SOWN_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="TAPE_ID" Type="int" Nullable="false" />
+          <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
+          <Property Name="ADM_PLANT_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SEC_AUDIT_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="USER" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ACTION" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="MESSAGE" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TIME_STAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SEC_ERROR_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="TIME_STAMP" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="USER" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="MESSAGE" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TIME_STAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_ADM_SOWN_LOG">
+          <End Role="ADM_PLANTS" Type="szkolkarzModel.Store.ADM_PLANTS" Multiplicity="1" />
+          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.Store.ADM_SOWN_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_PLANTS">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_SOWN_LOG">
+              <PropertyRef Name="ADM_PLANT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="szkolkarzModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="szkolkarzEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.ADM_PLANTS" />
+          <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.ADM_SOWN_LOG" />
+          <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.SEC_AUDIT_LOG" />
+          <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.SEC_ERROR_LOG" />
+          <AssociationSet Name="FK_ADM_SOWN_LOG" Association="szkolkarzModel.FK_ADM_SOWN_LOG">
+            <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
+            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADM_PLANTS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="PLANT" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="ADM_SOWN_LOG" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG" FromRole="ADM_PLANTS" ToRole="ADM_SOWN_LOG" />
+        </EntityType>
+        <EntityType Name="ADM_SOWN_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
+          <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ADM_PLANT_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADM_PLANTS" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG" FromRole="ADM_SOWN_LOG" ToRole="ADM_PLANTS" />
+        </EntityType>
+        <EntityType Name="SEC_AUDIT_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="USER" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ACTION" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MESSAGE" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TIME_STAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="SEC_ERROR_LOG">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="TIME_STAMP" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="USER" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="MESSAGE" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TIME_STAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <Association Name="FK_ADM_SOWN_LOG">
+          <End Role="ADM_PLANTS" Type="szkolkarzModel.ADM_PLANTS" Multiplicity="1" />
+          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.ADM_SOWN_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_PLANTS">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_SOWN_LOG">
+              <PropertyRef Name="ADM_PLANT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="szkolkarzModelStoreContainer" CdmEntityContainer="szkolkarzEntities">
+          <EntitySetMapping Name="ADM_PLANTS">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_PLANTS">
+              <MappingFragment StoreEntitySet="ADM_PLANTS">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PLANT" ColumnName="PLANT" />
+                <ScalarProperty Name="PRODUCTION_NO" ColumnName="PRODUCTION_NO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADM_SOWN_LOG">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_SOWN_LOG">
+              <MappingFragment StoreEntitySet="ADM_SOWN_LOG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="ADM_PLANT_ID" ColumnName="ADM_PLANT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SEC_AUDIT_LOG">
+            <EntityTypeMapping TypeName="szkolkarzModel.SEC_AUDIT_LOG">
+              <MappingFragment StoreEntitySet="SEC_AUDIT_LOG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USER" ColumnName="USER" />
+                <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+                <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+                <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SEC_ERROR_LOG">
+            <EntityTypeMapping TypeName="szkolkarzModel.SEC_ERROR_LOG">
+              <MappingFragment StoreEntitySet="SEC_ERROR_LOG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USER" ColumnName="USER" />
+                <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+                <ScalarProperty Name="TIME_STAMP" ColumnName="TIME_STAMP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

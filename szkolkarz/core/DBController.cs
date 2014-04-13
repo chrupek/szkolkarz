@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
+using System.Data.Objects;
 
 namespace szkolkarz.core
 {
-    class DBController
+    class DBController : System.IDisposable
     {
         DBConnection dbConnection = new DBConnection();
         utils.predefinedQueries queries = new utils.predefinedQueries();
@@ -20,17 +20,28 @@ namespace szkolkarz.core
 
         public List<ADM_SOWN_LOG> getSownHistory(string rowID)
         {
-            List<ADM_SOWN_LOG> sownsLog = new List<ADM_SOWN_LOG>();
-            string query = queries.getSelectAllSownAfterId()+rowID;
-            SqlDataReader queryResult = dbConnection.executeQuery(query);
+            szkolkarzEntities dc = null;
 
-            ADM_SOWN_LOG asl = new ADM_SOWN_LOG();
-            while (queryResult.HasRows)
+            try
             {
-                sownsLog = queryResult.Cast<ADM_SOWN_LOG>();
+                dc = new szkolkarzEntities();
+                List<ADM_SOWN_LOG> sownLog = from c in dc.ADM_SOWN_LOG
+                                             select new
+                                             {
+                                                 rowID = c.ID,
+                                                 tapeID = c.TAPE_ID,
+                                                 year = c.YEAR,
+                                                 plantID = c.ADM_PLANT_ID
+                                             };
+                return sownLog;
             }
-
-            return sownsLog;
+            finally
+            {
+                if (dc != null)
+                {
+                    dc = null;
+                }
+            }
         }
     }
 }
