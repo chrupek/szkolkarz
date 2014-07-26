@@ -112,7 +112,7 @@
             this.map1.ExtendBuffer = false;
             this.map1.FunctionMode = DotSpatial.Controls.FunctionMode.None;
             this.map1.IsBusy = false;
-            this.map1.IsZoomedToMaxExtent = false;
+            //this.map1.IsZoomedToMaxExtent = false;
             this.map1.Legend = this.legend1;
             this.map1.Location = new System.Drawing.Point(0, 0);
             this.map1.Name = "map1";

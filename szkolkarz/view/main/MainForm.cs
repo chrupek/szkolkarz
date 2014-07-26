@@ -22,7 +22,6 @@ namespace szkolkarz.forms.main
             InitializeComponent();
             customizeToolStrip();
             appController = new DBController();
-            appController.createConnection();
 
         }
 
