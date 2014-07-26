@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="89609224805c41259bb8ba8468a8e431" Name="Diagram1">
+      <Diagram DiagramId="836e4339f1e34b94b18f0a2cb690c971" Name="Diagram1">
         <EntityTypeShape EntityType="szkolkarzModel.ADM_PLANTS" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="szkolkarzModel.ADM_SOWN_LOG" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="szkolkarzModel.SEC_AUDIT_LOG" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="szkolkarzModel.SEC_ERROR_LOG" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="szkolkarzModel.FK_ADM_SOWN_LOG" ManuallyRouted="false" />
+        <AssociationConnector Association="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

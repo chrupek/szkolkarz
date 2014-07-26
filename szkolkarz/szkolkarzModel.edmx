@@ -10,7 +10,7 @@
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.Store.ADM_SOWN_LOG" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.Store.SEC_AUDIT_LOG" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.Store.SEC_ERROR_LOG" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK_ADM_SOWN_LOG" Association="szkolkarzModel.Store.FK_ADM_SOWN_LOG">
+          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID" Association="szkolkarzModel.Store.FK_ADM_SOWN_LOG_ADM_PLANT_ID">
             <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
             <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
           </AssociationSet>
@@ -52,7 +52,7 @@
           <Property Name="MESSAGE" Type="nvarchar(max)" Nullable="false" />
           <Property Name="TIME_STAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
         </EntityType>
-        <Association Name="FK_ADM_SOWN_LOG">
+        <Association Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID">
           <End Role="ADM_PLANTS" Type="szkolkarzModel.Store.ADM_PLANTS" Multiplicity="1" />
           <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.Store.ADM_SOWN_LOG" Multiplicity="*" />
           <ReferentialConstraint>
@@ -74,7 +74,7 @@
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.ADM_SOWN_LOG" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.SEC_AUDIT_LOG" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.SEC_ERROR_LOG" />
-          <AssociationSet Name="FK_ADM_SOWN_LOG" Association="szkolkarzModel.FK_ADM_SOWN_LOG">
+          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID" Association="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID">
             <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
             <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
           </AssociationSet>
@@ -86,7 +86,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="PLANT" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
           <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
-          <NavigationProperty Name="ADM_SOWN_LOG" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG" FromRole="ADM_PLANTS" ToRole="ADM_SOWN_LOG" />
+          <NavigationProperty Name="ADM_SOWN_LOG" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" FromRole="ADM_PLANTS" ToRole="ADM_SOWN_LOG" />
         </EntityType>
         <EntityType Name="ADM_SOWN_LOG">
           <Key>
@@ -96,7 +96,7 @@
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
           <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ADM_PLANT_ID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="ADM_PLANTS" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG" FromRole="ADM_SOWN_LOG" ToRole="ADM_PLANTS" />
+          <NavigationProperty Name="ADM_PLANTS" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" FromRole="ADM_SOWN_LOG" ToRole="ADM_PLANTS" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
           <Key>
@@ -118,7 +118,7 @@
           <Property Name="MESSAGE" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="TIME_STAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
         </EntityType>
-        <Association Name="FK_ADM_SOWN_LOG">
+        <Association Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID">
           <End Role="ADM_PLANTS" Type="szkolkarzModel.ADM_PLANTS" Multiplicity="1" />
           <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.ADM_SOWN_LOG" Multiplicity="*" />
           <ReferentialConstraint>

@@ -34,85 +34,43 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Analysis">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Analysis.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Analysis.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Analysis.Tests.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Analysis_Accessor">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Analysis_Accessor.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Analysis.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Compatibility">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Compatibility.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Controls">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Controls.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Controls.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Controls.Tests.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Controls.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Data.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data.Forms">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Data.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Data.Rasters.GdalExtension">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Data.Rasters.GdalExtension.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Data.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Data.Tests.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Extensions">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Extensions.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Modeling.Forms">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Modeling.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Mono">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Mono.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Positioning">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Positioning.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Positioning.Design">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Positioning.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Positioning.Forms">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Positioning.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Projection.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Projection.Tests.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Modeling.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Projections.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections.Forms">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Projections.Forms.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Serialization">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Serialization.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Serialization.Tests.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Symbology.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology.Forms">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Symbology.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Symbology.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Symbology.Tests.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Tools">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Tools.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Topology">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Topology.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Topology.Tests">
-      <HintPath>F:\progi\DotSpatial 1.4 Extended\bin\DotSpatial.Topology.Tests.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -134,7 +92,6 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBConnectionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

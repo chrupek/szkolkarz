@@ -14,6 +14,21 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -69,43 +84,46 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Analysis">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Analysis.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Analysis.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Compatibility">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Compatibility.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Controls">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Controls.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Controls.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Data.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data.Forms">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Data.Forms.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Extensions">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Extensions.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Modeling.Forms">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Modeling.Forms.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Modeling.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections.Forms">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.Forms.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Serialization">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Serialization.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology.Forms">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Topology">
-      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -123,34 +141,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADM_PLANTS.cs">
-      <DependentUpon>szkolkarzModel.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ADM_SOWN_LOG.cs">
-      <DependentUpon>szkolkarzModel.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="core\DBController.cs" />
-    <Compile Include="core\DBConnection.cs" />
     <Compile Include="core\utils\predefinedQueries.cs" />
     <Compile Include="SEC_AUDIT_LOG.cs">
-      <DependentUpon>szkolkarzModel.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SEC_ERROR_LOG.cs">
-      <DependentUpon>szkolkarzModel.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="szkolkarzModel.Context.cs">
+    <Compile Include="SzkolkarzModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>szkolkarzModel.Context.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="szkolkarzModel.cs">
+    <Compile Include="SzkolkarzModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>szkolkarzModel.tt</DependentUpon>
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="szkolkarzModel.Designer.cs">
+    <Compile Include="SzkolkarzModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>szkolkarzModel.edmx</DependentUpon>
+      <DependentUpon>SzkolkarzModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="view\main\MainForm.cs">
       <SubType>Form</SubType>
@@ -177,7 +194,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Program_Main.sequencediagram" />
     <None Include="Properties\Settings.settings">
@@ -190,22 +207,22 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="szkolkarzClassDiagram.cd" />
-    <EntityDeploy Include="szkolkarzModel.edmx">
+    <EntityDeploy Include="SzkolkarzModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>szkolkarzModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>SzkolkarzModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="szkolkarzModel.Context.tt">
+    <None Include="SzkolkarzModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>szkolkarzModel.edmx</DependentUpon>
-      <LastGenOutput>szkolkarzModel.Context.cs</LastGenOutput>
+      <DependentUpon>SzkolkarzModel.edmx</DependentUpon>
+      <LastGenOutput>SzkolkarzModel.Context.cs</LastGenOutput>
     </None>
-    <None Include="szkolkarzModel.edmx.diagram">
-      <DependentUpon>szkolkarzModel.edmx</DependentUpon>
+    <None Include="SzkolkarzModel.edmx.diagram">
+      <DependentUpon>SzkolkarzModel.edmx</DependentUpon>
     </None>
-    <None Include="szkolkarzModel.tt">
+    <None Include="SzkolkarzModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>szkolkarzModel.edmx</DependentUpon>
-      <LastGenOutput>szkolkarzModel.cs</LastGenOutput>
+      <DependentUpon>SzkolkarzModel.edmx</DependentUpon>
+      <LastGenOutput>SzkolkarzModel.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +247,33 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
