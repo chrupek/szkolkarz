@@ -16,5 +16,10 @@ namespace szkolkarz.view
             InitializeComponent();
         }
 
+        public void loadDataToGridView(List<ADM_SOWN_LOG> data)
+        {
+            this.sownLogDataGridView.DataSource = data;
+        }
+
     }
 }

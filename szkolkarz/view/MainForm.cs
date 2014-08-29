@@ -85,23 +85,7 @@ namespace szkolkarz.forms.main
         private void mainMap_MouseClicked(object sender, MouseEventArgs e)
         {
             
-            if (this.mainMap.Layers.Count.Equals(0))
-                return;
-            List<IFeature> featureList = new List<IFeature>();
-            FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
-            ISelection selection = featureLayer.Selection;
-            try
-            {
-                String rowId = featureList[0].ToString();
-                featureList = selection.ToFeatureList();
-                List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
-                this.mainMap.DataBindings.Add(new Binding("dataSource", queryResult, "ADM_SOWN_LOG"));
 
-            }
-            catch
-            {
-
-            }
         }
 
         private void infoStripButton_Click(object sender, EventArgs e)
@@ -116,7 +100,25 @@ namespace szkolkarz.forms.main
         {
             if (this.Cursor.Equals(Cursors.Hand) && mainMap != null)
             {
-                new DetailsInformation();
+                if (this.mainMap.Layers.Count.Equals(0))
+                    return;
+                DetailsInformation detailsInfoWindow = new DetailsInformation();
+                List<IFeature> featureList = new List<IFeature>();
+                FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
+                ISelection selection = featureLayer.Selection;
+                try
+                {
+                    String rowId = featureList[0].ToString();
+                    featureList = selection.ToFeatureList();
+                    List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
+                    detailsInfoWindow.loadDataToGridView(queryResult);
+                    detailsInfoWindow.Show();
+                }
+                catch
+                {
+
+                }
+
             }
         }
     }
