@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
-using System.Data.Objects;
 using System.Linq;
 
 namespace szkolkarz.core

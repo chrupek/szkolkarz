@@ -84,46 +84,49 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotSpatial.Analysis">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Analysis.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Analysis.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Compatibility">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Compatibility.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Compatibility.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Controls">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Controls.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Controls.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Data.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Data.Forms">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Data.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Data.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Extensions">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Extensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Modeling.Forms">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Modeling.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Modeling.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections.Forms">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Projections.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Serialization">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Serialization.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
-    </Reference>
-    <Reference Include="DotSpatial.Symbology.Forms">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Topology">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.95\lib\net40\EntityFramework.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -132,7 +135,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />

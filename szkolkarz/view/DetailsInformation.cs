@@ -16,10 +16,5 @@ namespace szkolkarz.view
             InitializeComponent();
         }
 
-        private void DetailsInformation_Load(object sender, EventArgs e)
-        {
-
-            this.reportViewer1.RefreshReport();
-        }
     }
 }

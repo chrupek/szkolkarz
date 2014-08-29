@@ -33,6 +33,7 @@
             this.legend1 = new DotSpatial.Controls.Legend();
             this.mainMap = new DotSpatial.Controls.Map();
             this.spatialToolStrip1 = new DotSpatial.Controls.SpatialToolStrip();
+            this.infoStripButton = new System.Windows.Forms.ToolStripButton();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,6 @@
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oProgramieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -124,19 +124,31 @@
             this.mainMap.SelectionEnabled = true;
             this.mainMap.Size = new System.Drawing.Size(561, 385);
             this.mainMap.TabIndex = 0;
+            this.mainMap.Click += new System.EventHandler(this.mainMap_Click);
             this.mainMap.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mainMap_MouseClicked);
             // 
             // spatialToolStrip1
             // 
             this.spatialToolStrip1.ApplicationManager = null;
             this.spatialToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.infoStripButton});
             this.spatialToolStrip1.Location = new System.Drawing.Point(0, 24);
             this.spatialToolStrip1.Map = this.mainMap;
             this.spatialToolStrip1.Name = "spatialToolStrip1";
             this.spatialToolStrip1.Size = new System.Drawing.Size(854, 25);
             this.spatialToolStrip1.TabIndex = 2;
             this.spatialToolStrip1.Text = "mainToolStrip";
+            // 
+            // infoStripButton
+            // 
+            this.infoStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.infoStripButton.Image = global::szkolkarz.Properties.Resources.indeks;
+            this.infoStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.infoStripButton.Name = "infoStripButton";
+            this.infoStripButton.Size = new System.Drawing.Size(23, 22);
+            this.infoStripButton.Text = "cmdMyInfo";
+            this.infoStripButton.ToolTipText = "Szczegóły";
+            this.infoStripButton.Click += new System.EventHandler(this.infoStripButton_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -200,16 +212,6 @@
             this.oProgramieToolStripMenuItem.Text = "O programie";
             this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::szkolkarz.Properties.Resources.indeks;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "cmdMyInfo";
-            this.toolStripButton1.ToolTipText = "Informacje";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,7 +254,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton infoStripButton;
     }
 }
 

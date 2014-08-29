@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using szkolkarz.core;
+using szkolkarz.view;
 using DotSpatial.Data;
 using DotSpatial.Symbology;
 
@@ -100,6 +101,22 @@ namespace szkolkarz.forms.main
             catch
             {
 
+            }
+        }
+
+        private void infoStripButton_Click(object sender, EventArgs e)
+        {
+            if (!this.Cursor.Equals(Cursors.Hand))
+                this.Cursor = Cursors.Hand;
+            else
+                this.Cursor = Cursors.Arrow;
+        }
+
+        private void mainMap_Click(object sender, EventArgs e)
+        {
+            if (this.Cursor.Equals(Cursors.Hand) && mainMap != null)
+            {
+                new DetailsInformation();
             }
         }
     }

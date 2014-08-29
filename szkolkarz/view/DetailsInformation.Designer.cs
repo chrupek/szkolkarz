@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.sownLogDataGridView = new System.Windows.Forms.DataGridView();
-            this.aDMSOWNLOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tAPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yEARDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ADM_PLANTS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.aDMSOWNLOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +63,14 @@
             this.splitContainer1.SplitterDistance = 193;
             this.splitContainer1.TabIndex = 0;
             // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(193, 337);
+            this.treeView1.TabIndex = 0;
+            // 
             // sownLogDataGridView
             // 
             this.sownLogDataGridView.AllowUserToAddRows = false;
@@ -86,10 +94,6 @@
             this.sownLogDataGridView.ReadOnly = true;
             this.sownLogDataGridView.Size = new System.Drawing.Size(417, 337);
             this.sownLogDataGridView.TabIndex = 0;
-            // 
-            // aDMSOWNLOGBindingSource
-            // 
-            this.aDMSOWNLOGBindingSource.DataSource = typeof(szkolkarz.ADM_SOWN_LOG);
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -119,13 +123,9 @@
             this.ADM_PLANTS.Name = "ADM_PLANTS";
             this.ADM_PLANTS.ReadOnly = true;
             // 
-            // treeView1
+            // aDMSOWNLOGBindingSource
             // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(193, 337);
-            this.treeView1.TabIndex = 0;
+            this.aDMSOWNLOGBindingSource.DataSource = typeof(szkolkarz.ADM_SOWN_LOG);
             // 
             // DetailsInformation
             // 
@@ -135,7 +135,6 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "DetailsInformation";
             this.Text = "Historia obsiań";
-            this.Load += new System.EventHandler(this.DetailsInformation_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
