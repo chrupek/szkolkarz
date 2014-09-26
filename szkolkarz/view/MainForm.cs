@@ -15,6 +15,7 @@ namespace szkolkarz.forms.main
 {
     public partial class MainForm : Form
     {
+        private bool infoON { get; set; }
         DBController appController;
 
         public MainForm()
@@ -91,14 +92,20 @@ namespace szkolkarz.forms.main
         private void infoStripButton_Click(object sender, EventArgs e)
         {
             if (!this.Cursor.Equals(Cursors.Hand))
+            {
                 this.Cursor = Cursors.Hand;
+                infoON = true;
+            }
             else
+            {
                 this.Cursor = Cursors.Arrow;
+                infoON = false;
+            }
         }
 
         private void mainMap_Click(object sender, EventArgs e)
         {
-            if (this.Cursor.Equals(Cursors.Hand) && mainMap != null)
+            if (infoON && mainMap != null)
             {
                 if (this.mainMap.Layers.Count.Equals(0))
                     return;
@@ -121,5 +128,6 @@ namespace szkolkarz.forms.main
 
             }
         }
+
     }
 }
