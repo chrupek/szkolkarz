@@ -17,7 +17,7 @@ namespace szkolkarz.forms.main
     {
         private bool infoON { get; set; }
         DBController appController;
-
+        
         public MainForm()
         {
             
@@ -32,6 +32,7 @@ namespace szkolkarz.forms.main
         private void customizeToolStrip()
         {
             ToolStripItem[] items;
+
             this.spatialToolStrip1.Items.RemoveByKey("cmdNew");
             this.spatialToolStrip1.Items.RemoveByKey("cmdOpen");
             this.spatialToolStrip1.Items.RemoveByKey("cmdSave");
@@ -66,6 +67,8 @@ namespace szkolkarz.forms.main
 
             items = this.spatialToolStrip1.Items.Find("cmdMaxExtents", false);
             items[0].ToolTipText = "Dopasuj do rozmiaru mapy";
+
+            items = null;
         }
 
         private void customizeMap()
@@ -91,10 +94,19 @@ namespace szkolkarz.forms.main
 
         private void infoStripButton_Click(object sender, EventArgs e)
         {
-            if (!this.Cursor.Equals(Cursors.Hand))
+            if (!this.Cursor.Equals(Cursors.Cross))
             {
-                this.Cursor = Cursors.Hand;
+                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
+                this.mainMap.Cursor = Cursors.Cross;
+                this.Cursor = Cursors.Cross;
                 infoON = true;
+                //enumerator = spatialToolStrip1.Items.GetEnumerator;
+
+                foreach (ToolStripItem i in spatialToolStrip1.Items)
+                {
+                    
+                }
+
             }
             else
             {
@@ -105,27 +117,31 @@ namespace szkolkarz.forms.main
 
         private void mainMap_Click(object sender, EventArgs e)
         {
-            if (infoON && mainMap != null)
+            if (infoON)
             {
-                if (this.mainMap.Layers.Count.Equals(0))
-                    return;
                 DetailsInformation detailsInfoWindow = new DetailsInformation();
-                List<IFeature> featureList = new List<IFeature>();
-                FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
-                ISelection selection = featureLayer.Selection;
+                
                 try
                 {
+
+                    List<IFeature> featureList = new List<IFeature>();
+                    FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
+                    ISelection selection = featureLayer.Selection;
+                
+                    MessageBox.Show("jestem w try");
+
                     String rowId = featureList[0].ToString();
                     featureList = selection.ToFeatureList();
                     List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
                     detailsInfoWindow.loadDataToGridView(queryResult);
                     detailsInfoWindow.Show();
+
                 }
-                catch
+                
+                catch (ArgumentOutOfRangeException)
                 {
-
+                    MessageBox.Show("Nie wybrano mapy.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
-
             }
         }
 
