@@ -120,27 +120,32 @@ namespace szkolkarz.forms.main
             if (infoON)
             {
                 DetailsInformation detailsInfoWindow = new DetailsInformation();
-                
+
                 try
                 {
 
                     List<IFeature> featureList = new List<IFeature>();
                     FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
                     ISelection selection = featureLayer.Selection;
-                
-                    MessageBox.Show("jestem w try");
 
                     String rowId = featureList[0].ToString();
+
+                    MessageBox.Show(rowId);
+
                     featureList = selection.ToFeatureList();
                     List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
                     detailsInfoWindow.loadDataToGridView(queryResult);
                     detailsInfoWindow.Show();
 
                 }
-                
+
                 catch (ArgumentOutOfRangeException)
                 {
                     MessageBox.Show("Nie wybrano mapy.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
             }
         }
