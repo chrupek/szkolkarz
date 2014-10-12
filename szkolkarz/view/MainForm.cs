@@ -96,53 +96,54 @@ namespace szkolkarz.forms.main
         {
             if (!this.Cursor.Equals(Cursors.Cross))
             {
-                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
+                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.Select;
                 this.mainMap.Cursor = Cursors.Cross;
                 this.Cursor = Cursors.Cross;
                 infoON = true;
-                //enumerator = spatialToolStrip1.Items.GetEnumerator;
-
-                foreach (ToolStripItem i in spatialToolStrip1.Items)
-                {
-                    
-                }
 
             }
             else
             {
                 this.Cursor = Cursors.Arrow;
+                this.mainMap.Cursor = Cursors.Hand;
                 infoON = false;
             }
         }
 
         private void mainMap_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(infoON);
+
             if (infoON)
             {
                 DetailsInformation detailsInfoWindow = new DetailsInformation();
 
                 try
                 {
-
                     List<IFeature> featureList = new List<IFeature>();
                     FeatureLayer featureLayer = mainMap.Layers[0] as FeatureLayer;
-                    ISelection selection = featureLayer.Selection;
+                    ISelection selectedFeature = featureLayer.Selection;
+                    try
+                    {
+                        featureList = selectedFeature.ToFeatureList();
+                        
+                        String rowId = featureList[0].Fid.ToString(); //get selected row id
 
-                    String rowId = featureList[0].ToString();
-
-                    MessageBox.Show(rowId);
-
-                    featureList = selection.ToFeatureList();
-                    List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
-                    detailsInfoWindow.loadDataToGridView(queryResult);
-                    detailsInfoWindow.Show();
+                        List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
+                        detailsInfoWindow.loadDataToGridView(queryResult);
+                        detailsInfoWindow.Show();
+                    }
+                    catch (ArgumentOutOfRangeException)
+                    {
+                        MessageBox.Show("Błąd wczytywania mapy", "BŁĄD", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
 
                 }
 
-                catch (ArgumentOutOfRangeException)
-                {
-                    MessageBox.Show("Nie wybrano mapy.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                }
+                //catch (ArgumentOutOfRangeException)
+                //{
+                //    MessageBox.Show("Nie wybrano mapy.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                //}
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
