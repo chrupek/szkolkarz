@@ -112,8 +112,6 @@ namespace szkolkarz.forms.main
 
         private void mainMap_Click(object sender, EventArgs e)
         {
-            Console.WriteLine(infoON);
-
             if (infoON)
             {
                 DetailsInformation detailsInfoWindow = new DetailsInformation();
@@ -126,27 +124,22 @@ namespace szkolkarz.forms.main
                     try
                     {
                         featureList = selectedFeature.ToFeatureList();
-                        
-                        String rowId = featureList[0].Fid.ToString(); //get selected row id
 
-                        List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(rowId);
+                        //String rowId = featureList[0].Fid.ToString(); //get selected row id
+
+                        List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(featureList);
                         detailsInfoWindow.loadDataToGridView(queryResult);
                         detailsInfoWindow.Show();
                     }
-                    catch (ArgumentOutOfRangeException)
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Błąd wczytywania mapy", "BŁĄD", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }
-
-                //catch (ArgumentOutOfRangeException)
-                //{
-                //    MessageBox.Show("Nie wybrano mapy.", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                //}
-                catch (Exception ex)
+                catch (ArgumentOutOfRangeException)
                 {
-                    MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Błąd wczytywania mapy", "BŁĄD", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

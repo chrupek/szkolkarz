@@ -30,7 +30,7 @@
         {
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.legend1 = new DotSpatial.Controls.Legend();
+            this.mainMapLegend = new DotSpatial.Controls.Legend();
             this.mainMap = new DotSpatial.Controls.Map();
             this.spatialToolStrip1 = new DotSpatial.Controls.SpatialToolStrip();
             this.infoStripButton = new System.Windows.Forms.ToolStripButton();
@@ -74,7 +74,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.legend1);
+            this.splitContainer1.Panel1.Controls.Add(this.mainMapLegend);
             // 
             // splitContainer1.Panel2
             // 
@@ -83,26 +83,26 @@
             this.splitContainer1.SplitterDistance = 289;
             this.splitContainer1.TabIndex = 0;
             // 
-            // legend1
+            // mainMapLegend
             // 
-            this.legend1.BackColor = System.Drawing.Color.White;
-            this.legend1.ControlRectangle = new System.Drawing.Rectangle(0, 0, 289, 385);
-            this.legend1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.legend1.DocumentRectangle = new System.Drawing.Rectangle(0, 0, 187, 428);
-            this.legend1.HorizontalScrollEnabled = true;
-            this.legend1.Indentation = 30;
-            this.legend1.IsInitialized = false;
-            this.legend1.Location = new System.Drawing.Point(0, 0);
-            this.legend1.MinimumSize = new System.Drawing.Size(5, 5);
-            this.legend1.Name = "legend1";
-            this.legend1.ProgressHandler = null;
-            this.legend1.ResetOnResize = false;
-            this.legend1.SelectionFontColor = System.Drawing.Color.Black;
-            this.legend1.SelectionHighlight = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
-            this.legend1.Size = new System.Drawing.Size(289, 385);
-            this.legend1.TabIndex = 0;
-            this.legend1.Text = "legend1";
-            this.legend1.VerticalScrollEnabled = true;
+            this.mainMapLegend.BackColor = System.Drawing.Color.White;
+            this.mainMapLegend.ControlRectangle = new System.Drawing.Rectangle(0, 0, 289, 385);
+            this.mainMapLegend.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainMapLegend.DocumentRectangle = new System.Drawing.Rectangle(0, 0, 187, 428);
+            this.mainMapLegend.HorizontalScrollEnabled = true;
+            this.mainMapLegend.Indentation = 30;
+            this.mainMapLegend.IsInitialized = false;
+            this.mainMapLegend.Location = new System.Drawing.Point(0, 0);
+            this.mainMapLegend.MinimumSize = new System.Drawing.Size(5, 5);
+            this.mainMapLegend.Name = "mainMapLegend";
+            this.mainMapLegend.ProgressHandler = null;
+            this.mainMapLegend.ResetOnResize = false;
+            this.mainMapLegend.SelectionFontColor = System.Drawing.Color.Black;
+            this.mainMapLegend.SelectionHighlight = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(238)))), ((int)(((byte)(252)))));
+            this.mainMapLegend.Size = new System.Drawing.Size(289, 385);
+            this.mainMapLegend.TabIndex = 0;
+            this.mainMapLegend.Text = "legend1";
+            this.mainMapLegend.VerticalScrollEnabled = true;
             // 
             // mainMap
             // 
@@ -114,7 +114,7 @@
             this.mainMap.ExtendBuffer = false;
             this.mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
             this.mainMap.IsBusy = false;
-            this.mainMap.Legend = this.legend1;
+            this.mainMap.Legend = this.mainMapLegend;
             this.mainMap.Location = new System.Drawing.Point(0, 0);
             this.mainMap.Name = "mainMap";
             this.mainMap.ProgressHandler = null;
@@ -243,7 +243,7 @@
 
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private DotSpatial.Controls.Legend legend1;
+        private DotSpatial.Controls.Legend mainMapLegend;
         private DotSpatial.Controls.Map mainMap;
         private DotSpatial.Controls.SpatialToolStrip spatialToolStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;

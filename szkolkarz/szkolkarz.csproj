@@ -116,6 +116,9 @@
     <Reference Include="DotSpatial.Symbology">
       <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
     </Reference>
+    <Reference Include="DotSpatial.Symbology.Forms">
+      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="DotSpatial.Topology">
       <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
     </Reference>
