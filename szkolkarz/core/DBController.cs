@@ -17,21 +17,13 @@ namespace szkolkarz.core
 
 
 
-        public List<ADM_SOWN_LOG> getSownHistory(List<IFeature> rowsList)
+        public List<ADM_SOWN_LOG> getSownHistory(List<int> rowsList)
         {
-            List<int> ids  = new List<int>();
-            foreach (IFeature row in rowsList)
-                ids.Add(row.Fid);
-
             try
             {
-                using (var dbEntities = new szkolkarzEntities())
+                using (var context = new szkolkarzEntities())
                 {
-                    var query = from asw in
-                                    dbEntities.ADM_SOWN_LOG
-                                where asw.ID 
-                                orderby asw.ADM_PLANT_ID
-                                select asw;
+                    var query = context.ADM_SOWN_LOG.Where(a => rowsList.Contains(a.TAPE_ID));
                     return query.ToList<ADM_SOWN_LOG>();
                 }
             }

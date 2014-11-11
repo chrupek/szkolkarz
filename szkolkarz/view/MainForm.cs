@@ -16,7 +16,7 @@ namespace szkolkarz.forms.main
     public partial class MainForm : Form
     {
         private bool infoON { get; set; }
-        DBController appController;
+        DBController dbController;
         
         public MainForm()
         {
@@ -25,7 +25,7 @@ namespace szkolkarz.forms.main
             customizeToolStrip();
             mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.Select;
             //customizeMap();
-            appController = new DBController();
+            dbController = new DBController();
 
         }
 
@@ -124,10 +124,10 @@ namespace szkolkarz.forms.main
                     try
                     {
                         featureList = selectedFeature.ToFeatureList();
-
+                        List<int> rows = featureList.ConvertAll(f => (int) f.Fid);
                         //String rowId = featureList[0].Fid.ToString(); //get selected row id
 
-                        List<ADM_SOWN_LOG> queryResult = appController.getSownHistory(featureList);
+                        List<ADM_SOWN_LOG> queryResult = dbController.getSownHistory(rows);
                         detailsInfoWindow.loadDataToGridView(queryResult);
                         detailsInfoWindow.Show();
                     }

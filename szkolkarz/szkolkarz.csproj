@@ -125,6 +125,9 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.121\lib\net40\EntityFramework.Extended.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
@@ -151,7 +154,6 @@
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="core\DBController.cs" />
-    <Compile Include="core\utils\predefinedQueries.cs" />
     <Compile Include="SEC_AUDIT_LOG.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
@@ -242,6 +244,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="core\utils\" />
     <Folder Include="model\" />
     <Folder Include="view\about\" />
   </ItemGroup>
