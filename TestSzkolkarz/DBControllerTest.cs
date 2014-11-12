@@ -15,6 +15,7 @@ namespace TestSzkolkarz
             List<int> ids = new List<int>{ 1, 2, 10, 15 };
             DBController dataProvider = new DBController();
             List<ADM_SOWN_LOG> result = dataProvider.getSownHistory(ids);
+            Assert.IsTrue(result.Count > 0);
         }
     }
 }

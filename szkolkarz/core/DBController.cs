@@ -21,7 +21,7 @@ namespace szkolkarz.core
         {
             try
             {
-                using (var context = new szkolkarzEntities())
+                using (var context = new szkolkarz.szkolkarzEntities())
                 {
                     var query = context.ADM_SOWN_LOG.Where(a => rowsList.Contains(a.TAPE_ID));
                     return query.ToList<ADM_SOWN_LOG>();
