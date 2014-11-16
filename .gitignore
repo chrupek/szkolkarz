@@ -5,10 +5,11 @@
 *.suo
 *.user
 *.sln.docstates
+packages/
+
 
 # Test data
 
-shp_map/
 
 # Build results
 
