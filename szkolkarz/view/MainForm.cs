@@ -9,6 +9,7 @@ using szkolkarz.core;
 using szkolkarz.view;
 using DotSpatial.Data;
 using DotSpatial.Symbology;
+using System.Data.SqlClient;
 
 
 namespace szkolkarz.forms.main
@@ -127,13 +128,14 @@ namespace szkolkarz.forms.main
                         List<int> rows = featureList.ConvertAll(f => (int) f.Fid);
                         //String rowId = featureList[0].Fid.ToString(); //get selected row id
 
-                        List<ADM_SOWN_LOG> queryResult = dbController.getSownHistory(rows);
+                        List<V_FULL_SOWN_LOG> queryResult = dbController.getSownHistory(rows);
                         detailsInfoWindow.loadDataToGridView(queryResult);
                         detailsInfoWindow.Show();
                     }
-                    catch (Exception ex)
+                    catch (SqlException)
                     {
-                        MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Błąd pobierania danych z bazy", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        //TODO add logging error into file
                     }
 
                 }

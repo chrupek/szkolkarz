@@ -122,8 +122,12 @@
     <Reference Include="DotSpatial.Topology">
       <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework">
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -187,6 +191,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="V_FULL_SOWN_LOG.cs">
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Program_Main.sequencediagram.layout">
       <DependentUpon>Program_Main.sequencediagram</DependentUpon>
     </EmbeddedResource>
@@ -206,12 +213,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.Config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Program_Main.sequencediagram" />
+    <None Include="Properties\DataSources\ADM_PLANTS.datasource" />
     <None Include="Properties\DataSources\ADM_SOWN_LOG.datasource" />
+    <None Include="Properties\DataSources\V_FULL_SOWN_LOG.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

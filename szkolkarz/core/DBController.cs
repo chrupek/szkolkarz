@@ -17,14 +17,14 @@ namespace szkolkarz.core
 
 
 
-        public List<ADM_SOWN_LOG> getSownHistory(List<int> rowsList)
+        public List<V_FULL_SOWN_LOG> getSownHistory(List<int> rowsList)
         {
             try
             {
                 using (var context = new szkolkarz.szkolkarzEntities())
                 {
-                    var query = context.ADM_SOWN_LOG.Where(a => rowsList.Contains(a.TAPE_ID));
-                    return query.ToList<ADM_SOWN_LOG>();
+                    var query = context.V_FULL_SOWN_LOG.Where(a => rowsList.Contains(a.TAPE_ID));
+                    return query.ToList<V_FULL_SOWN_LOG>();
                 }
             }
             catch (SqlException e)

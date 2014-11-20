@@ -30,20 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.sownLogDataGridView = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vFULLSOWNLOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tAPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yEARDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ADM_PLANTS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aDMSOWNLOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pLANTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pRODUCTIONNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sownLogDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMSOWNLOGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vFULLSOWNLOGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -83,11 +87,11 @@
             this.sownLogDataGridView.AutoGenerateColumns = false;
             this.sownLogDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sownLogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
             this.tAPEIDDataGridViewTextBoxColumn,
             this.yEARDataGridViewTextBoxColumn,
-            this.ADM_PLANTS});
-            this.sownLogDataGridView.DataSource = this.aDMSOWNLOGBindingSource;
+            this.pLANTDataGridViewTextBoxColumn,
+            this.pRODUCTIONNODataGridViewTextBoxColumn});
+            this.sownLogDataGridView.DataSource = this.vFULLSOWNLOGBindingSource;
             this.sownLogDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sownLogDataGridView.Location = new System.Drawing.Point(0, 0);
             this.sownLogDataGridView.Name = "sownLogDataGridView";
@@ -95,37 +99,45 @@
             this.sownLogDataGridView.Size = new System.Drawing.Size(417, 337);
             this.sownLogDataGridView.TabIndex = 0;
             // 
-            // iDDataGridViewTextBoxColumn
+            // vFULLSOWNLOGBindingSource
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vFULLSOWNLOGBindingSource.DataSource = typeof(szkolkarz.V_FULL_SOWN_LOG);
             // 
             // tAPEIDDataGridViewTextBoxColumn
             // 
             this.tAPEIDDataGridViewTextBoxColumn.DataPropertyName = "TAPE_ID";
-            this.tAPEIDDataGridViewTextBoxColumn.HeaderText = "ID TAŚMY";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.tAPEIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.tAPEIDDataGridViewTextBoxColumn.HeaderText = "Id taśmy";
             this.tAPEIDDataGridViewTextBoxColumn.Name = "tAPEIDDataGridViewTextBoxColumn";
             this.tAPEIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // yEARDataGridViewTextBoxColumn
             // 
             this.yEARDataGridViewTextBoxColumn.DataPropertyName = "YEAR";
-            this.yEARDataGridViewTextBoxColumn.HeaderText = "ROK";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.yEARDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.yEARDataGridViewTextBoxColumn.HeaderText = "Rok obsiania";
             this.yEARDataGridViewTextBoxColumn.Name = "yEARDataGridViewTextBoxColumn";
             this.yEARDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // ADM_PLANTS
+            // pLANTDataGridViewTextBoxColumn
             // 
-            this.ADM_PLANTS.DataPropertyName = "ADM_PLANTS";
-            this.ADM_PLANTS.HeaderText = "DRZEWO";
-            this.ADM_PLANTS.Name = "ADM_PLANTS";
-            this.ADM_PLANTS.ReadOnly = true;
+            this.pLANTDataGridViewTextBoxColumn.DataPropertyName = "PLANT";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.pLANTDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.pLANTDataGridViewTextBoxColumn.HeaderText = "Artykuł";
+            this.pLANTDataGridViewTextBoxColumn.Name = "pLANTDataGridViewTextBoxColumn";
+            this.pLANTDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // aDMSOWNLOGBindingSource
+            // pRODUCTIONNODataGridViewTextBoxColumn
             // 
-            this.aDMSOWNLOGBindingSource.DataSource = typeof(szkolkarz.ADM_SOWN_LOG);
+            this.pRODUCTIONNODataGridViewTextBoxColumn.DataPropertyName = "PRODUCTION_NO";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.pRODUCTIONNODataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.pRODUCTIONNODataGridViewTextBoxColumn.HeaderText = "Numer produkcji";
+            this.pRODUCTIONNODataGridViewTextBoxColumn.Name = "pRODUCTIONNODataGridViewTextBoxColumn";
+            this.pRODUCTIONNODataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // DetailsInformation
             // 
@@ -140,7 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sownLogDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aDMSOWNLOGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vFULLSOWNLOGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,10 +162,10 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.DataGridView sownLogDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource vFULLSOWNLOGBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn tAPEIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yEARDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ADM_PLANTS;
-        private System.Windows.Forms.BindingSource aDMSOWNLOGBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pLANTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTIONNODataGridViewTextBoxColumn;
     }
 }

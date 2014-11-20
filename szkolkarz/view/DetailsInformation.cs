@@ -16,9 +16,17 @@ namespace szkolkarz.view
             InitializeComponent();
         }
 
-        public void loadDataToGridView(List<ADM_SOWN_LOG> data)
+        public void loadDataToGridView(List<V_FULL_SOWN_LOG> data)
         {
-            this.sownLogDataGridView.DataSource = data;
+            try
+            {
+                this.sownLogDataGridView.DataSource = data;
+            }
+            catch (DataException e)
+            {
+                MessageBox.Show(e.Message, "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+    
         }
 
     }

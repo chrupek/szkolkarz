@@ -29,5 +29,6 @@ namespace szkolkarz
         public DbSet<ADM_SOWN_LOG> ADM_SOWN_LOG { get; set; }
         public DbSet<SEC_AUDIT_LOG> SEC_AUDIT_LOG { get; set; }
         public DbSet<SEC_ERROR_LOG> SEC_ERROR_LOG { get; set; }
+        public DbSet<V_FULL_SOWN_LOG> V_FULL_SOWN_LOG { get; set; }
     }
 }
