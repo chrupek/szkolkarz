@@ -24,16 +24,14 @@ namespace szkolkarz.forms.main
             
             InitializeComponent();
             customizeToolStrip();
-            mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.Select;
-            //customizeMap();
+            translateToolStrip();
             dbController = new DBController();
 
         }
 
         private void customizeToolStrip()
         {
-            ToolStripItem[] items;
-
+            
             this.spatialToolStrip1.Items.RemoveByKey("cmdNew");
             this.spatialToolStrip1.Items.RemoveByKey("cmdOpen");
             this.spatialToolStrip1.Items.RemoveByKey("cmdSave");
@@ -42,7 +40,11 @@ namespace szkolkarz.forms.main
             this.spatialToolStrip1.Items.RemoveByKey("cmdTable");
             this.spatialToolStrip1.Items.RemoveByKey("cmdInfo");
 
-            //translate tooltips
+        }
+
+        private void translateToolStrip()
+        {
+            ToolStripItem[] items;
             items = this.spatialToolStrip1.Items.Find("cmdAddData", false);
             items[0].ToolTipText = "Otwórz mapę";
 
@@ -72,25 +74,9 @@ namespace szkolkarz.forms.main
             items = null;
         }
 
-        private void customizeMap()
-        {
-            //this.mainMap.DataBindings.Add
-        }
-
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void mainMap_MouseClicked(object sender, MouseEventArgs e)
-        {
-            
-
         }
 
         private void infoStripButton_Click(object sender, EventArgs e)
@@ -105,6 +91,7 @@ namespace szkolkarz.forms.main
             }
             else
             {
+                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
                 this.Cursor = Cursors.Arrow;
                 this.mainMap.Cursor = Cursors.Hand;
                 infoON = false;
