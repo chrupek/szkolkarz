@@ -1,0 +1,2120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="147a1ce0-d9a7-49d7-8944-f8d2193330a0"
+  name="main"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d81ba188-17b9-43da-8b60-697ee4e4585f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dszkolkarz.forms.main"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="507bca23-b094-45ea-821f-cd02fd538507"
+        name="MainForm"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f4f23bdd-3530-4eca-b7fe-1b922879b74c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c126b824-2675-4aa0-b8f9-1348e2ca7e9e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84f979dd-6426-4fa0-8b36-f940ac1d7a35">
+                <propertyInstance
+                  Id="2b70bf52-9b3c-47f6-b499-4be62599f43f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b436ca06-f709-4e7d-b75d-aa44c8bd4913">
+                <propertyInstance
+                  Id="41a9d7cd-ac0f-46d1-96b0-f01f65467efc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a4045c2-5afb-496f-953a-1f50dd6c2d43">
+                <propertyInstance
+                  Id="5f46dec8-29af-4804-82c1-4cba145b993e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3c87f20-2609-4f85-b250-279ea8b94b30">
+                <propertyInstance
+                  Id="3d20b761-59a5-4176-80a8-e0313e27a08d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="886e591f-4623-4c04-8c5a-6cbd2e227856">
+                <propertyInstance
+                  Id="7f6870cb-46ee-40bd-a1ce-af7a325e2797"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="ec247c8e-a9a8-4db1-a137-c91e8f303855"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f3f46fe0-2076-4849-a16e-372a67e509f7"
+              LastKnownName="Form"
+              LastKnownLocation="Package3_1818.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ed42d4b1-dfcb-4300-8239-e26b66c05a72"
+            name="infoON"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f58627d8-6255-4683-bcb4-cd98bbfcf7f1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DinfoON"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f7cb493-6c29-4f90-8890-7695fc075e43"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41dfde74-6c83-41b9-afbd-764025682b8b">
+                    <propertyInstance
+                      Id="d16b2e10-a21c-4956-9fb7-b3194422f3aa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc1a7d30-d629-4cc1-bb2e-1e6a0863a0eb">
+                    <propertyInstance
+                      Id="2a860b70-4630-4917-bb07-bf2096bb1ff8"
+                      name="Get"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8907d293-6238-4cea-8b53-cfcff2e5fbfc">
+                    <propertyInstance
+                      Id="5e3bcf11-9c66-479b-b3bd-84c41fb5f31b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b87636b-a1c4-42f6-b8d0-b27c7752afd5">
+                    <propertyInstance
+                      Id="b556de9a-a4af-410b-948e-479d029ebe4b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75499365-ebf1-48e8-862a-2c346b90850e">
+                    <propertyInstance
+                      Id="80f5b0aa-48e7-4aad-9b72-2614b729d889"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b51f23b6-3fd4-42f6-b373-c1bae998f3b9">
+                    <propertyInstance
+                      Id="b0294d93-1a0c-480d-8da6-e5ef002c7dfa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd70b0d1-1b4d-4fcf-92be-8e5cf918e063">
+                    <propertyInstance
+                      Id="ee90ae1f-0d01-42dc-8969-27c17abce964"
+                      name="Set"
+                      value="private" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="SzkolkarzModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="edf60470-4066-4744-beab-d4f1a448f953"
+            name="dbController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="94bcb839-cc7a-477b-914a-8b3ecc80fc4e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DdbController"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="707c0860-b478-4847-8ff2-96495b11b691"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04642743-064e-4af4-bc73-618619b426bb">
+                    <propertyInstance
+                      Id="0332c51f-7230-4c09-a5fe-5aa1c123b40e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62688842-1e0a-44c6-9e30-6e9b04d79491">
+                    <propertyInstance
+                      Id="4bbf2d90-00c1-490b-abe2-64c9553d8c95"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eae30f50-59c0-40b2-ac4d-887f3565aad5">
+                    <propertyInstance
+                      Id="dbcf81a6-d1be-439d-98b1-0e3f389aa44e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb002161-ecd7-44e3-bee2-aa27e56fb700">
+                    <propertyInstance
+                      Id="5c10032a-4a2a-43a1-9c06-9dc2ad53bd4f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2859fc5-0383-4ec0-872b-57ee56604dbd">
+                    <propertyInstance
+                      Id="f63e7293-f79a-48e1-9a33-66553f4fadbf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dc901167-7a77-495f-b004-7512e6066846"
+                LastKnownName="DBController"
+                LastKnownLocation="Package_1820.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="71fca9c2-927f-4251-bacf-490c9d9da76d"
+            name="components"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a91235b-0bfe-44ad-bc44-c6d4f0eec6e5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3Dcomponents"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2eaf4ffd-9a38-495b-80ca-a82c0d362c4c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02bc7f9e-f6fa-4e85-aed0-4173d148d3ab">
+                    <propertyInstance
+                      Id="e3ddde76-b57b-4d98-a422-3f9cef90525d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="948e580e-19e1-40a0-9172-7d5dab21d131">
+                    <propertyInstance
+                      Id="9a392df1-38d5-457f-9c79-60aa6f8958fd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5240205-8394-40dd-a5c3-a7c26fe5c4e1">
+                    <propertyInstance
+                      Id="0e5d5bf0-6152-4d14-93e0-5f348069926b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3e3868b-267b-47a1-b13d-0baa97889af8">
+                    <propertyInstance
+                      Id="e56130ee-772f-4ded-8bd8-0fd075ac5b74"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77b953d7-4d36-49bc-af3e-5d103b6005d0">
+                    <propertyInstance
+                      Id="794aac0c-9ed4-4ad1-9af0-0159e464b2e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1f9f8d32-a71f-4e3b-b84d-14a737d04d0e"
+                LastKnownName="IContainer"
+                LastKnownLocation="Package1_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e868da8c-2794-40d8-a72b-784ac56c0b5b"
+            name="toolStripContainer1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="37253cd7-99b8-4b0b-9079-84cf18da1af7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DtoolStripContainer1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="299b5d83-f357-41f8-83a3-47ba1ccff6f0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d30525e7-c3d1-4dcb-bfdb-a503d507afcc">
+                    <propertyInstance
+                      Id="e22bc447-73e3-4f58-81c3-9ae21ec80fdc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5752860-9e8c-4fb6-98ea-b565e867b92f">
+                    <propertyInstance
+                      Id="d113fc92-36e8-4829-aa33-7aa2d2da6f7b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fce47f66-4dc6-45a9-b36b-4748371614a5">
+                    <propertyInstance
+                      Id="36a634dc-cd7b-41d5-8afa-25970b5f8125"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37f611ec-5429-4158-8a21-5850d0d487df">
+                    <propertyInstance
+                      Id="c13eadd8-3d60-4054-871c-45a32d98bbf5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8ea4704-454f-47b0-9d82-94e126bd98d1">
+                    <propertyInstance
+                      Id="5fc4f55c-d54b-44ee-848f-3d6b46f51047"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d25b75d7-36e2-432a-ac30-0e050f724a74"
+                LastKnownName="ToolStripContainer"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd74463f-c73f-451f-90bf-1ea54d244e4b"
+            name="splitContainer1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7c4de256-ab32-4219-8793-713e7373e954"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DsplitContainer1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="14d6f10e-7466-43ba-9ed6-b077244cec6e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5df8a66-8929-46c2-bd9d-947602d4d367">
+                    <propertyInstance
+                      Id="b55a851e-8a3a-4126-92e7-2f383dca92e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b8db2ce-d106-4464-8475-d010d8bc5a65">
+                    <propertyInstance
+                      Id="6cf21ca5-43b6-42d7-97c6-76a159e229c5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fe3d788-306e-4575-b696-263fe28b7076">
+                    <propertyInstance
+                      Id="d595e2e1-38e8-4610-927d-be36287b4c06"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40fe57c3-370a-4cab-89ef-d453587bb3ca">
+                    <propertyInstance
+                      Id="855c00a0-e540-41f8-8e52-54aa5afce53d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26d14f05-5e19-434d-872b-90d408a768c0">
+                    <propertyInstance
+                      Id="4a6ff1ab-710c-4f3d-bad5-4d0434114ea6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="70ed8617-d2d4-4065-b56b-8d7fb8a84c63"
+                LastKnownName="SplitContainer"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4d44743-2d29-4f31-a8e3-4050e444f22e"
+            name="mainMapLegend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f4cd1d74-e036-49b8-a7ec-c4de373cf72e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DmainMapLegend"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="07b693f9-f5cc-4003-9a90-19bac33c0bcf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81dbfd61-6407-4ea5-b242-e5467c8d136a">
+                    <propertyInstance
+                      Id="752a217a-381d-411a-bb86-d8485f856cf0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56cc262a-298f-4bf7-a2ec-ccad55de939f">
+                    <propertyInstance
+                      Id="e8822c9b-4279-44db-9fa9-7b1f4ada84bd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50e7f63a-35f9-4a15-be44-f67d05b626ae">
+                    <propertyInstance
+                      Id="afa36dfc-7876-4289-83b0-55d1e195bb13"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a494c027-7c1d-4071-9d62-c61689aa5344">
+                    <propertyInstance
+                      Id="f535523a-dbe9-4b21-a669-89ac6fbda4f6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0982406b-e373-4681-afe9-26c5094cefb1">
+                    <propertyInstance
+                      Id="7d50dfe1-eb69-4667-9df1-4e09a26aca96"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="90d1fb05-c107-4411-9df6-3172c03ff011"
+                LastKnownName="Legend"
+                LastKnownLocation="Package3_1821.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f3e1ebbc-9f2d-4464-9605-cb00966a49ad"
+            name="mainMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7df0a51e-9194-4da5-926e-8f76c3b688ca"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DmainMap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="855cc016-814e-4b78-a0b4-675aed99cb24"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ced095c8-9ecb-4f0f-9bf1-8d6135198d17">
+                    <propertyInstance
+                      Id="3e07a163-9ab1-4474-81cc-14733f27dd39"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e38535b5-e800-4a3f-bf31-8ed5a414e78a">
+                    <propertyInstance
+                      Id="fbe1f048-05db-4f6e-9654-8ec3e5506758"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ac43e85-08a4-4134-914e-96d48657b158">
+                    <propertyInstance
+                      Id="1e91021f-337c-416c-86d2-a05e2b2220c5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37da4cf1-fac9-4eba-b16f-fb07b9d0ce8c">
+                    <propertyInstance
+                      Id="20fff8ea-a207-4b1b-9ed5-88ad6fcf95c1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6da9fcf-9261-49a7-9ddb-661143d946f1">
+                    <propertyInstance
+                      Id="256a3123-1c26-4f86-a45e-2fcb6829d31e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6f4a3017-d918-4447-849e-73f773ea41b3"
+                LastKnownName="Map"
+                LastKnownLocation="Package3_1821.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d0e36afa-312b-4b80-ae54-d68f337003eb"
+            name="spatialToolStrip1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="209dc2d4-9e10-4669-85be-2617309b25cf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DspatialToolStrip1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8a007470-ea05-4ba8-96c5-fb406d157163"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="425cf5b7-d8e7-4f29-9003-d45b2bc361b1">
+                    <propertyInstance
+                      Id="06a59b10-e7c4-41c0-9a75-2ebb4b538c34"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d12a3742-df4b-4174-9354-522fbd39475c">
+                    <propertyInstance
+                      Id="b22723de-bb9d-42ac-84f0-4ac268b65f53"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52f6263c-7ceb-4387-86f4-0dfba2a366ee">
+                    <propertyInstance
+                      Id="1ae017d8-a8e4-4316-a825-1ff6ddb95f10"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f0b0d91-dbf4-4d8e-8faf-548adade8f6a">
+                    <propertyInstance
+                      Id="84a5e34b-4c31-419f-96b9-af5d4d173a40"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02363785-79d7-4aa4-8a65-38db8f93fc6e">
+                    <propertyInstance
+                      Id="ed70739c-226c-4087-9d5c-78107f883b58"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4108b2ed-1b2c-422b-bfea-848b70e81935"
+                LastKnownName="SpatialToolStrip"
+                LastKnownLocation="Package3_1821.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="087c06c7-f316-4949-acc2-38e5456853c8"
+            name="fileToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6d1d28b9-9f6a-479c-a887-f905a973f90a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DfileToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a95327da-2b45-464b-9fe8-8be443054f90"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="756e0b3c-b90d-4895-bc33-ad7d3e400185">
+                    <propertyInstance
+                      Id="aa284f42-aa45-4833-a0d5-29629de71119"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d03a1de0-0f5d-4f87-a997-8bea151d85a8">
+                    <propertyInstance
+                      Id="68b197e9-f5bd-4405-9f52-eef9eb6a758a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c863a275-d239-4528-8153-c5c3db23fdd0">
+                    <propertyInstance
+                      Id="9e1435ae-5bca-4b80-bc30-9fcb30deb67e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a757cf6-e251-4488-825f-8573a9562656">
+                    <propertyInstance
+                      Id="650c057a-5f9b-4302-b5b2-5d5110a82fdb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ddc00d0-ed7b-4d98-ba65-1f7830f3c96e">
+                    <propertyInstance
+                      Id="c718ea10-8d5e-4683-bfa9-07ea529b814c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4a50bc9c-212f-417b-b555-d12dca481a6a"
+            name="closeToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2a4fba7f-2d7c-48c2-927c-8ab541dbc21b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DcloseToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8fa2f33c-bed4-481a-8e9c-4bd8c3e2e754"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac7c2247-1d4b-4c36-ae19-bcc334c18d03">
+                    <propertyInstance
+                      Id="1e1edd43-3960-404d-a8af-a1d2eb27c13e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a6b9fee-214f-42b3-8933-2eeae8d679e3">
+                    <propertyInstance
+                      Id="51ec11c9-e8bc-4a6b-821e-c267deb98187"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea54f434-a449-49b9-a5d4-ec7a8039402c">
+                    <propertyInstance
+                      Id="3cc69f5c-ba33-4e69-99b2-cc296caa0736"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bc28de5-0e69-41e8-850e-885eeab664f3">
+                    <propertyInstance
+                      Id="1a6044c8-5104-44b3-9512-401c80468bc8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4be1271-4be2-4bc4-8c1f-a6894317c02e">
+                    <propertyInstance
+                      Id="fe5e5dad-73b7-4230-b214-2ac8e434762f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="70516b09-836b-40b2-9632-74819261464c"
+            name="menuStrip1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="be58623c-6294-4cb3-9987-8df08dfa3a93"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DmenuStrip1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6994998c-c08f-408e-a322-d0c680e15230"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85aed90f-0387-4001-a35a-709e19347816">
+                    <propertyInstance
+                      Id="8f84ea42-7d31-4b68-9928-5c1dd8f258f5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a3ab9fc-2ac8-437c-a0eb-cd29d568a378">
+                    <propertyInstance
+                      Id="107a1752-58df-4b83-a913-61f30b700d48"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bfc27f6-cfbd-49d1-bc7f-876bfa54ad4a">
+                    <propertyInstance
+                      Id="523618b9-a3ba-49de-b06c-96684d721dda"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="346ebb90-ef14-4940-ae6d-c58834829eca">
+                    <propertyInstance
+                      Id="8755a621-d0e2-4c8f-bc0f-f93eb6653776"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0dd70449-06d7-4f0d-a2fc-e8f1f7281731">
+                    <propertyInstance
+                      Id="078053aa-d499-4e30-93e9-a4903b34ab49"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41dfa13f-67f2-4915-a5cd-60ed3b8198a7"
+                LastKnownName="MenuStrip"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="49a789ea-d0e2-4d47-b039-484c6627bf07"
+            name="newToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="35597f27-94c9-4ee7-9ea9-c782dc87a53e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DnewToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bdaf3653-74dc-459e-b530-e0e152a38cb8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f408b182-e680-4324-87ed-fa4b40e2013e">
+                    <propertyInstance
+                      Id="51cc627a-9dc5-44dc-8ba6-7f97a9043a8d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2912b214-6a74-41f6-a7d5-866f062d4dac">
+                    <propertyInstance
+                      Id="e46f3dba-45c4-4d86-8f7b-95cfb5d7abec"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84d62c75-2cd9-4cbb-bc49-2ddf2fa49562">
+                    <propertyInstance
+                      Id="33b589f7-cf4e-4d83-9dd4-2f7185322108"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d85bed3-f233-4d71-afd4-150eb4216b3c">
+                    <propertyInstance
+                      Id="a4890de8-518f-4a42-8845-209f06a21bf4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e135af5e-66dd-4185-a58a-ac200b822275">
+                    <propertyInstance
+                      Id="f0b7d96d-e36c-49bd-86b3-46419f90dbb6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="287b55da-c957-42ba-831a-9cd27ed15cc6"
+            name="openToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="37c74f57-edb7-4405-849d-32d1761f6a8f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DopenToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98305472-e090-466f-900e-2d04230c6939"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dca68aed-8d6a-41d3-8708-bbf6f208ed32">
+                    <propertyInstance
+                      Id="e0b3764a-f83b-42b2-9456-29049237ac74"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f85a416d-80f4-41f6-9271-85706711bd5f">
+                    <propertyInstance
+                      Id="24fce899-6eca-4a50-a7aa-f15756a3d478"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afed91f8-ed7e-46ed-9f97-bebe71127ad7">
+                    <propertyInstance
+                      Id="74f58e17-729a-4db6-9f0a-263e767e9c58"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be978c62-035a-4380-829f-13e52e10afed">
+                    <propertyInstance
+                      Id="2d97bfab-5d3a-4b1b-af6b-3f7b45c3040b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="922e0a5b-74f0-4a30-9cc5-ea37726c8120">
+                    <propertyInstance
+                      Id="809e99e5-783e-459e-aff1-559df46fb66c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e6beaf94-d6cb-46aa-bbbe-e49a7ab6b5cf"
+            name="viewToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dfb302a8-cd81-41c7-968e-8b6f8bd0409a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DviewToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4bf8aede-662d-4001-b0d7-ec8e68c32fd1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88713cc9-583d-4c9f-a4e9-db6f5786dcf5">
+                    <propertyInstance
+                      Id="516eac5a-4d6a-4c88-a652-3169a866589e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="092dc5ea-0efd-48ba-9e15-0644a91a1501">
+                    <propertyInstance
+                      Id="711b9cbc-16f3-4ce0-bf35-5c26af6a440f"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4ae04a5-4faf-42b0-a97f-4b4941a852e7">
+                    <propertyInstance
+                      Id="a8c4bd99-cae3-49f6-84c8-619745410f1b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c600ff59-b846-4bd2-90d8-308ece0112fe">
+                    <propertyInstance
+                      Id="51ffe992-fc6c-48e8-b78a-b013f737c23b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceddf2f6-18d9-42ad-8004-f43e72d7aaad">
+                    <propertyInstance
+                      Id="45fc24a6-39cd-4a76-a1a3-e93f211f5fbb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce8569a3-509a-4f76-b7f3-be9981940d28"
+            name="helpToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ef0f3c71-88f7-43d2-aec4-9247ebdca704"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DhelpToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4cc636f-13da-4223-ba08-951842ddd32f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab6fee41-596d-4541-bef8-e93407bd51e6">
+                    <propertyInstance
+                      Id="9acef356-ccc4-4897-b9c3-c4556a593dc2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="415be549-a171-494c-b1cd-812b3a961d5f">
+                    <propertyInstance
+                      Id="7e5ec98a-7d7c-4530-9a7b-7a1ce3bee048"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d789d20b-035b-485b-adb2-1a92568de6af">
+                    <propertyInstance
+                      Id="baa3ccb1-402e-4d09-be38-19ebdbd211fd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd0f24fa-f4a8-42da-9c9c-d09008cf6301">
+                    <propertyInstance
+                      Id="ca3af60c-f221-4154-8fcd-1e575a2fd096"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42faef67-f67b-4603-8087-8ac98c915919">
+                    <propertyInstance
+                      Id="2193ae83-60df-4025-9bb0-b5f1c00b6e4c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a82a1166-4a1c-4db9-8ef5-a6a447c74775"
+            name="oProgramieToolStripMenuItem"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="10107a2d-2cc4-45b0-8291-23be0f2fbc94"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DoProgramieToolStripMenuItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0050160b-e7d9-4df6-81cf-559b21c73e94"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e3d2426-793d-4e14-b18b-b870195763ca">
+                    <propertyInstance
+                      Id="51d97d63-2c05-4340-b78e-35a9cdd6b9e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="078fc751-b54a-4180-a40e-e65a09308ee8">
+                    <propertyInstance
+                      Id="414216e4-6ebb-4041-848b-d5aeb2afe5b2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f08d4e4-99f5-4ca5-8010-14c5c90d3831">
+                    <propertyInstance
+                      Id="767a2f10-bb60-4de6-bcc2-da75ebf5cef8"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02cc20f1-eafd-4fae-9a28-a86f63680cb5">
+                    <propertyInstance
+                      Id="abc9b373-d304-4368-a3d4-4ab491bc4bc9"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efd4cf82-1f68-4d1c-a4ad-809ecaf28b84">
+                    <propertyInstance
+                      Id="96f41362-8060-4078-9c4d-1ff90c5f3f98"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b3189e52-c6cc-42ae-9e74-a4774b10e407"
+                LastKnownName="ToolStripMenuItem"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="21e05ef2-ea2b-4cde-8ec3-338ecc68ebd8"
+            name="infoStripButton"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3fb3b8db-859e-4355-932d-4181c958c7b2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DinfoStripButton"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1c8cd533-a21e-46b8-b1dc-fbf18da2b623"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="869ef7d5-8284-475f-8fbe-575a42879083">
+                    <propertyInstance
+                      Id="7420d3ed-42ce-4773-8a97-0cacc9cdef12"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ed78ff7-3c54-41e5-8ab3-3b07e730c57a">
+                    <propertyInstance
+                      Id="15670733-1da4-4dba-835a-811f75ad498d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="335f3d60-2d1a-4193-b0d1-143ff7292548">
+                    <propertyInstance
+                      Id="755c2c6f-2307-4114-9f82-d7b05ad5b717"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab4ff1a1-23a4-4132-a1a0-bf5159cf55a4">
+                    <propertyInstance
+                      Id="aa185407-f350-4492-8d49-bc19f3e04395"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b51058e1-bdb9-4c17-8efb-ca1eeafdc7e0">
+                    <propertyInstance
+                      Id="57990b27-357d-4149-8203-1bfaee3e2fec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="2d40974e-9717-4f30-b637-5e16459954f8"
+                LastKnownName="ToolStripButton"
+                LastKnownLocation="Package3_1818.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="394edefa-a50f-48a6-b6a0-0c39f147ed3b"
+            name="customizeToolStrip"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5d7b518b-235c-41f1-886f-1e18b99fee52"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DcustomizeToolStrip"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29cfc883-4504-43b2-8c72-4de754e60e7b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8d7853c-86a1-4bdb-9cd6-fc10e0699dd4">
+                    <propertyInstance
+                      Id="9e609fcc-0010-4edc-ae80-1291428b7768"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02bc0a20-7060-4a40-88b6-ff7160ac5199">
+                    <propertyInstance
+                      Id="e8f8d83a-acc6-4422-84a4-293623792008"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4b1c3d2-ea20-4721-8ac2-360c2111bd04">
+                    <propertyInstance
+                      Id="d1e5eb95-622b-4c49-9a01-9a6b1787f6b0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5046d752-44fc-48aa-a582-7d7b74fbb718">
+                    <propertyInstance
+                      Id="9d583898-9803-45c2-b929-ad3b50c5698e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25a578d4-5373-4a25-a773-a21e97087ba5">
+                    <propertyInstance
+                      Id="5beb1bc4-7901-4715-ae76-232d57230231"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e26a64b9-50e5-4291-9b1d-b70e9a0ea8d5">
+                    <propertyInstance
+                      Id="57d42464-2fa7-4926-ab2c-59023ffa29a4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="84e8ccce-a4f9-4bed-ac71-2cd4a9a303ec"
+            name="customizeMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="30b6de5c-8504-44a6-a4f1-9beff55d35cb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DcustomizeMap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1e1bb8b6-8c38-43bf-acbd-eb84252de8a8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbcd8bfa-4d2d-4ce1-9ad8-2dc755eafb03">
+                    <propertyInstance
+                      Id="7d933315-a079-44e4-b2a9-000e02ea00c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12915ff7-8a0e-4886-a024-12b462749f66">
+                    <propertyInstance
+                      Id="deaf4196-2c87-4ea7-9fd1-5471c2c8907b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe7e4124-b3ea-402b-83ea-00c642c74087">
+                    <propertyInstance
+                      Id="542bb679-db1e-4b05-8d13-e4fe1eafae6c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac675728-6a16-41a0-a2a4-d8bb88c449ab">
+                    <propertyInstance
+                      Id="c05d1be9-30c1-49fa-92cb-5c88b2a7a83e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b436bb68-88ad-4016-88b3-792bb1d414a0">
+                    <propertyInstance
+                      Id="ffb43ca9-7e40-4f51-8e3b-91b110630b1a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3317872-1b5d-44ae-b081-a77499b272ad">
+                    <propertyInstance
+                      Id="e29fac2d-9a29-4c87-8909-bfc87698c9bf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="986ca771-f745-4429-88f1-5c1b1ec0ecd7"
+            name="closeToolStripMenuItem_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="efb1c77f-0245-42aa-a046-7a8d23a70ecc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DcloseToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91902143-c085-442b-b182-6790e0be0169"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43e740a5-2f3d-4334-9a31-b5fa855417ed">
+                    <propertyInstance
+                      Id="552203dc-b7f3-4afd-be95-dda1d2ba8df9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="713d5836-55d6-46e2-b08f-8f46e8acca6a">
+                    <propertyInstance
+                      Id="a85c5fa6-6a3d-4dd8-bc1a-38fdec119d40"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e61f51c4-07dc-4e0b-a056-9b9016b64098">
+                    <propertyInstance
+                      Id="95942858-a277-4120-b5ed-6b44f9999566"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb2d13ee-4055-4354-8fd2-3c4932e32055">
+                    <propertyInstance
+                      Id="15fa4fa0-e012-4249-87fe-e3ed0c3088e0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffd75791-05fb-4847-80b3-e9ce3a6277cd">
+                    <propertyInstance
+                      Id="5e797e39-ea39-45c1-9a82-1f496aa1e1aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fe814bc-0c47-4533-8744-f76da3f056bf">
+                    <propertyInstance
+                      Id="aafaaf5d-1bbb-48b3-adcb-8bbdd61c2cf0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d93a5db5-3589-4a67-9712-3bce41785369"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c7607615-33d3-4ffc-a228-6c2673a31912"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DcloseToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b3dfc4b-a111-414b-a30b-e2097a5add49"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3e22bc61-2823-4ec9-b4e2-f7e559bc7e10"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d8f1e642-60e5-4666-b00c-eb5de93e25f2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DcloseToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9669d6db-be2a-497f-88b4-9424b0035e91"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9256f9a1-e8c9-4520-b544-8d86e3dd9c24"
+            name="aboutToolStripMenuItem_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ce34f2d8-573c-4842-8fc1-027d9f92e193"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DaboutToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="36c78446-19ee-4569-90d2-897e61e5bd8a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d85d10d5-c8bc-427c-9134-f66d78e58e68">
+                    <propertyInstance
+                      Id="95c2d2a2-938c-46fa-a502-f42154a1b9b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e483c885-fa14-4aed-94f5-2537c4c9f777">
+                    <propertyInstance
+                      Id="79c98446-4fad-4b38-b6cd-61d8b16ea741"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4509948-008a-494c-9fc7-abe81b9f6256">
+                    <propertyInstance
+                      Id="4867351d-4569-4847-a3a2-7d9959ad3881"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="805446b4-a02e-4aad-8842-1439d0dc7270">
+                    <propertyInstance
+                      Id="57c8db90-7cbf-4452-9f05-bad28740671a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c303c5c5-1b54-4b8d-b498-f2441c8acfc8">
+                    <propertyInstance
+                      Id="6ff09758-6579-428d-8205-27e87591246e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfe22534-20b4-41e9-8c6e-07f6d46b2f69">
+                    <propertyInstance
+                      Id="e9d20766-690c-49cd-8c84-59956cb54c85"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83fcf17e-70c3-47c5-b7fb-cd5e08f85b8a"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="91951abf-4657-4724-8c0d-4d32887b765d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DaboutToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b3dfc4b-a111-414b-a30b-e2097a5add49"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9e3b739e-5400-44ac-932c-9ee6b54b4693"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55342a4b-65b5-4a9f-a6a9-7a5fd02fcc5a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DaboutToolStripMenuItem_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9669d6db-be2a-497f-88b4-9424b0035e91"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ca2f4250-ee59-4107-8c06-3aa73dbbf763"
+            name="mainMap_MouseClicked"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f9db71b8-6b55-4650-befd-44054c373cab"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_MouseClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DMouseEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc461113-2d57-41b7-812a-2ad2e19224d8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad6fb57c-6a97-4278-bcbd-f71eec9209d4">
+                    <propertyInstance
+                      Id="705a0e76-fc18-4738-b519-8a2794d9f6eb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f47b1f0-d21a-4983-a6c3-6326196e5c57">
+                    <propertyInstance
+                      Id="7f536cee-dcac-4514-864e-9b472e489083"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b7a24cb-75d4-4a08-b4c6-5822223abb74">
+                    <propertyInstance
+                      Id="04647eaa-033c-4e8d-ac60-79faee45c961"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="508091a6-8ca4-4a22-83b9-8ba0b58a1b41">
+                    <propertyInstance
+                      Id="7fcb0aae-538a-4171-822a-f49242014980"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ddf0350-abb3-411e-a3c3-f848f8857349">
+                    <propertyInstance
+                      Id="b565c823-318f-4a54-91cc-c891d41b91c8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="648d83d5-e6eb-4775-93a0-fa22e57d2836">
+                    <propertyInstance
+                      Id="c2a08aa0-5f5b-4a30-9fc2-25074104b0df"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eeafa466-04a2-4c19-a4d4-5698069edb4b"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55ddf708-479a-4269-b411-de167aa14dc2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_MouseClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DMouseEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b3dfc4b-a111-414b-a30b-e2097a5add49"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0742bedf-2b5f-4d38-879c-81b2c88c13f3"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="608d6783-6abf-42c8-baf8-7981343faa41"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_MouseClicked OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Windows.Forms.dll&quot; Namespace%3DSystem.Windows.Forms Type%3DMouseEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="dfa3617c-2d36-4af0-8ac7-83b5fead4164"
+                      LastKnownName="MouseEventArgs"
+                      LastKnownLocation="Package3_1818.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="588348ac-28b3-481c-8cc9-a1fde507035c"
+            name="infoStripButton_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="59d5249c-c818-413f-9c59-8b9068fb2c9f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DinfoStripButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="90c6f9b9-478e-4b42-9779-a1eac093f51c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32780fb3-6dd8-4c21-8673-ffb648a57375">
+                    <propertyInstance
+                      Id="187f0bd4-c474-4b80-af8f-6632e7502ec2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9dbffbc9-9fb0-4d10-8b35-c495e0972a6b">
+                    <propertyInstance
+                      Id="6d07c082-db44-4041-89b9-a4285ca87069"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa05f69e-cc42-42e2-9d9c-2683ee114f25">
+                    <propertyInstance
+                      Id="7bfedd70-f5dd-4701-b811-4d82247fd2af"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31da3634-9b5b-4e05-be5e-c82d8fdd7ab1">
+                    <propertyInstance
+                      Id="4e62ae34-d517-4f94-a8ce-c3af254362d3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3292deb-b788-47a0-adbc-576872113f6d">
+                    <propertyInstance
+                      Id="b4d107d5-871a-4224-991a-8e290bc13aa0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="666286bb-7483-46d1-9c99-5ff58e75fb61">
+                    <propertyInstance
+                      Id="f19630a3-3b70-466d-8aa3-450dcc41ae3c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fffec56-02d3-4e30-8e41-aa6df61c3abe"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6513f438-3487-4454-91fe-3a71eb6f7111"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DinfoStripButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b3dfc4b-a111-414b-a30b-e2097a5add49"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ab986671-795e-48c1-9356-0211c35290a3"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fac26367-6123-4a89-91b2-ebb19e04954f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DinfoStripButton_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9669d6db-be2a-497f-88b4-9424b0035e91"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ff3c75d7-4058-41e3-b6fc-153fd227efd9"
+            name="mainMap_Click"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7592fa6e-036e-4289-8e0f-3566eccb0e39"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2db640c7-e79b-4f6c-a42d-5c289a775de9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aecbab32-4be8-472d-b161-e67b9e7d6f4e">
+                    <propertyInstance
+                      Id="97a72e9d-df0b-4d5f-a8bb-4b1dd193bc51"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c2d8c05-3cf9-449e-a5bf-5d47cd8bec84">
+                    <propertyInstance
+                      Id="cd6a7d71-c257-400f-99df-5efd75ac55e5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a277182-32d3-421f-a7b2-8baad2464585">
+                    <propertyInstance
+                      Id="d67db0bb-3219-4ba4-9725-13703fd68aff"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23297924-f5c9-4b21-9dd9-0a1bf6443404">
+                    <propertyInstance
+                      Id="6565cd41-2642-49bd-8588-a6d9be275b96"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b62896f-b276-4682-bad6-818b10025a06">
+                    <propertyInstance
+                      Id="6a095c4a-3468-45f8-aa31-8b147a6be0dc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cdb9b2b-7ead-48d5-a741-f0965625f818">
+                    <propertyInstance
+                      Id="cc8c17de-7ea5-4c55-bb72-c53b0ae9a176"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9bd11c5b-78d8-4e1d-9abf-0a3d7b94256b"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e11f511b-c06b-498d-bbc4-7dc2232a3f7e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b3dfc4b-a111-414b-a30b-e2097a5add49"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e3def74e-3cbc-474b-8159-e2fdec4d3bfb"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b8fc8c7-3067-457e-b908-b9b908ceecf5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DmainMap_Click OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9669d6db-be2a-497f-88b4-9424b0035e91"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="445a78e8-2c8f-4fe9-9a33-9f256f212d9c"
+            name="Dispose"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9c4da4c2-9b9b-452c-b72b-eba73f5a0582"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d0bed33-b059-4a7e-8f67-0c7d79dcc8b9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="191c3559-0411-447f-bbd3-10c3efa480c1">
+                    <propertyInstance
+                      Id="fed8bce9-ebe9-4da4-8766-51522e6f15b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc4c5562-7f31-484e-b859-136faa097165">
+                    <propertyInstance
+                      Id="c8dd4c57-ee31-4b4c-ab96-480577743617"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3eb614e-5a81-451a-8e4d-f805dd6319fa">
+                    <propertyInstance
+                      Id="58412416-631c-4590-9c77-b3b2fcc56a45"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c227b833-df31-4f51-be79-dca1ab3390eb">
+                    <propertyInstance
+                      Id="0de20f3e-7871-44a1-8ae1-2a18b0e1e513"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="716e037b-e61b-45ca-b9c3-35e6fb89ce62">
+                    <propertyInstance
+                      Id="d281a4f1-05c5-4f65-aa8f-dea029ee3148"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="919495cb-3164-4f64-992d-a4edfe1c91d0">
+                    <propertyInstance
+                      Id="7cdb7b80-6148-44e1-95c8-15410ad8f825"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0aac947-6224-4707-acd7-b842b3058a7f"
+                  name="disposing"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a0e8edc5-7278-418d-8df9-bbb7b6df9e91"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="SzkolkarzModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fae64e79-b172-4584-8646-859efbf297af"
+            name="InitializeComponent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b56f5008-dba0-42cc-8318-4bd4575cc89b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4c482dc1-c207-44fe-a839-a5797b2a115c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1785a35-3687-41a7-a824-15ef8b48f263">
+                    <propertyInstance
+                      Id="c7cbfcbd-97f7-4321-a1fc-32e0b809acb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86ff8284-d4ec-48f3-8c8b-3c9fff6d070c">
+                    <propertyInstance
+                      Id="933e940d-54ef-4423-b75e-0db647fc3458"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d5908b1-08c8-43e7-a178-852d004a9990">
+                    <propertyInstance
+                      Id="20e632c5-ea27-4b49-a186-1bc44eb72514"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99f2287d-c58b-49ad-b368-972b8ba132e4">
+                    <propertyInstance
+                      Id="e490e3dc-28a5-4f0b-9281-43f17e10a4f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93e97cc3-9c33-4ac1-9e67-f39a60473225">
+                    <propertyInstance
+                      Id="668c2467-30b4-44e8-a5c3-74cdedc8d9f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c98ba0a-83bf-4072-9da4-aa09965f6653">
+                    <propertyInstance
+                      Id="412bf379-a577-4c75-95d0-3975638863cb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="faeb743b-e9fe-47b8-bf89-0b4118108e8c"
+            name="MainForm"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b05477fb-dad7-4f79-ac09-b0a4d0c539e9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.forms.main Type%3DMainForm Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bfd186c3-509b-42c6-a866-9fc2f299c441"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28347d92-f325-4e3b-9e6c-2082b975c1ad">
+                    <propertyInstance
+                      Id="2177386b-aa09-41f4-9584-7ba9ca9292af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c20caecc-7615-4aae-ab2a-a231c11b79e9">
+                    <propertyInstance
+                      Id="6c81db04-cb3e-46bd-b2da-3a5a6222bbb3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8cf80a5-d56b-4969-b3e8-ae7deedf82eb">
+                    <propertyInstance
+                      Id="b9363df2-0bb3-47ed-b760-aeb8ace927ac"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f98acaf0-28b9-4c19-992b-1dff444937a5">
+                    <propertyInstance
+                      Id="be4961dd-6224-4ac5-8c9d-46a19adeaafb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca53b621-2edd-4d02-83a7-bd1ec17903b1">
+                    <propertyInstance
+                      Id="6ac9fd5e-b0a4-413a-a335-b2799e7c6892"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7aaea4f-b80d-4b4d-9d0e-6efa27261bae">
+                    <propertyInstance
+                      Id="e091e9e3-3064-4f74-9ce6-dee5786c1323"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

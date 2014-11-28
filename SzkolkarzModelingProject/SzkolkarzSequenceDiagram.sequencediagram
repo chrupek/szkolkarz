@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="8401514c-293d-4941-8dcf-2863b38badd8" name="SzkolkarzSequenceDiagram" linkedPackageId="412f2887-ec1b-4038-a990-5b5f96f34563" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="05418da0-f524-48cc-a915-b753b7009fae">
+      <profileInstance Id="839c3b97-5d0c-426a-ba71-241d25536fca" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0686ebb3-f959-4866-b06f-222104359490">
+      <profileInstance Id="67585995-c42c-4bfd-9fe4-e62ad4bb784b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e77ea237-9052-4c19-b652-ba5b3d35210e">
+      <profileInstance Id="9560480b-49a7-46b2-a796-938eef3446ed" name="CSharpProfile">
+        <elementDefinition Id="51cf49ec-efa8-4f4b-930b-f1b30a3fb73c" />
+      </profileInstance>
+      <elementDefinition Id="da230c9d-5518-4888-9456-e9bf8daa02b1" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="08068759-2e6b-4ad3-a7a0-8f07fd4d4876" name="SzkolkarzSequenceDiagram" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="47625b75-bdbb-47b4-b2ad-2f4a97eef1ed" />
+        <ownedAttributesInternal>
+          <property Id="23521b27-9a0e-4c38-a890-8c2cf816b3ea" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8026c4c-c8f5-441f-b110-4e8b86f97d07" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6f7fd9be-49ba-4ff2-8c88-2622045e5d0e" LastKnownName="DetailsInformation" />
+            </type_NamedElement>
+          </property>
+          <property Id="0e14c1b8-8201-4680-a482-5c48b5f0f179" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a4827490-8c2e-4975-936d-85d1515f65d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6f7fd9be-49ba-4ff2-8c88-2622045e5d0e" LastKnownName="DetailsInformation" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6f7fd9be-49ba-4ff2-8c88-2622045e5d0e" name="DetailsInformation" isAbstract="false" isLeaf="false" cachedFullName="SzkolkarzModelingProject::szkolkarz::view::DetailsInformation">
+        <elementDefinition Id="08c78c48-63de-4a58-b9c3-bfbcac574080" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="412f2887-ec1b-4038-a990-5b5f96f34563" name="SzkolkarzModelingProject">
+    <elementDefinition Id="ba4d4e94-a4f5-4a2e-a4bb-15e12f7af187" />
+  </package>
+</SequenceDesignerModel>

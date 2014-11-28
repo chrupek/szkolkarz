@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
-  Id="ecbdf3df-cd3e-48d5-a00c-ed9d9868a61a"
-  name="szkolkarzModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  Id="ba4d4e94-a4f5-4a2e-a4bb-15e12f7af187"
+  name="SzkolkarzModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -17,97 +17,43 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
     <packageHasProfileInstances
-      Id="45b4e1df-3a6b-4704-99f0-622d9c86bcb3">
+      Id="da230c9d-5518-4888-9456-e9bf8daa02b1">
       <profileInstance
-        Id="60f20fec-668e-4cb6-a955-9fe7115505a7"
+        Id="51cf49ec-efa8-4f4b-930b-f1b30a3fb73c"
         name="CSharpProfile" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <packageMoniker
-        Id="690de81c-5ab7-4c6b-b513-3c7583653099"
+        Id="e52d572b-ce72-4943-bbb6-db2138dfb081"
         LastKnownName="szkolkarz"
-        LastKnownLocation="Package_1731.uml" />
+        LastKnownLocation="Package_1817.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
-        Id="9960617e-df90-476a-b1b6-5366ea07cb39"
+        Id="ca665a72-aca5-4ec2-b1b8-b0b351a3e74d"
         LastKnownName="System"
-        LastKnownLocation="Package2_1731.uml" />
+        LastKnownLocation="Package1_1817.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
-        Id="487b6aac-0264-436f-b972-f264d481b706"
+        Id="793b8984-481a-4a41-b98b-e407f0caaa34"
         LastKnownName="DotSpatial"
-        LastKnownLocation="Package14_1731.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="68594ce8-78c3-4b28-8692-b07e02d7a96d"
-        name="Linq.DataContext"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
+        LastKnownLocation="Package2_1821.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <interaction
-        Id="afd492a6-d6db-47f2-a165-b83bc3b7f60e"
-        name="Sequence1"
+        Id="47625b75-bdbb-47b4-b2ad-2f4a97eef1ed"
+        name="SzkolkarzSequenceDiagram"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
         isLeaf="false"
         isReentrant="false">
-        <lifelines>
-          <lifeline
-            Id="4e717979-6046-4a03-aebd-ccfd3b5a4126"
-            name="program : Program"
-            isActor="false"
-            lifelineDisplayName="program : Program">
-            <represents>
-              <propertyMoniker
-                Id="fb9c96d9-b28e-4365-8705-eb7dcadf8bda"
-                LastKnownLocation="szkolkarzModelingProject.uml" />
-            </represents>
-          </lifeline>
-          <lifeline
-            Id="b1fe58f1-4dec-433f-881b-cb768dacf45b"
-            name="mainForm : MainForm"
-            isActor="false"
-            lifelineDisplayName="mainForm : MainForm">
-            <represents>
-              <propertyMoniker
-                Id="e1efa6c4-9ece-4793-930b-34a7aeca4ffb"
-                LastKnownLocation="szkolkarzModelingProject.uml" />
-            </represents>
-          </lifeline>
-          <lifeline
-            Id="ea3a3ac5-78a9-4ccc-9cf1-dd30f8ea80c9"
-            name="dBController : DBController"
-            isActor="false"
-            lifelineDisplayName="dBController : DBController">
-            <represents>
-              <propertyMoniker
-                Id="cc3f955c-532c-47a3-acd4-05a4ac378f8f"
-                LastKnownLocation="szkolkarzModelingProject.uml" />
-            </represents>
-          </lifeline>
-          <lifeline
-            Id="b2d0751b-7024-452c-9666-cdd967d7576b"
-            name="dBConnection : DBConnection"
-            isActor="false"
-            lifelineDisplayName="dBConnection : DBConnection">
-            <represents>
-              <propertyMoniker
-                Id="a01bae05-a799-49b2-a624-7cf9474d634d"
-                LastKnownLocation="szkolkarzModelingProject.uml" />
-            </represents>
-          </lifeline>
-        </lifelines>
         <ownedAttributesInternal>
           <property
-            Id="fb9c96d9-b28e-4365-8705-eb7dcadf8bda"
+            Id="d8026c4c-c8f5-441f-b110-4e8b86f97d07"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -117,13 +63,13 @@
             isComposite="false">
             <type_NamedElement>
               <classMoniker
-                Id="ba06e71f-76b7-4f5a-8241-f09891b8529f"
-                LastKnownName="Program"
-                LastKnownLocation="Package_1731.uml" />
+                Id="08c78c48-63de-4a58-b9c3-bfbcac574080"
+                LastKnownName="DetailsInformation"
+                LastKnownLocation="Package_1818.uml" />
             </type_NamedElement>
           </property>
           <property
-            Id="e1efa6c4-9ece-4793-930b-34a7aeca4ffb"
+            Id="a4827490-8c2e-4975-936d-85d1515f65d7"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -133,41 +79,9 @@
             isComposite="false">
             <type_NamedElement>
               <classMoniker
-                Id="53d82c4d-e7e3-4802-b101-f48d4b88ac2e"
-                LastKnownName="MainForm"
-                LastKnownLocation="Package11_1731.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="cc3f955c-532c-47a3-acd4-05a4ac378f8f"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="87ac4bc8-dfdc-444b-ba6c-b2bacbb596d3"
-                LastKnownName="DBController"
-                LastKnownLocation="Package6_1731.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="a01bae05-a799-49b2-a624-7cf9474d634d"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="22963f75-df1c-4f71-93d4-790d482125f6"
-                LastKnownName="DBConnection"
-                LastKnownLocation="Package6_1731.uml" />
+                Id="08c78c48-63de-4a58-b9c3-bfbcac574080"
+                LastKnownName="DetailsInformation"
+                LastKnownLocation="Package_1818.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>

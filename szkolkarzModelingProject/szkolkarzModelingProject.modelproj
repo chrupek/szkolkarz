@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1b74990d-dc8b-49bb-9c66-b87f34b1d689}</ProjectGuid>
+    <ProjectGuid>{7369a3d7-c263-4066-86fa-7d2fb3cce412}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>szkolkarzModelingProject</Name>
-    <RootNamespace>szkolkarzModelingProject</RootNamespace>
+    <Name>SzkolkarzModelingProject</Name>
+    <RootNamespace>SzkolkarzModelingProject</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -22,70 +22,89 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="ModelDefinition\Package10_1731.uml">
+    <Content Include="ModelDefinition\Package1_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package11_1731.uml">
+    <Content Include="ModelDefinition\Package1_1818.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package12_1731.uml">
+    <Content Include="ModelDefinition\Package1_1821.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package13_1731.uml">
+    <Content Include="ModelDefinition\Package1_1825.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package14_1731.uml">
+    <Content Include="ModelDefinition\Package2_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package15_1731.uml">
+    <Content Include="ModelDefinition\Package2_1818.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package1_1731.uml">
+    <Content Include="ModelDefinition\Package2_1821.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package2_1731.uml">
+    <Content Include="ModelDefinition\Package2_1825.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package3_1731.uml">
+    <Content Include="ModelDefinition\Package3_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package4_1731.uml">
+    <Content Include="ModelDefinition\Package3_1818.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package5_1731.uml">
+    <Content Include="ModelDefinition\Package3_1821.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package6_1731.uml">
+    <Content Include="ModelDefinition\Package3_1825.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package7_1731.uml">
+    <Content Include="ModelDefinition\Package4_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package8_1731.uml">
+    <Content Include="ModelDefinition\Package4_1825.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package9_1731.uml">
+    <Content Include="ModelDefinition\Package5_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModelDefinition\Package_1731.uml">
+    <Content Include="ModelDefinition\Package_1817.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="szkolkarzClassDiagra,.classdiagram">
+    <Content Include="ModelDefinition\Package_1818.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="szkolkarzClassDiagra,.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>szkolkarzClassDiagra,.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
+    <Content Include="ModelDefinition\Package_1820.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+    <Content Include="ModelDefinition\Package_1821.uml">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_1825.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SzkolkarzClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SzkolkarzClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SzkolkarzClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="SzkolkarzSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SzkolkarzSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SzkolkarzSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="ModelDefinition\szkolkarzModelingProject.uml">
+    <Content Include="ModelDefinition\SzkolkarzModelingProject.uml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="406d6141-14d1-4206-9ed0-2833232cf377"
+  name="Controls"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="5b57c087-d6cd-4289-bd06-dbabbf246f4d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DDotSpatial.Controls"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="90d1fb05-c107-4411-9df6-3172c03ff011"
+        name="Legend"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c15ec94c-1687-4198-8e31-1d6441e9eb6b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2FDotSpatial.Controls.dll Namespace%3DDotSpatial.Controls Type%3DLegend"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="45e99da9-a203-4891-a3e3-95a1217b2d3e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4d63792-00b6-429e-a78f-cc4c08e3b4ed">
+                <propertyInstance
+                  Id="8b359793-45b9-4e54-9f9a-9c0ef519f00c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4d2b7443-f463-4ec1-aeab-eb9180b8cd95">
+                <propertyInstance
+                  Id="e186dc83-9a7e-4825-ae7d-baeaf1b87875"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d658df89-674f-4e41-9415-6ea17ae7efe6">
+                <propertyInstance
+                  Id="1faa0fba-d51e-47fa-93fd-7558306f3487"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a592bc82-ce52-4c46-8dac-ff87e2baca7b">
+                <propertyInstance
+                  Id="ce5c7021-0292-4b0a-a83d-999aaba6c00f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53052dee-ef76-48cc-bb1f-9150f2dfb7d8">
+                <propertyInstance
+                  Id="75f50b90-d726-47ad-b3b4-78e82d4e986d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6f4a3017-d918-4447-849e-73f773ea41b3"
+        name="Map"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3742daf1-bdce-46aa-b17e-1bfe823b60d4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2FDotSpatial.Controls.dll Namespace%3DDotSpatial.Controls Type%3DMap"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ef52ba05-1492-4424-9be2-a5f1f0e453d4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e3a1eaa-3e67-4c10-8c13-09daef855dbc">
+                <propertyInstance
+                  Id="4b249afa-4fd6-4770-97fb-4589dbac3f40"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49a9c369-1165-421f-bd84-061e1d228db6">
+                <propertyInstance
+                  Id="ab66d197-00ed-4812-a0f6-b25f2b4ecdff"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="150afed1-9184-478f-a564-c27a918171f6">
+                <propertyInstance
+                  Id="0587913f-de55-48be-a2b1-0ff5f6d7e606"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="552e2a11-f825-420e-b63e-23a509203749">
+                <propertyInstance
+                  Id="27eb519e-3f9d-4384-b46e-cc4e45e513cd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4d4e62d-bcaa-4670-b691-fbc67444d72b">
+                <propertyInstance
+                  Id="9c4e8ee4-db47-4b2c-a4da-b1bfec0b8642"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4108b2ed-1b2c-422b-bfea-848b70e81935"
+        name="SpatialToolStrip"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cb212295-a9c8-41d9-b7d1-c1c007686347"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2FDotSpatial.Controls.dll Namespace%3DDotSpatial.Controls Type%3DSpatialToolStrip"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a0228018-8d5b-419a-9f3b-cda01d2af920"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="676e3319-ec88-4edb-81b2-96f1864b68a1">
+                <propertyInstance
+                  Id="34e142bf-d24b-4ab6-afdf-ca23e6947f44"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8753b438-cf52-4469-8ae4-26c51d47361f">
+                <propertyInstance
+                  Id="d378ea5b-831b-4107-a003-4ede2a1ac35e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="097c8018-9c32-45ef-8aef-e501f55e1d60">
+                <propertyInstance
+                  Id="7c090620-036f-4152-b6d1-a0b05c954fb8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c422616-f852-4687-aa7c-8d25d2adcb12">
+                <propertyInstance
+                  Id="6c6290ec-4844-4a2b-95af-a95c4894e83a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="858915c6-70fe-4ba5-b4df-81a31641d773">
+                <propertyInstance
+                  Id="ecb4cad0-40b4-4c88-bea4-936f4683fd33"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
