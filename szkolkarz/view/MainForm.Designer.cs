@@ -125,7 +125,6 @@
             this.mainMap.Size = new System.Drawing.Size(561, 385);
             this.mainMap.TabIndex = 0;
             this.mainMap.Click += new System.EventHandler(this.mainMap_Click);
-            this.mainMap.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mainMap_MouseClicked);
             // 
             // spatialToolStrip1
             // 
@@ -210,7 +209,6 @@
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
             this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
-            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // MainForm
             // 

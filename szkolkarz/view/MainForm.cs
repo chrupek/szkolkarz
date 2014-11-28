@@ -24,8 +24,7 @@ namespace szkolkarz.forms.main
             
             InitializeComponent();
             customizeToolStrip();
-            mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.Select;
-            //customizeMap();
+            translateToolStrip();
             dbController = new DBController();
 
         }
@@ -51,7 +50,6 @@ namespace szkolkarz.forms.main
 
         public void translateControls()
         {
-
             ToolStripItem[] items;
 
             items = this.spatialToolStrip1.Items.Find("cmdAddData", false);
@@ -105,6 +103,7 @@ namespace szkolkarz.forms.main
             }
             else
             {
+                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
                 this.Cursor = Cursors.Arrow;
                 this.mainMap.Cursor = Cursors.Hand;
                 infoON = false;
