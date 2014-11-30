@@ -32,7 +32,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.mainMapLegend = new DotSpatial.Controls.Legend();
             this.mainMap = new DotSpatial.Controls.Map();
-            this.spatialToolStrip1 = new DotSpatial.Controls.SpatialToolStrip();
+            this.spatialToolStrip = new DotSpatial.Controls.SpatialToolStrip();
             this.infoStripButton = new System.Windows.Forms.ToolStripButton();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +48,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.spatialToolStrip1.SuspendLayout();
+            this.spatialToolStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,17 +126,17 @@
             this.mainMap.TabIndex = 0;
             this.mainMap.Click += new System.EventHandler(this.mainMap_Click);
             // 
-            // spatialToolStrip1
+            // spatialToolStrip
             // 
-            this.spatialToolStrip1.ApplicationManager = null;
-            this.spatialToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.spatialToolStrip.ApplicationManager = null;
+            this.spatialToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.infoStripButton});
-            this.spatialToolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.spatialToolStrip1.Map = this.mainMap;
-            this.spatialToolStrip1.Name = "spatialToolStrip1";
-            this.spatialToolStrip1.Size = new System.Drawing.Size(854, 25);
-            this.spatialToolStrip1.TabIndex = 2;
-            this.spatialToolStrip1.Text = "mainToolStrip";
+            this.spatialToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.spatialToolStrip.Map = this.mainMap;
+            this.spatialToolStrip.Name = "spatialToolStrip";
+            this.spatialToolStrip.Size = new System.Drawing.Size(854, 25);
+            this.spatialToolStrip.TabIndex = 2;
+            this.spatialToolStrip.Text = "mainToolStrip";
             // 
             // infoStripButton
             // 
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 410);
-            this.Controls.Add(this.spatialToolStrip1);
+            this.Controls.Add(this.spatialToolStrip);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.toolStripContainer1);
             this.MainMenuStrip = this.menuStrip1;
@@ -228,8 +228,8 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.spatialToolStrip1.ResumeLayout(false);
-            this.spatialToolStrip1.PerformLayout();
+            this.spatialToolStrip.ResumeLayout(false);
+            this.spatialToolStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -243,7 +243,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private DotSpatial.Controls.Legend mainMapLegend;
         private DotSpatial.Controls.Map mainMap;
-        private DotSpatial.Controls.SpatialToolStrip spatialToolStrip1;
+        private DotSpatial.Controls.SpatialToolStrip spatialToolStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;

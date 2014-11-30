@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="MainForm_mainMap_Click.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MainForm_mainMap_Click.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MainForm_mainMap_Click.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package1_1817.uml">
       <SubType>Content</SubType>
     </Content>
@@ -88,13 +95,6 @@
     <Content Include="SzkolkarzClassDiagram.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>SzkolkarzClassDiagram.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="SzkolkarzSequenceDiagram.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="SzkolkarzSequenceDiagram.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>SzkolkarzSequenceDiagram.sequencediagram</DependentUpon>
     </Content>
     <Content Include="UMLUseCaseDiagram1.usecasediagram">
       <SubType>Content</SubType>
