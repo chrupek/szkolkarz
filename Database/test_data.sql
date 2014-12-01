@@ -1,9 +1,17 @@
-﻿Insert into adm_plants(id, plant, production_no) values (1,'Sosna','0000000002');
-Insert into adm_plants(id, plant, production_no) values (2,'Dąb','0000000003');
-Insert into adm_plants(id, plant, production_no) values (3,'Świerk','0000000004');
-Insert into adm_plants(id, plant, production_no) values (4,'Brzoza','0000000005');
-Insert into adm_plants(id, plant, production_no) values (5,'Klon','0000000005');
-Insert into adm_plants(id, plant, production_no) values (6,'Buk','0000000006');
+﻿insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (1,'Sosna');
+insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (2,'Dąb');
+insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (3,'Świerk');
+insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (4,'Brzoza');
+insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (5,'Klon');
+insert into ADM_TEXT_RESOURCE(ID, [KEY]) values (6,'Buk');
+
+
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (1,1,'0000000002');
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (2,2,'0000000003');
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (3, 3,'0000000004');
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (4, 4,'0000000005');
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (5, 5,'0000000005');
+Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (6, 6,'0000000006');
 
 insert into adm_sown_log(id, tape_id, year, adm_plant_id) values (11, 1, convert(smalldatetime, '2014-01-17'), 1 );
 insert into adm_sown_log(id, tape_id, [year], adm_plant_id) values (22,2,convert(smalldatetime, '2014-01-17'),2);

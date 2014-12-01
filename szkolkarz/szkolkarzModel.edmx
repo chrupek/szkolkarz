@@ -8,27 +8,25 @@
         <EntityContainer Name="szkolkarzModelStoreContainer">
           <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.Store.ADM_PLANTS" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.Store.ADM_SOWN_LOG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ADM_TEXT_RESOURCE" EntityType="szkolkarzModel.Store.ADM_TEXT_RESOURCE" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.Store.SEC_AUDIT_LOG" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.Store.SEC_ERROR_LOG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="szkolkarzModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="V_FULL_SOWN_LOG" EntityType="szkolkarzModel.Store.V_FULL_SOWN_LOG" store:Type="Views" store:Schema="dbo" store:Name="V_FULL_SOWN_LOG">
             <DefiningQuery>SELECT 
       [V_FULL_SOWN_LOG].[TAPE_ID] AS [TAPE_ID], 
       [V_FULL_SOWN_LOG].[YEAR] AS [YEAR], 
-      [V_FULL_SOWN_LOG].[PLANT] AS [PLANT], 
+      [V_FULL_SOWN_LOG].[key] AS [key], 
       [V_FULL_SOWN_LOG].[PRODUCTION_NO] AS [PRODUCTION_NO]
       FROM [dbo].[V_FULL_SOWN_LOG] AS [V_FULL_SOWN_LOG]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID" Association="szkolkarzModel.Store.FK_ADM_SOWN_LOG_ADM_PLANT_ID">
-            <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
-            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="ADM_PLANTS">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" Nullable="false" />
-          <Property Name="PLANT" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="ADM_TEXT_RESOURCE_ID" Type="smallint" Nullable="false" />
           <Property Name="PRODUCTION_NO" Type="nchar" Nullable="false" MaxLength="10" />
         </EntityType>
         <EntityType Name="ADM_SOWN_LOG">
@@ -39,6 +37,13 @@
           <Property Name="TAPE_ID" Type="int" Nullable="false" />
           <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
           <Property Name="ADM_PLANT_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ADM_TEXT_RESOURCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="smallint" Nullable="false" />
+          <Property Name="KEY" Type="nvarchar" Nullable="false" MaxLength="100" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
           <Key>
@@ -60,6 +65,16 @@
           <Property Name="MESSAGE" Type="nvarchar(max)" Nullable="false" />
           <Property Name="TIME_STAMP" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
         </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
         <!--Errors Found During Generation:
       warning 6002: The table/view 'szkolkarz.dbo.V_FULL_SOWN_LOG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
       -->
@@ -67,26 +82,14 @@
           <Key>
             <PropertyRef Name="TAPE_ID" />
             <PropertyRef Name="YEAR" />
-            <PropertyRef Name="PLANT" />
+            <PropertyRef Name="key" />
             <PropertyRef Name="PRODUCTION_NO" />
           </Key>
           <Property Name="TAPE_ID" Type="int" Nullable="false" />
           <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
-          <Property Name="PLANT" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="key" Type="nvarchar" Nullable="false" MaxLength="100" />
           <Property Name="PRODUCTION_NO" Type="nchar" Nullable="false" MaxLength="10" />
         </EntityType>
-        <Association Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID">
-          <End Role="ADM_PLANTS" Type="szkolkarzModel.Store.ADM_PLANTS" Multiplicity="1" />
-          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.Store.ADM_SOWN_LOG" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="ADM_PLANTS">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="ADM_SOWN_LOG">
-              <PropertyRef Name="ADM_PLANT_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
@@ -95,22 +98,19 @@
         <EntityContainer Name="szkolkarzEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.ADM_PLANTS" />
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.ADM_SOWN_LOG" />
+          <EntitySet Name="ADM_TEXT_RESOURCE" EntityType="szkolkarzModel.ADM_TEXT_RESOURCE" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.SEC_AUDIT_LOG" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.SEC_ERROR_LOG" />
+          <EntitySet Name="sysdiagrams" EntityType="szkolkarzModel.sysdiagram" />
           <EntitySet Name="V_FULL_SOWN_LOG" EntityType="szkolkarzModel.V_FULL_SOWN_LOG" />
-          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID" Association="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID">
-            <End Role="ADM_PLANTS" EntitySet="ADM_PLANTS" />
-            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
-          </AssociationSet>
         </EntityContainer>
         <EntityType Name="ADM_PLANTS">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" />
-          <Property Name="PLANT" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ADM_TEXT_RESOURCE_ID" Type="Int16" Nullable="false" />
           <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
-          <NavigationProperty Name="ADM_SOWN_LOG" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" FromRole="ADM_PLANTS" ToRole="ADM_SOWN_LOG" />
         </EntityType>
         <EntityType Name="ADM_SOWN_LOG">
           <Key>
@@ -120,7 +120,13 @@
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
           <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ADM_PLANT_ID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="ADM_PLANTS" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" FromRole="ADM_SOWN_LOG" ToRole="ADM_PLANTS" />
+        </EntityType>
+        <EntityType Name="ADM_TEXT_RESOURCE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int16" Nullable="false" />
+          <Property Name="KEY" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
           <Key>
@@ -142,30 +148,28 @@
           <Property Name="MESSAGE" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="TIME_STAMP" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
         </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         <EntityType Name="V_FULL_SOWN_LOG">
           <Key>
             <PropertyRef Name="TAPE_ID" />
             <PropertyRef Name="YEAR" />
-            <PropertyRef Name="PLANT" />
+            <PropertyRef Name="key" />
             <PropertyRef Name="PRODUCTION_NO" />
           </Key>
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
           <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="PLANT" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="key" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
         </EntityType>
-        <Association Name="FK_ADM_SOWN_LOG_ADM_PLANT_ID">
-          <End Role="ADM_PLANTS" Type="szkolkarzModel.ADM_PLANTS" Multiplicity="1" />
-          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.ADM_SOWN_LOG" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="ADM_PLANTS">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="ADM_SOWN_LOG">
-              <PropertyRef Name="ADM_PLANT_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -176,7 +180,7 @@
             <EntityTypeMapping TypeName="szkolkarzModel.ADM_PLANTS">
               <MappingFragment StoreEntitySet="ADM_PLANTS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="PLANT" ColumnName="PLANT" />
+                <ScalarProperty Name="ADM_TEXT_RESOURCE_ID" ColumnName="ADM_TEXT_RESOURCE_ID" />
                 <ScalarProperty Name="PRODUCTION_NO" ColumnName="PRODUCTION_NO" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -188,6 +192,14 @@
                 <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
                 <ScalarProperty Name="YEAR" ColumnName="YEAR" />
                 <ScalarProperty Name="ADM_PLANT_ID" ColumnName="ADM_PLANT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADM_TEXT_RESOURCE">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_TEXT_RESOURCE">
+              <MappingFragment StoreEntitySet="ADM_TEXT_RESOURCE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KEY" ColumnName="KEY" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -212,12 +224,23 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="szkolkarzModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="V_FULL_SOWN_LOG">
             <EntityTypeMapping TypeName="szkolkarzModel.V_FULL_SOWN_LOG">
               <MappingFragment StoreEntitySet="V_FULL_SOWN_LOG">
                 <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
                 <ScalarProperty Name="YEAR" ColumnName="YEAR" />
-                <ScalarProperty Name="PLANT" ColumnName="PLANT" />
+                <ScalarProperty Name="key" ColumnName="key" />
                 <ScalarProperty Name="PRODUCTION_NO" ColumnName="PRODUCTION_NO" />
               </MappingFragment>
             </EntityTypeMapping>

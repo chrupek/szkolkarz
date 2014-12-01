@@ -154,11 +154,18 @@
     <Compile Include="ADM_SOWN_LOG.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ADM_TEXT_RESOURCE.cs">
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="core\DBController.cs" />
+    <Compile Include="core\utils\TranslationManager.cs" />
     <Compile Include="SEC_AUDIT_LOG.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SEC_ERROR_LOG.cs">
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SzkolkarzModel.Context.cs">
@@ -247,7 +254,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="core\utils\" />
     <Folder Include="model\" />
     <Folder Include="view\about\" />
   </ItemGroup>

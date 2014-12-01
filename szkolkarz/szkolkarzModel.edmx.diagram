@@ -4,13 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="df434c976421480d8ca294c4efe0b651" Name="Diagram1">
-        <EntityTypeShape EntityType="szkolkarzModel.ADM_PLANTS" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="szkolkarzModel.ADM_SOWN_LOG" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="szkolkarzModel.SEC_AUDIT_LOG" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="szkolkarzModel.SEC_ERROR_LOG" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="szkolkarzModel.V_FULL_SOWN_LOG" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_PLANT_ID" ManuallyRouted="false" />
+      <Diagram DiagramId="1f706818ad0947f898181c605db92693" Name="Diagram1">
+        <EntityTypeShape EntityType="szkolkarzModel.ADM_PLANTS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.ADM_SOWN_LOG" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.ADM_TEXT_RESOURCE" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.SEC_AUDIT_LOG" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.SEC_ERROR_LOG" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.sysdiagram" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="szkolkarzModel.V_FULL_SOWN_LOG" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

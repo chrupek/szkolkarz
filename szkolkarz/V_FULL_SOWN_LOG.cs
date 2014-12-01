@@ -16,7 +16,7 @@ namespace szkolkarz
     {
         public int TAPE_ID { get; set; }
         public System.DateTime YEAR { get; set; }
-        public string PLANT { get; set; }
+        public string key { get; set; }
         public string PRODUCTION_NO { get; set; }
     }
 }

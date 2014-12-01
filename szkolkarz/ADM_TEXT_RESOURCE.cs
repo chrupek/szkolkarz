@@ -12,11 +12,9 @@ namespace szkolkarz
     using System;
     using System.Collections.Generic;
     
-    public partial class ADM_SOWN_LOG
+    public partial class ADM_TEXT_RESOURCE
     {
-        public int ID { get; set; }
-        public int TAPE_ID { get; set; }
-        public System.DateTime YEAR { get; set; }
-        public int ADM_PLANT_ID { get; set; }
+        public short ID { get; set; }
+        public string KEY { get; set; }
     }
 }

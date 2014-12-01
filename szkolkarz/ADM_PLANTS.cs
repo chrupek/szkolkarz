@@ -14,15 +14,8 @@ namespace szkolkarz
     
     public partial class ADM_PLANTS
     {
-        public ADM_PLANTS()
-        {
-            this.ADM_SOWN_LOG = new HashSet<ADM_SOWN_LOG>();
-        }
-    
         public int ID { get; set; }
-        public string PLANT { get; set; }
+        public short ADM_TEXT_RESOURCE_ID { get; set; }
         public string PRODUCTION_NO { get; set; }
-    
-        public virtual ICollection<ADM_SOWN_LOG> ADM_SOWN_LOG { get; set; }
     }
 }
