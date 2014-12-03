@@ -1514,6 +1514,24 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="507bca23-b094-45ea-821f-cd02fd538507" />
+        <targetEnds>
+          <association Id="25967983-9c0b-4663-bd4d-d901040dbfa6" isDerived="false" sourceEndRoleName="MainForm" targetEndRoleName="Program" isLeaf="false" isAbstract="false">
+            <classMoniker Id="69321cd3-1a11-419d-962f-e54c2878ca0e" LastKnownName="Program" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20789d82-0aaf-4b29-9c20-41196d3345a7" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9ac7be56-cee8-4d33-b9ae-7579ccbbcd9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5ccca72-886a-4ddc-a735-256635731bf2" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19819b75-62d6-49df-8d01-86f74c51f831" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="028effa0-4eab-4ae1-b9a1-69e6886f48ff" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="e5cf66a0-3476-492e-83a4-496cd713e2c0" name="infoON" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <referencesInternal>
@@ -3113,24 +3131,6 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="a682347d-d97f-408f-9082-5c88f03fb5d4" />
-        <targetEnds>
-          <association Id="3a9704d4-23ab-4ebd-a623-3dbc415d1c07" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="MainForm" isLeaf="false" isAbstract="false">
-            <classMoniker Id="989172dd-8694-4118-aa0f-158ca23e2495" LastKnownName="MainForm" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bb0f300e-94b3-4ff8-a045-139273ce13e2" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="7ecdeb64-6773-450f-a1d5-7ae4e14031c2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ce3a7122-1118-4e6e-bf00-e43448fdd5eb" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="99f6b7e3-833c-4469-af2a-33b2ab3d8c7b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="e5ba51fb-9de9-4d1a-8875-2f4bb04ada6a" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="0db890ed-15bd-4452-b831-7431b25e2c00" name="Main" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
             <referencesInternal>
@@ -4620,6 +4620,144 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="27a786f3-0476-40b2-89a4-278432c9af8b" name="ErrorLoger" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="3a678511-f394-4f03-a3b0-9bf06f8fc3bd" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger" tag="ViewCode">
+            <elementDefinition Id="92dcc907-aee8-4d1f-bddb-55470fba5630" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="7cd68162-ebe5-48c1-9515-476dc443f344" name="class" profile="CSharpProfile">
+            <elementDefinition Id="f9668e29-bd0b-4f5c-825f-9e3b22a734bb" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="43c60784-100d-49c6-bed2-b195556a94c9">
+                <propertyInstance Id="e2ea766b-8952-49b2-ba99-aab95616d2fa" name="ClrAttributes">
+                  <elementDefinition Id="ebe4b64a-5a94-48b1-b438-1086da8c074f" />
+                </propertyInstance>
+                <elementDefinition Id="6ca7e042-c752-4f24-9a20-56c5f7c66a54" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="33f35842-8880-47ae-9fff-b35cc28fe1e3">
+                <propertyInstance Id="5158f5e6-26f6-401f-adea-914c25fb67ef" name="IsPartial" value="false">
+                  <elementDefinition Id="fd33a0c2-6903-49fb-a980-2a3d9289fe40" />
+                </propertyInstance>
+                <elementDefinition Id="42a42835-7289-4762-a6b3-b2be350427ca" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9a1c58bd-2d43-4027-98fa-4af84df4b219">
+                <propertyInstance Id="d838486b-bc8c-49a7-bf73-db1187a18267" name="IsStatic" value="True">
+                  <elementDefinition Id="3c08b441-e2bd-4ae1-91f4-aa63fbf5387e" />
+                </propertyInstance>
+                <elementDefinition Id="ab1c86b3-a7cf-4819-92ab-c0c43f423a87" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8067f1da-cc46-4baf-8a0c-ce8ed4620c23">
+                <propertyInstance Id="bc955962-b291-4660-892a-0e4d5608bc74" name="IsUnsafe" value="false">
+                  <elementDefinition Id="0300dc80-bb1d-4c39-b806-321781615a2b" />
+                </propertyInstance>
+                <elementDefinition Id="4a1cd89e-b87b-4aff-81e2-83aea0a0b8da" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c83cf972-91b8-4bd6-8c9b-420fb0b7f444">
+                <propertyInstance Id="5a721000-f657-4553-8156-e23da4daa49b" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="bc370a52-fac8-4dc3-8789-62ec57727b65" />
+                </propertyInstance>
+                <elementDefinition Id="745e5976-cfd2-420d-9c7c-7a64bdcd1d30" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="9c364d3e-a8e2-4f8e-aa94-097fcda10847" />
+        <targetEnds>
+          <association Id="d098cfe8-924d-457b-887b-f4d8068834a2" isDerived="false" sourceEndRoleName="ErrorLoger" targetEndRoleName="MainForm" isLeaf="false" isAbstract="false">
+            <classMoniker Id="989172dd-8694-4118-aa0f-158ca23e2495" LastKnownName="MainForm" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7465c203-24f2-4750-ae8d-7da49c0ee998" name="ErrorLoger" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b6c5f21a-162b-4b47-a1a5-286906865211" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3aabc1e2-f864-4786-8692-6dd9476103f1" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="82863970-5085-47f0-9961-c5f8766536fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="53208503-505a-4587-a120-594b582a0747" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="ca65bab7-21d7-48e0-b159-1aafe4c83b81" name="writeErrorToFile" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="85bfc9dc-da54-4630-bd2f-da1aec19b68e" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger Member%3D(Name%3DwriteErrorToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])" tag="ViewCode">
+                <elementDefinition Id="1f844321-8181-4ccd-877e-7278d16977dc" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="64196e8c-d187-4ba2-813f-f0fbd9bd12eb" name="method" profile="CSharpProfile">
+                <elementDefinition Id="cf0ad3aa-c8ea-47f5-9070-fd897cac42ef" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a7797cb-919a-4e85-8764-abd0e4f7fc04">
+                    <propertyInstance Id="c4266d12-4b90-4a6c-b76b-196efee0bb55" name="ClrAttributes">
+                      <elementDefinition Id="c90527fe-0045-434f-97aa-4aa79f62e0e1" />
+                    </propertyInstance>
+                    <elementDefinition Id="adae98bf-1571-43f5-867c-6de20f6ec268" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="27fadf00-5f65-4aa5-8646-a664a946a976">
+                    <propertyInstance Id="5e0c2f9b-c641-436d-8942-0140a6d60904" name="IsPartial" value="false">
+                      <elementDefinition Id="be9e3c49-ff61-4b16-b8d6-51b8509b7f30" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b1588e6-edeb-483d-b336-917569be86c2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d499c058-821e-4f4a-94d6-9a6ae7da8ed0">
+                    <propertyInstance Id="3137c94f-9f76-46d9-95ea-36ff929557d5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c7c642e1-865b-4797-93fe-a2e049528104" />
+                    </propertyInstance>
+                    <elementDefinition Id="f4237195-bb9a-47cb-8c9f-ee01bcae69cc" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5bf16d17-0b42-4c35-a3d1-e55d58e81bf3">
+                    <propertyInstance Id="be396e15-4f03-4d14-a565-d397cfbf4ae4" name="Inheritance" value="none">
+                      <elementDefinition Id="6ae81f60-6a30-4a58-bf56-3722f34d228f" />
+                    </propertyInstance>
+                    <elementDefinition Id="c816bce3-a4bd-4ed5-9675-c21042e49357" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a8c0ea4-35d6-4f69-9126-3ebffc3227a7">
+                    <propertyInstance Id="2c1c8422-6a13-47b2-8c96-038b4e9f0763" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a3ad5875-5d07-4f70-a3c2-873e79126d8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="d4ea8714-4f08-4900-9344-300c5bf17f4a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="46ceffb8-2128-4179-952d-d28f51d6eb83">
+                    <propertyInstance Id="9a8f985f-9483-4417-bfe9-2ce806ffbb77" name="params" value="false">
+                      <elementDefinition Id="77b08d0e-6b93-4a43-b357-df9f98490f5a" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c4a1c86-1b59-4f30-afe5-cbcdc7b3b348" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="818ef906-22eb-4fa8-adda-414e13c7f062" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c2fe3529-bef6-4c0e-8ae5-385de4f897ef" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="5b08f06f-5cd0-4043-8bfe-2ffdacc47fd4" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger Member%3D(Name%3DwriteErrorToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="d344af09-61b8-4424-8f53-46990966f017" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="4a8ade48-0dd4-4653-9317-44ed4dbab158" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1537ff16-39a1-4966-be12-146302eac1bd" LastKnownName="Exception" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1537ff16-39a1-4966-be12-146302eac1bd" name="Exception" isAbstract="false" isLeaf="false" cachedFullName="SzkolkarzModelingProject::System::Exception">
+        <elementDefinition Id="53569f6a-14aa-4ceb-94f5-a41a7df44a6b" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="fd4965b4-bde2-45be-ba02-e14c032fd959" name="SzkolkarzModelingProject">
     <elementDefinition Id="ba4d4e94-a4f5-4a2e-a4bb-15e12f7af187" />

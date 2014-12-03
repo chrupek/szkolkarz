@@ -77,6 +77,47 @@
               LastKnownLocation="Package3_1818.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="028effa0-4eab-4ae1-b9a1-69e6886f48ff"
+            isDerived="false"
+            sourceEndRoleName="MainForm"
+            targetEndRoleName="Program"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a682347d-d97f-408f-9082-5c88f03fb5d4"
+              LastKnownName="Program"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ac7be56-cee8-4d33-b9ae-7579ccbbcd9d"
+                  name="MainForm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19819b75-62d6-49df-8d01-86f74c51f831"
+                  name="Program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="ed42d4b1-dfcb-4300-8239-e26b66c05a72"

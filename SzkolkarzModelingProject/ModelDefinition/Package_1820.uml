@@ -350,5 +350,11 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="20612465-c702-4889-8fda-203878f0a733"
+        LastKnownName="utils"
+        LastKnownLocation="Package_1701.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

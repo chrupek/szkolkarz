@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="20612465-c702-4889-8fda-203878f0a733"
+  name="utils"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e658f265-0e72-4d7c-8499-8773b458a4e9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dszkolkarz.core.utils"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9c364d3e-a8e2-4f8e-aa94-097fcda10847"
+        name="ErrorLoger"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="92dcc907-aee8-4d1f-bddb-55470fba5630"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f9668e29-bd0b-4f5c-825f-9e3b22a734bb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ca7e042-c752-4f24-9a20-56c5f7c66a54">
+                <propertyInstance
+                  Id="ebe4b64a-5a94-48b1-b438-1086da8c074f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42a42835-7289-4762-a6b3-b2be350427ca">
+                <propertyInstance
+                  Id="fd33a0c2-6903-49fb-a980-2a3d9289fe40"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab1c86b3-a7cf-4819-92ab-c0c43f423a87">
+                <propertyInstance
+                  Id="3c08b441-e2bd-4ae1-91f4-aa63fbf5387e"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a1cd89e-b87b-4aff-81e2-83aea0a0b8da">
+                <propertyInstance
+                  Id="0300dc80-bb1d-4c39-b806-321781615a2b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="745e5976-cfd2-420d-9c7c-7a64bdcd1d30">
+                <propertyInstance
+                  Id="bc370a52-fac8-4dc3-8789-62ec57727b65"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="53208503-505a-4587-a120-594b582a0747"
+            isDerived="false"
+            sourceEndRoleName="ErrorLoger"
+            targetEndRoleName="MainForm"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="507bca23-b094-45ea-821f-cd02fd538507"
+              LastKnownName="MainForm"
+              LastKnownLocation="Package1_1821.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6c5f21a-162b-4b47-a1a5-286906865211"
+                  name="ErrorLoger"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82863970-5085-47f0-9961-c5f8766536fb"
+                  name="MainForm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="818ef906-22eb-4fa8-adda-414e13c7f062"
+            name="writeErrorToFile"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1f844321-8181-4ccd-877e-7278d16977dc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger Member%3D(Name%3DwriteErrorToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf0ad3aa-c8ea-47f5-9070-fd897cac42ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adae98bf-1571-43f5-867c-6de20f6ec268">
+                    <propertyInstance
+                      Id="c90527fe-0045-434f-97aa-4aa79f62e0e1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b1588e6-edeb-483d-b336-917569be86c2">
+                    <propertyInstance
+                      Id="be9e3c49-ff61-4b16-b8d6-51b8509b7f30"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4237195-bb9a-47cb-8c9f-ee01bcae69cc">
+                    <propertyInstance
+                      Id="c7c642e1-865b-4797-93fe-a2e049528104"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c816bce3-a4bd-4ed5-9675-c21042e49357">
+                    <propertyInstance
+                      Id="6ae81f60-6a30-4a58-bf56-3722f34d228f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4ea8714-4f08-4900-9344-300c5bf17f4a">
+                    <propertyInstance
+                      Id="a3ad5875-5d07-4f70-a3c2-873e79126d8a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c4a1c86-1b59-4f30-afe5-cbcdc7b3b348">
+                    <propertyInstance
+                      Id="77b08d0e-6b93-4a43-b357-df9f98490f5a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a8ade48-0dd4-4653-9317-44ed4dbab158"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d344af09-61b8-4424-8f53-46990966f017"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DErrorLoger Member%3D(Name%3DwriteErrorToFile OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="53569f6a-14aa-4ceb-94f5-a41a7df44a6b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_1817.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
