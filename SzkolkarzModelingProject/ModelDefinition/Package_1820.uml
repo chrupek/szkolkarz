@@ -79,59 +79,20 @@
         </suppliersInternal>
         <targetEnds>
           <association
-            Id="4df2b75b-b646-44ed-9a18-117981589135"
+            Id="a628a07b-d0fc-401d-9452-9fcc36eaadee"
             isDerived="false"
             sourceEndRoleName="DBController"
-            targetEndRoleName="V_FULL_SOWN_LOG"
+            targetEndRoleName="MainForm"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="d80f920f-e146-4b57-b742-94af038a278f"
-              LastKnownName="V_FULL_SOWN_LOG"
-              LastKnownLocation="Package_1817.uml" />
+              Id="507bca23-b094-45ea-821f-cd02fd538507"
+              LastKnownName="MainForm"
+              LastKnownLocation="Package1_1821.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="aed4b3fc-b73f-48e2-b46c-a1c7e8e0eb06"
-                  name="DBController"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="239bf619-fea4-4ad6-a216-81b2ca70df93"
-                  name="V_FULL_SOWN_LOG"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="c3d46817-b1cc-4a22-a770-f606e9fb513c"
-            isDerived="false"
-            sourceEndRoleName="DBController"
-            targetEndRoleName="DetailsInformation"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="08c78c48-63de-4a58-b9c3-bfbcac574080"
-              LastKnownName="DetailsInformation"
-              LastKnownLocation="Package_1818.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ae6bfce3-5139-4489-9e88-74bc7fd81806"
+                  Id="fe7a2f8e-a041-4f0a-8e27-c93a7ffd1208"
                   name="DBController"
                   isLeaf="false"
                   isStatic="false"
@@ -144,8 +105,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="4734b9cc-4e2c-4b87-a1da-dfd8ce5f1a2b"
-                  name="DetailsInformation"
+                  Id="1a0e6fa2-9f00-48a0-8005-68db0107a33b"
+                  name="MainForm"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

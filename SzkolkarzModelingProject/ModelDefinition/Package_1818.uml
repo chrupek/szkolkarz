@@ -101,51 +101,24 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f8cba0c2-0dbc-4dd0-9780-7e299b05964f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1344597d-94e8-4417-894e-05efda72df84"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="409b65aa-53e4-4014-87f9-2ed9cfdd7c10"
                   name="MainForm"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="cab76017-a236-41e6-bbed-753287f93a29"
-            isDerived="false"
-            sourceEndRoleName="DetailsInformation"
-            targetEndRoleName="Program"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="a682347d-d97f-408f-9082-5c88f03fb5d4"
-              LastKnownName="Program"
-              LastKnownLocation="Package_1817.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1ee02474-6bae-4e67-91d9-03d6f30f1633"
-                  name="DetailsInformation"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="15b019c2-9c25-4d34-8833-f49767bcf515"
-                  name="Program"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

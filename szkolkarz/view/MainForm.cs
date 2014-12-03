@@ -125,10 +125,10 @@ namespace szkolkarz.forms.main
                     detailsInfoWindow.loadDataToGridView(queryResult);
                     detailsInfoWindow.Show();
                 }
-                catch (SqlException)
+                catch (SqlException ex)
                 {
                     MessageBox.Show("Błąd pobierania danych z bazy", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //TODO add logging error into file
+                    ErrorLoger.writeErrorToFile(ex);
                 }
 
             }

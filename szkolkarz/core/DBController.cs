@@ -8,15 +8,12 @@ using DotSpatial.Data;
 namespace szkolkarz.core
 {
     class DBController : System.IDisposable{
-    
         
         public void Dispose()
         {
- 	        throw new NotImplementedException();
+            this.Dispose();
         }
-
-
-
+        
         public List<V_FULL_SOWN_LOG> getSownHistory(List<int> rowsList)
         {
             try
@@ -27,9 +24,9 @@ namespace szkolkarz.core
                     return query.ToList<V_FULL_SOWN_LOG>();
                 }
             }
-            catch (SqlException e)
+            catch (SqlException)
             {
-                throw e;
+                throw;
             }
         }
     }
