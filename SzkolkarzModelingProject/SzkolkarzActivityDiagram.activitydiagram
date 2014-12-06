@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="4a60937b-9675-4a5b-9d71-e0ee5bae1444" name="SzkolkarzActivityDiagram" linkedPackageId="1dcc9215-083d-48e4-8436-441ab4e26edf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="12780ed5-c786-42f5-84cf-1cadb6833eb3">
+      <elementDefinition Id="7a10f183-516b-4cac-b8d7-8bcb64ecd0af" />
+      <body>Użytkownik chce wybrać inny plik</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="d6f697a7-d307-4adc-a523-60149deaa8ed">
+      <profileInstance Id="55280d74-4b9b-4852-a395-db46484e2d17" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="971b63e9-1c2c-4807-916a-bf6aa273f518">
+      <profileInstance Id="b649880f-f73a-486a-a0a5-69dfa0d0cd63" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="85547c0e-4b1d-4629-8f8c-0dc373335938">
+      <profileInstance Id="fb0928a4-8186-473c-b005-ddb55468179e" name="CSharpProfile">
+        <elementDefinition Id="51cf49ec-efa8-4f4b-930b-f1b30a3fb73c" />
+      </profileInstance>
+      <elementDefinition Id="da230c9d-5518-4888-9456-e9bf8daa02b1" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="c85c8a95-b470-471e-8784-795379760756" name="SzkolkarzActivityDiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0d38d8b7-a6e8-4ff8-9825-2c1c632bb248" />
+        <nodes>
+          <initialNode Id="229ed9bc-a508-4ab9-9891-31b8b72548c9" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d6d772ad-4433-4ebb-afe1-910e48690b07" />
+            <flowNodeTargets>
+              <controlFlow Id="1d9ceb15-979a-4513-a0f3-b638180766ca" isLeaf="false">
+                <opaqueActionMoniker Id="306da7bd-0bc8-485c-a362-29faddb727c3" LastKnownName="Wybierz &quot;Wczytaj mapę&quot;" />
+                <elementDefinition Id="06d3bc0f-97fe-415d-ab40-8e29c4e4f7f0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode Id="f7e498ec-b55b-42a3-94a5-42d864772eb0" name="Decision1" isLeaf="false">
+            <elementDefinition Id="5e63d170-4fd7-4c17-9bea-2cffafac4168" />
+            <flowNodeTargets>
+              <controlFlow Id="efd74ae8-bad7-4992-a872-420fa6c5f99d" isLeaf="false">
+                <opaqueActionMoniker Id="eb55b249-7a28-44e4-b873-383b0f3eb21c" LastKnownName="Wybierz &quot;Szczegóły&quot;" />
+                <elementDefinition Id="2245ef03-81dc-418f-8892-b4951d012eb6" />
+              </controlFlow>
+              <controlFlow Id="73f864de-5ada-484a-8d07-f2f16b974a22" isLeaf="false">
+                <opaqueActionMoniker Id="306da7bd-0bc8-485c-a362-29faddb727c3" LastKnownName="Wybierz &quot;Wczytaj mapę&quot;" />
+                <elementDefinition Id="cffa8b38-c521-421b-bdea-05ab5e218f96" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="306da7bd-0bc8-485c-a362-29faddb727c3" name="Wybierz &quot;Wczytaj mapę&quot;" isLeaf="false">
+            <elementDefinition Id="7d9acd16-81d7-4865-a087-9b15cd258428" />
+            <flowNodeTargets>
+              <controlFlow Id="ecdbf86f-a8b6-44f2-91ff-7782d2ffe835" isLeaf="false">
+                <decisionNodeMoniker Id="f7e498ec-b55b-42a3-94a5-42d864772eb0" LastKnownName="Decision1" />
+                <elementDefinition Id="6d6beeff-d39c-4a91-b437-bdb8da786eb1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eb55b249-7a28-44e4-b873-383b0f3eb21c" name="Wybierz &quot;Szczegóły&quot;" isLeaf="false">
+            <elementDefinition Id="3edc6b7c-8865-41fd-8373-d89fbc13b4a6" />
+            <flowNodeTargets>
+              <controlFlow Id="97ce3d78-3cba-4a54-8716-ce433a064714" isLeaf="false">
+                <opaqueActionMoniker Id="e71f2938-ac6c-48ed-ad1a-d3195dc93878" LastKnownName="Wybierz pole  na mapie" />
+                <elementDefinition Id="5ec8372e-8042-46ca-a360-a513e0d79f06" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e71f2938-ac6c-48ed-ad1a-d3195dc93878" name="Wybierz pole  na mapie" isLeaf="false">
+            <elementDefinition Id="d8024bc3-8dad-4eb2-9f03-ddd5d83e4e14" />
+            <flowNodeTargets>
+              <controlFlow Id="47a3beb6-57a8-45cc-98ce-ebfb013126f6" isLeaf="false">
+                <sendSignalActionMoniker Id="6a775317-7dc4-41e6-917a-49e551ca2576" LastKnownName="Pokaż szczegóły" />
+                <elementDefinition Id="83905c87-36c5-4ef1-9962-60a597645e9c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="04cbf24c-3489-4b01-8e66-df1e9cad9523" name="Główne okno" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="78e69b49-78eb-44e1-83f8-f0e4addcf6df" />
+            <upperBound>
+              <literalInteger Id="25a7866e-c4c1-489d-8059-8d2820d3b6b1" name="2147483647" value="2147483647">
+                <elementDefinition Id="3af81c43-2912-4af3-b7ef-0a650197e9d7" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="d85af30e-ddf6-4fc5-a621-aa7cc580e10e" name="Szczegóły" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="454a9394-43e8-461d-bf74-2f5ed2c5f126" />
+            <upperBound>
+              <literalInteger Id="3a7dedaf-ebcc-42cf-bce8-c84f09f9988b" name="2147483647" value="2147483647">
+                <elementDefinition Id="fe428596-896c-41db-bd3d-d9cdd8b12afe" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <sendSignalAction Id="6a775317-7dc4-41e6-917a-49e551ca2576" name="Pokaż szczegóły" isLeaf="false">
+            <elementDefinition Id="42cc795c-2105-4224-9ed9-167b9723e0f8" />
+            <flowNodeTargets>
+              <controlFlow Id="c16cadb0-6aa0-47b4-bcd2-fa63582825b2" isLeaf="false">
+                <opaqueActionMoniker Id="c137d1c1-6bcb-4d90-9ce4-f2863ff0622f" LastKnownName="Czekaj na dalsze  instrukcje" />
+                <elementDefinition Id="478d7de9-f36d-41ed-a36b-5f0a24fe98e6" />
+              </controlFlow>
+              <controlFlow Id="dda31e3a-3e2f-40d7-b75f-8e0167aca5f2" isLeaf="false">
+                <acceptEventActionMoniker Id="dd565443-f339-4480-bbeb-ddd04b191572" LastKnownName="Pokaż szczegóły" />
+                <elementDefinition Id="f1fd17fa-6f7b-4b44-ba05-7d45f95608b7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction Id="dd565443-f339-4480-bbeb-ddd04b191572" name="Pokaż szczegóły" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="128b0afc-4b53-4f73-8e9e-f72fa133971f" />
+            <flowNodeTargets>
+              <controlFlow Id="fa04a941-64ad-48cc-828b-423f18e33c2b" isLeaf="false">
+                <opaqueActionMoniker Id="c5502563-9dea-428f-800d-a2878dff1bf7" LastKnownName="Czekaj na dalsze  instrukcje1" />
+                <elementDefinition Id="75a9ce47-c0ac-421f-a4ab-2f57ec46d308" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction Id="c137d1c1-6bcb-4d90-9ce4-f2863ff0622f" name="Czekaj na dalsze  instrukcje" isLeaf="false">
+            <elementDefinition Id="eaaabb65-4236-430d-aadf-339bad8ce19c" />
+          </opaqueAction>
+          <opaqueAction Id="c5502563-9dea-428f-800d-a2878dff1bf7" name="Czekaj na dalsze  instrukcje1" isLeaf="false">
+            <elementDefinition Id="b1fea126-8c7e-49be-8053-93e52b510e3a" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="1dcc9215-083d-48e4-8436-441ab4e26edf" name="SzkolkarzModelingProject">
+    <elementDefinition Id="ba4d4e94-a4f5-4a2e-a4bb-15e12f7af187" />
+  </package>
+</activityRootModel>

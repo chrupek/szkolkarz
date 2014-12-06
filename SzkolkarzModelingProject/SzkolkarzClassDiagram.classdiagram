@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4328160b-95e5-43dc-ad17-e8c17c38561c" name="SzkolkarzClassDiagram" linkedPackageId="fd4965b4-bde2-45be-ba02-e14c032fd959" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="4328160b-95e5-43dc-ad17-e8c17c38561c" name="SzkolkarzClassDiagram" linkedPackageId="fd4965b4-bde2-45be-ba02-e14c032fd959" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="bb082eea-4234-4ef6-9d4d-1208d253fd9b" name="ADM_SOWN_LOG" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -4756,6 +4756,314 @@
     <packageHasNamedElement>
       <referencedType Id="1537ff16-39a1-4966-be12-146302eac1bd" name="Exception" isAbstract="false" isLeaf="false" cachedFullName="SzkolkarzModelingProject::System::Exception">
         <elementDefinition Id="53569f6a-14aa-4ceb-94f5-a41a7df44a6b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17e9738a-f096-4b50-b22a-96426dd82f04" name="TranslationManager" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="f1e8b2c5-13d0-4867-b71d-47c5a4dd6cba" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager" tag="ViewCode">
+            <elementDefinition Id="c469dc3a-36ad-4471-9de3-14aa09bcebf1" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ca87bb54-8647-4b92-ae15-40bcf6447967" name="class" profile="CSharpProfile">
+            <elementDefinition Id="6249baf6-aa4b-4c11-9683-d571780200b3" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4a210ba8-8fc0-474d-9b95-7d8f3b322ed1">
+                <propertyInstance Id="d0c635d0-bb4e-4a24-9751-01481711d4a1" name="ClrAttributes">
+                  <elementDefinition Id="4a1d020f-119d-4171-922c-0c7f782b0713" />
+                </propertyInstance>
+                <elementDefinition Id="d6bce1d4-8702-430c-8654-5cb2906bf43d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="dd6b3424-c159-4147-8802-828fbd530b10">
+                <propertyInstance Id="9fa32457-60f0-4b03-989c-519c60c77edf" name="IsPartial" value="false">
+                  <elementDefinition Id="8d851c85-79a6-4690-b6db-7778b14b4449" />
+                </propertyInstance>
+                <elementDefinition Id="0e02b518-9721-4e0c-b3d6-6e99513bc855" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="813630ef-34c8-4bd8-8e42-09129b6abd84">
+                <propertyInstance Id="ede6d7ed-3816-4fc2-9c96-32b43febb391" name="IsStatic" value="False">
+                  <elementDefinition Id="4fbaf168-dad7-4bdb-8ae8-f41cbf3cf754" />
+                </propertyInstance>
+                <elementDefinition Id="b522b827-3fb7-40ed-ba0e-f9d2e1c74e27" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="cadf3adf-d430-441b-b08a-502876486ea5">
+                <propertyInstance Id="99a4ff1b-6bc7-40e7-9126-51f53d306566" name="IsUnsafe" value="false">
+                  <elementDefinition Id="10fed632-9a1b-4fda-a71f-d3554bb6d1a8" />
+                </propertyInstance>
+                <elementDefinition Id="e737d8b7-ff81-455f-a6e6-738392092868" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1b2b5eb1-c7bf-49ff-9664-525e897a30d7">
+                <propertyInstance Id="18106273-485a-46fb-bff2-84ff3516d374" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="1d58619c-79d3-4caf-bc98-4e9a42326e30" />
+                </propertyInstance>
+                <elementDefinition Id="70277d5b-8f46-4651-9b00-134c10cd2bc6" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="c54d39a0-8977-43a8-9b67-bc6923f74a54" />
+        <targetEnds>
+          <association Id="26263d21-e4d5-4527-9ef4-2bef36faeba3" isDerived="false" sourceEndRoleName="TranslationManager" targetEndRoleName="MainForm" isLeaf="false" isAbstract="false">
+            <classMoniker Id="989172dd-8694-4118-aa0f-158ca23e2495" LastKnownName="MainForm" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c5ecb96-f193-4958-8dba-4163db5c4b8a" name="TranslationManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d0bfffdc-feb8-4bb4-9749-376e7a743022" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="083e6e98-ea48-4e75-bdfc-476c9bb1e6b1" name="MainForm" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f0628c0-0eed-4bb2-b938-ae2c2c05c250" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce5ced43-fa8f-4286-a14a-01e55ae587bf" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5ecffc9b-85ae-44c0-b7dd-b366ad0ffb35" name="tranlationDictionary" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="78b82117-5106-4af2-a56e-4b5fa645fe8f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager Member%3DtranlationDictionary" tag="ViewCode">
+                <elementDefinition Id="ca54c45e-9517-4fcc-9838-b92a1b848194" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dde550e6-f637-400d-9602-9ace2c959260" name="field" profile="CSharpProfile">
+                <elementDefinition Id="6dbf4e67-f48f-40dc-984e-86abaaed5336" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d6c1b3fa-7a11-49a2-9656-373c943330fa">
+                    <propertyInstance Id="2a8b0ded-7d7b-4c58-a736-7d0bd409765c" name="ClrAttributes">
+                      <elementDefinition Id="6ed2b9df-7d2b-493d-a390-4e031f7ba92b" />
+                    </propertyInstance>
+                    <elementDefinition Id="1764ab6e-bd4d-42a0-8183-20264cd71f93" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="614239fe-4f74-4793-99f4-b4f6a75978d8">
+                    <propertyInstance Id="89bef318-51f6-4950-811e-938c6df52956" name="IsConst" value="false">
+                      <elementDefinition Id="2561b630-f29c-4b8c-bba9-8ed9ae1576da" />
+                    </propertyInstance>
+                    <elementDefinition Id="20ec2434-5e2e-4333-8744-a26667af9650" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4bd429d0-fd3e-44bd-a02b-bddb32d8c6d0">
+                    <propertyInstance Id="96d75dc6-07e9-41bc-8317-d8f2508a61ec" name="IsNullable" value="false">
+                      <elementDefinition Id="8236daf1-f978-4c95-a62d-4094efd17eef" />
+                    </propertyInstance>
+                    <elementDefinition Id="e272aa8e-be8f-45a6-899f-3ad628fd7eff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="24b99f88-c577-4c9b-8bbe-d0245f16a885">
+                    <propertyInstance Id="40f7a978-3b72-4281-b4be-74536a84556a" name="IsVolatile" value="false">
+                      <elementDefinition Id="2cb89394-1adc-4e5a-b632-84cf6e39289b" />
+                    </propertyInstance>
+                    <elementDefinition Id="6784887d-f19f-4e75-b0b9-6b18220d00cd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="97836a74-d8a4-4b0c-b7bf-6df614778070">
+                    <propertyInstance Id="67e53817-466c-4af4-812f-8b87e6734f4b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ba7c4c17-8a25-4fb3-9c19-1144ace5bcbc" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e83ca7d-43bf-4484-ad54-0d8b1eae069f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="beb8eb89-011e-40ee-a0c2-f7fe43e99855" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e4924862-55fb-4d23-a74e-3a8470576ffe" LastKnownName="Dictionary&lt;String‎, String‎&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="db0f6a33-f626-4e54-930f-60372db05245" name="getTranslations" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="bbe0d38c-de23-4018-822e-2dbc00306808" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager Member%3D(Name%3DgetTranslations OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="05cffb71-2183-4e3f-b328-708a53ed8f4a" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f0be38e1-4520-4f3b-9c59-6d8c70a52937" name="method" profile="CSharpProfile">
+                <elementDefinition Id="a2954f62-9680-434a-897f-4b4c09d264a2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="00085984-5b2e-467b-bb0b-5f531b3b8a33">
+                    <propertyInstance Id="9b71a060-81e5-48f7-9276-5b7edd46b2f2" name="ClrAttributes">
+                      <elementDefinition Id="f5ade964-c28e-48f6-9c8f-1f9f85f93c46" />
+                    </propertyInstance>
+                    <elementDefinition Id="19e224fc-b49d-410c-a204-9e9cc8eade9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a286bb6f-5c95-4ed7-b74c-fc2f90e29c64">
+                    <propertyInstance Id="77ece5c9-8492-4763-a95f-20e569ef4529" name="IsPartial" value="false">
+                      <elementDefinition Id="31eead70-24ae-4a01-9fea-246aba9f110b" />
+                    </propertyInstance>
+                    <elementDefinition Id="f7bf8772-8faf-405e-aee2-2645ea219c0e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="97960f51-6f1f-4633-ae2f-759923921c2a">
+                    <propertyInstance Id="4dbcd762-0713-4a32-bae5-3bd7bef00d94" name="IsUnsafe" value="false">
+                      <elementDefinition Id="4ce382f3-1b3a-453e-9722-59c750c1ca0c" />
+                    </propertyInstance>
+                    <elementDefinition Id="fa34523a-636a-4b14-a6d0-0f28f68ba38e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1deb0263-b1f9-4f1f-acb8-de04d1cf40e4">
+                    <propertyInstance Id="3cdc9291-3581-49ac-b304-2c087f6a613e" name="Inheritance" value="none">
+                      <elementDefinition Id="0d481997-462e-40e7-a4d0-74f7042e9ebe" />
+                    </propertyInstance>
+                    <elementDefinition Id="2eb4622a-7e09-4c79-a321-642610735dd4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eea9fb35-d8a5-4027-90c6-fa1f87785e3f">
+                    <propertyInstance Id="1eb8a22e-e126-4260-a379-da50750d0719" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1063d61c-7a1d-46b1-92c9-b325434e36c4" />
+                    </propertyInstance>
+                    <elementDefinition Id="41472ebe-f0ee-4008-bb4c-646c0102d855" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f5790b79-a844-4ee8-9cba-c8fadf5a0932">
+                    <propertyInstance Id="74c58b8f-bf9f-4741-a63c-82e198265168" name="params" value="false">
+                      <elementDefinition Id="06ecee73-9358-4c55-9987-487810298f4a" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9c873aa-1e29-4589-9ad0-871fda795a2a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="380a54c5-22aa-4327-b5b0-7417c3985915" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12c56de4-8848-46fe-af39-362d08d336b1" direction="Return">
+                  <elementDefinition Id="d632be99-e678-4d04-9a26-52adf3ecdd67" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e4924862-55fb-4d23-a74e-3a8470576ffe" LastKnownName="Dictionary&lt;String‎, String‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="519221d0-f214-41fb-81cd-bf26fd60131c" name="language" direction="In">
+                  <referencesInternal>
+                    <reference Id="b0830438-a93e-4f34-9297-baa734243af3" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager Member%3D(Name%3DgetTranslations OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dlanguage" tag="ViewCode">
+                      <elementDefinition Id="734867e0-1635-4f68-9446-91a0a491c76a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="8d5718ab-e227-4338-9bfe-eb8fd89be18f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="493f19b8-d433-4568-bab9-860df84db311" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="201f289a-0a58-4b0b-a53e-4aa3fe42a735" name="TranslationManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="202a78a1-c7cf-4412-878e-24f2f05878d3" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="b83d3f23-0028-4f53-b3a0-5167ff967585" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8e3c12d6-6c9c-4b37-bc76-ab7bef88829c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0abc4dc8-2986-4d71-aca1-cf428d1442d5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3cd20483-89c1-4054-80d5-5f63f333a74b">
+                    <propertyInstance Id="19765b2e-d034-44ae-b21f-ed5aaf9257cc" name="ClrAttributes">
+                      <elementDefinition Id="928a7163-def5-4bc6-8794-a930f7df35be" />
+                    </propertyInstance>
+                    <elementDefinition Id="5d482153-6aa2-4a52-a625-04a7bc49c7ab" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="166ea3aa-70a6-4f93-b2c2-e4eaca3db991">
+                    <propertyInstance Id="26cd2da8-bb62-4485-be3e-0b67dce448ae" name="IsPartial" value="false">
+                      <elementDefinition Id="61c392f3-b381-452a-9dfe-3c04f6495f2a" />
+                    </propertyInstance>
+                    <elementDefinition Id="0de3c018-a5d5-4dd8-9aff-28ca0e1461f0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="520ffcd6-d991-4eef-ac20-e1835b36330b">
+                    <propertyInstance Id="137eaf49-9431-4f9e-9f8a-9f1b69b4075a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="eab045e0-4538-464b-a628-9e0efc0d473c" />
+                    </propertyInstance>
+                    <elementDefinition Id="e213a86f-3bee-461f-9ac6-4ab392d2f01c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f4705193-23d9-48ca-b0a6-33fe4aa18e29">
+                    <propertyInstance Id="9157c637-82f5-424f-9f5c-81b41f43e668" name="Inheritance" value="none">
+                      <elementDefinition Id="debcf63e-5156-43b3-ad68-f0f686c935c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="8178d1bd-f993-4c75-92b7-1587c58cc7f9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c5a6c4f1-9d3a-48a8-8879-9e8c28e583d1">
+                    <propertyInstance Id="2e7d4149-b0a6-4326-a7bc-a90b77ddf492" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fec2293b-202c-4ba6-927e-4ea98b46ca7d" />
+                    </propertyInstance>
+                    <elementDefinition Id="60dbede7-6112-41a4-91c5-da28c8380028" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="58d2a8a0-a4de-485c-a071-5c04857e6e92">
+                    <propertyInstance Id="c0b1a70c-b413-41d9-9027-3fc7352fdfb4" name="params" value="false">
+                      <elementDefinition Id="8f984d33-a28d-49c9-98c1-c8ebb01a058f" />
+                    </propertyInstance>
+                    <elementDefinition Id="00ec8eca-6d4f-4efb-9032-6387960e64af" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="5e31d64f-75f3-4b0d-89f3-30c96339a3ea" />
+          </operation>
+          <operation Id="f2ce2cf3-3980-4be6-b0e7-46714763b7dc" name="getPolishTranslations" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="508062e5-004e-4057-8e83-146c81e08dcb" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fszkolkarz%2Fbin%2FRelease%2Fszkolkarz.exe Namespace%3Dszkolkarz.core.utils Type%3DTranslationManager Member%3DgetPolishTranslations" tag="ViewCode">
+                <elementDefinition Id="0f00334c-dbbc-401d-9a96-60ea1bbe25af" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4936bf68-0da3-4a89-b0d7-2231573ba152" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8930c8c9-bedc-4a8e-9db7-cecd9fe4037a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf3517f4-1a55-4cc2-86d8-ce716ce8904e">
+                    <propertyInstance Id="0d98d0f2-beca-4bf7-a0f1-27e517fdd70e" name="ClrAttributes">
+                      <elementDefinition Id="2a79aec7-c9e9-4155-aa42-88c122f3e2d6" />
+                    </propertyInstance>
+                    <elementDefinition Id="1c38db88-ada4-4e54-a4ff-934cc6463545" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e894c253-bdec-4246-9fa1-fe38faa48b4d">
+                    <propertyInstance Id="fb01c824-ac9a-4c92-80cf-538e50fc5839" name="IsPartial" value="false">
+                      <elementDefinition Id="d0156c97-1849-431d-a13c-c2afd17ac3c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="0aad5b80-52c2-4e03-9e2f-b2fb0b876b87" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cf279ccc-2c94-4abb-8ceb-7d963e1d48f4">
+                    <propertyInstance Id="9bf78866-9267-4436-b3bd-e33dd503718a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="821803fc-af57-44a2-bad1-e318e9d745e6" />
+                    </propertyInstance>
+                    <elementDefinition Id="87f2e5c0-fdff-434b-b51f-acb83babb169" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cb9ca446-53d0-4798-a3fc-102e50baae25">
+                    <propertyInstance Id="999dae88-3009-430f-9c72-70987f95ecc7" name="Inheritance" value="none">
+                      <elementDefinition Id="a86f7f2e-21fc-45ad-9134-83167e90aa15" />
+                    </propertyInstance>
+                    <elementDefinition Id="93b229dc-e6f3-42d6-b37f-fabc4b7d8313" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="86ba8231-e7e0-4b03-96b3-df70999de049">
+                    <propertyInstance Id="7bd2d5f2-7493-4c0a-8107-8a7614749de3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="db14dfee-271d-46e4-8544-fb4e5451d463" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee3dc6ea-a3d6-43e5-9e70-e801fdb82bd6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="970a1137-2b84-42bf-bfd0-904f4fe34809">
+                    <propertyInstance Id="5ac07696-aeab-4d2a-9a8c-50e76a9b686a" name="params" value="false">
+                      <elementDefinition Id="e8a763ed-ea0b-40be-b8e7-9279989684e8" />
+                    </propertyInstance>
+                    <elementDefinition Id="777c49ea-3ec1-4f36-a1f1-539311659df7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="00daabdc-5c5c-4698-a61b-2e56deddf318" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6eab48bb-3d1d-46dc-b3ca-976b3f021789" direction="Return">
+                  <elementDefinition Id="fd97d980-bb25-4c99-a796-4aa75c0bd145" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e4924862-55fb-4d23-a74e-3a8470576ffe" LastKnownName="Dictionary&lt;String‎, String‎&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e4924862-55fb-4d23-a74e-3a8470576ffe" name="Dictionary&lt;String‎, String‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="SzkolkarzModelingProject::System::Collections::Generic::Dictionary&lt;String‎, String‎&gt;">
+        <elementDefinition Id="525f7bda-13c0-4572-abea-085cecf21bfe" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

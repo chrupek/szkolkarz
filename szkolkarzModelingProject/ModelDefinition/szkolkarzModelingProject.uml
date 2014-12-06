@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="ba4d4e94-a4f5-4a2e-a4bb-15e12f7af187"
   name="SzkolkarzModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="7a10f183-516b-4cac-b8d7-8bcb64ecd0af">
+      <body>Użytkownik chce wybrać inny plik</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -86,6 +92,176 @@
           </property>
         </ownedAttributesInternal>
       </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0d38d8b7-a6e8-4ff8-9825-2c1c632bb248"
+        name="SzkolkarzActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="d6d772ad-4433-4ebb-afe1-910e48690b07"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06d3bc0f-97fe-415d-ab40-8e29c4e4f7f0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d9acd16-81d7-4865-a087-9b15cd258428"
+                  LastKnownName="Wybierz &quot;Wczytaj mapę&quot;"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="5e63d170-4fd7-4c17-9bea-2cffafac4168"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2245ef03-81dc-418f-8892-b4951d012eb6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3edc6b7c-8865-41fd-8373-d89fbc13b4a6"
+                  LastKnownName="Wybierz &quot;Szczegóły&quot;"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cffa8b38-c521-421b-bdea-05ab5e218f96"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d9acd16-81d7-4865-a087-9b15cd258428"
+                  LastKnownName="Wybierz &quot;Wczytaj mapę&quot;"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="7d9acd16-81d7-4865-a087-9b15cd258428"
+            name="Wybierz &quot;Wczytaj mapę&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d6beeff-d39c-4a91-b437-bdb8da786eb1"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5e63d170-4fd7-4c17-9bea-2cffafac4168"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3edc6b7c-8865-41fd-8373-d89fbc13b4a6"
+            name="Wybierz &quot;Szczegóły&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5ec8372e-8042-46ca-a360-a513e0d79f06"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d8024bc3-8dad-4eb2-9f03-ddd5d83e4e14"
+                  LastKnownName="Wybierz pole  na mapie"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d8024bc3-8dad-4eb2-9f03-ddd5d83e4e14"
+            name="Wybierz pole  na mapie"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="83905c87-36c5-4ef1-9962-60a597645e9c"
+                isLeaf="false">
+                <sendSignalActionMoniker
+                  Id="42cc795c-2105-4224-9ed9-167b9723e0f8"
+                  LastKnownName="Pokaż szczegóły"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="78e69b49-78eb-44e1-83f8-f0e4addcf6df"
+            name="Główne okno"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="3af81c43-2912-4af3-b7ef-0a650197e9d7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="454a9394-43e8-461d-bf74-2f5ed2c5f126"
+            name="Szczegóły"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="fe428596-896c-41db-bd3d-d9cdd8b12afe"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <sendSignalAction
+            Id="42cc795c-2105-4224-9ed9-167b9723e0f8"
+            name="Pokaż szczegóły"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="478d7de9-f36d-41ed-a36b-5f0a24fe98e6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eaaabb65-4236-430d-aadf-339bad8ce19c"
+                  LastKnownName="Czekaj na dalsze  instrukcje"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f1fd17fa-6f7b-4b44-ba05-7d45f95608b7"
+                isLeaf="false">
+                <acceptEventActionMoniker
+                  Id="128b0afc-4b53-4f73-8e9e-f72fa133971f"
+                  LastKnownName="Pokaż szczegóły"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction
+            Id="128b0afc-4b53-4f73-8e9e-f72fa133971f"
+            name="Pokaż szczegóły"
+            isLeaf="false"
+            isUnmarshall="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="75a9ce47-c0ac-421f-a4ab-2f57ec46d308"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b1fea126-8c7e-49be-8053-93e52b510e3a"
+                  LastKnownName="Czekaj na dalsze  instrukcje1"
+                  LastKnownLocation="SzkolkarzModelingProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </acceptEventAction>
+          <opaqueAction
+            Id="eaaabb65-4236-430d-aadf-339bad8ce19c"
+            name="Czekaj na dalsze  instrukcje"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b1fea126-8c7e-49be-8053-93e52b510e3a"
+            name="Czekaj na dalsze  instrukcje1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

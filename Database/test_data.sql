@@ -13,7 +13,7 @@ Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (4, 4,'00
 Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (5, 5,'0000000005');
 Insert into adm_plants(id, ADM_TEXT_RESOURCE_id, production_no) values (6, 6,'0000000006');
 
-insert into adm_sown_log(id, tape_id, year, adm_plant_id) values (11, 1, convert(smalldatetime, '2014-01-17'), 1 );
+insert into adm_sown_log(id, tape_id, [year], adm_plant_id) values (11, 1, convert(smalldatetime, '2014-01-17'), 1 );
 insert into adm_sown_log(id, tape_id, [year], adm_plant_id) values (22,2,convert(smalldatetime, '2014-01-17'),2);
 insert into adm_sown_log(id, tape_id, [year], adm_plant_id) values (33,3,convert(smalldatetime, '2014-01-17'),3);
 insert into adm_sown_log(id, tape_id, [year], adm_plant_id) values (44,4,convert(smalldatetime, '2014-01-17'),4);

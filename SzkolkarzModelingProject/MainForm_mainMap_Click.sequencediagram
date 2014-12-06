@@ -436,9 +436,19 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </executionOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="7482ec31-6f48-4932-b323-5f7dd3f0c6c3" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="a3bf74a3-e165-4927-9965-df8fba015355" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
+              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="68cd9c10-f0d6-4ff6-8b9d-44b9025524f9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="d8911baa-cd4a-49e0-9ab5-46de1aa1d87e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="37b9769a-fb7b-4bcf-a127-ddb9c655ec09" name="OperandOccurrenceSpecification">
@@ -451,44 +461,14 @@
               <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="7482ec31-6f48-4932-b323-5f7dd3f0c6c3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="3366c242-c99a-4dff-bcbb-44b8fbc83fc6" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="d8911baa-cd4a-49e0-9ab5-46de1aa1d87e" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="68cd9c10-f0d6-4ff6-8b9d-44b9025524f9" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="a3bf74a3-e165-4927-9965-df8fba015355" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="60b09c3a-a8bf-4748-a766-ad75873e21be" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="dd1c9bca-acde-4485-9f71-0ab068a28841" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="f6cd6380-94ee-4936-ad10-a993b7c30c80" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="885728bf-4910-4a98-81ee-1d25a79882bf" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="586b796f-6dc7-416f-93e3-711dc7954a1f" name="OperandOccurrenceSpecification">
@@ -501,9 +481,29 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="885728bf-4910-4a98-81ee-1d25a79882bf" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="84889246-1dea-47ce-8396-3106fb6b4464" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="dd1c9bca-acde-4485-9f71-0ab068a28841" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="60b09c3a-a8bf-4748-a766-ad75873e21be" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f6cd6380-94ee-4936-ad10-a993b7c30c80" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <behaviorExecutionSpecification Id="88512d92-778f-47a1-ac23-7e7ab07d812a" name="BehaviorExecutionSpecification">
@@ -718,14 +718,14 @@
               <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="1af47dbc-b771-42aa-8540-8b683d6ecfd8" name="MessageOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="18750fc3-a954-4252-b418-2e27a838118b" name="MessageOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="1af47dbc-b771-42aa-8540-8b683d6ecfd8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="65490898-68bb-4c63-8c22-293e7d88b266" name="ExecutionOccurrenceSpecification">
@@ -793,12 +793,12 @@
               <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </executionOccurrenceSpecification>
+          <lostFoundTarget Id="e30d96e8-bc18-4eeb-9470-cd50051fb15d" name="LostFoundTarget" />
           <messageOccurrenceSpecification Id="84bb03f9-38ee-4c72-8b8c-c5e01438751d" name="MessageOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
             </covered>
           </messageOccurrenceSpecification>
-          <lostFoundTarget Id="e30d96e8-bc18-4eeb-9470-cd50051fb15d" name="LostFoundTarget" />
           <operandOccurrenceSpecification Id="43ae3572-5691-49c1-881f-3fbc27faadbc" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
@@ -940,9 +940,19 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </executionOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="282437c3-b41d-4c00-90f7-f2695f8d279d" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="7f475a10-b48d-47e6-a167-bd6f797c946c" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="655055d5-5a63-409e-8e6e-f0fd91127b71" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="c895b1e3-a0ec-4626-a5cd-46cc97599ae3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="44f9111b-87d0-4ad7-8629-19e83436ef57" name="OperandOccurrenceSpecification">
@@ -955,44 +965,14 @@
               <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="282437c3-b41d-4c00-90f7-f2695f8d279d" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="9d5e7136-2034-4462-85cd-a63ca850fac5" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="c895b1e3-a0ec-4626-a5cd-46cc97599ae3" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="655055d5-5a63-409e-8e6e-f0fd91127b71" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="7f475a10-b48d-47e6-a167-bd6f797c946c" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="6a39d5a0-a21a-4fde-b9b1-cebe7035f755" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="143627b5-b29d-4efc-a30b-219335660a92" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="3f5bf2d4-3fdc-43cf-93d2-198a17722964" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="988fe9de-be56-431c-aa01-14214a09b48e" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="3adc3687-d394-448e-9a86-68e4f8b65948" name="OperandOccurrenceSpecification">
@@ -1000,14 +980,34 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a83ba6fe-df03-41b1-94a8-677307ff09a8" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="988fe9de-be56-431c-aa01-14214a09b48e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="3a38684d-c90f-4a78-9ffc-1fe5a83f5c5a" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="a83ba6fe-df03-41b1-94a8-677307ff09a8" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="143627b5-b29d-4efc-a30b-219335660a92" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="6a39d5a0-a21a-4fde-b9b1-cebe7035f755" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="3f5bf2d4-3fdc-43cf-93d2-198a17722964" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="bd22300f-fe2f-44a1-b27d-18ede0e9f183" name="OperandOccurrenceSpecification">
@@ -1015,19 +1015,9 @@
               <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="b0ab3f0c-f5e8-4171-b4c6-c76a404c85fc" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="483d759c-03fe-4f01-bcda-c6dd42a04208" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="deab2297-6f21-4e70-8591-1425afd20d6c" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="4f5bc099-4c1e-4ff0-94dd-e7d2da8c2659" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="9ea9cd05-9ef1-4d84-9536-52cf0cbb6c8e" name="OperandOccurrenceSpecification">
@@ -1035,24 +1025,29 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="483d759c-03fe-4f01-bcda-c6dd42a04208" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="e5dfe259-41fd-4f87-aadb-7872b16b88a3" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="deab2297-6f21-4e70-8591-1425afd20d6c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b0ab3f0c-f5e8-4171-b4c6-c76a404c85fc" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="4f5bc099-4c1e-4ff0-94dd-e7d2da8c2659" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="0e160657-b9ca-45bd-a52f-5f4d9e0cbe21" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="a4e7a38d-9769-49f9-bfa8-60350e883adc" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="f227ff4f-0628-471c-a1c9-1b4a8651e4f4" name="OperandOccurrenceSpecification">
@@ -1080,24 +1075,9 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="ac27b0b8-af15-4749-b06b-4b604327692d" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="a4e7a38d-9769-49f9-bfa8-60350e883adc" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="a4436422-f58c-4e32-9c49-9935486568d7" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="734524a9-5091-4c2c-b2fc-6bd9a4a29a5c" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="ff249317-a16c-4bbd-a244-e41c5e484f24" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
+              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="17a76811-f797-4a2a-ba81-b515575fa4f2" name="OperandOccurrenceSpecification">
@@ -1105,34 +1085,39 @@
               <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="2f5e44ab-221f-4b30-af8e-81b2545d6a0a" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="b9761d67-7cab-467f-80ad-1e8649ec5b2b" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="8cff5ac3-4bce-47a4-93af-caa821d150dc" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="2f5e44ab-221f-4b30-af8e-81b2545d6a0a" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="62a93746-4bde-43f7-bc5b-c40d2fbb6903" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="734524a9-5091-4c2c-b2fc-6bd9a4a29a5c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="a4436422-f58c-4e32-9c49-9935486568d7" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ac27b0b8-af15-4749-b06b-4b604327692d" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="ce58fcd3-bdb2-457d-a6e0-57cfe2b77382" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="ff249317-a16c-4bbd-a244-e41c5e484f24" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
+              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="2637cf5e-acee-48f9-a849-2816a38d0357" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="26dadb37-dc9b-4a12-9118-46ea76d5602f" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="dab4b882-abb4-4a26-86a9-0463db77a27d" name="OperandOccurrenceSpecification">
@@ -1140,14 +1125,34 @@
               <lifelineMoniker Id="0d9103f8-3984-468b-9bad-8cc3db396f6f" LastKnownName="detailsInfoWindow : DetailsInformation" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="2637cf5e-acee-48f9-a849-2816a38d0357" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="9793a72d-5230-4d05-a6a4-e1901092db3d" LastKnownName="this.dbController : DBController" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="1156e608-e6ad-4715-af0c-3669d8f2cbe1" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="26dadb37-dc9b-4a12-9118-46ea76d5602f" name="OperandOccurrenceSpecification">
+          <operandOccurrenceSpecification Id="62a93746-4bde-43f7-bc5b-c40d2fbb6903" name="OperandOccurrenceSpecification">
             <covered>
-              <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
+              <lifelineMoniker Id="04d1568f-fb2d-4833-bb98-b19f74d23021" LastKnownName="query : IQueryable&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="8cff5ac3-4bce-47a4-93af-caa821d150dc" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="a79f150d-1247-438e-8845-0055a338a95e" LastKnownName="context : szkolkarzEntities" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="ce58fcd3-bdb2-457d-a6e0-57cfe2b77382" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="2aa5a24f-fa26-4339-beb7-d1d692d28860" LastKnownName="source : DbSet&lt;V_FULL_SOWN_LOG&gt;" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="67f027e4-691a-4551-9272-6c810aafda22" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="457cd302-d29f-4884-bd3c-b374a1742151" name="OperandOccurrenceSpecification">
@@ -1178,11 +1183,6 @@
           <operandOccurrenceSpecification Id="d0f99bf7-0dcd-4077-978b-bb87ae661bff" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="8a1a6543-08e1-46e2-b18e-c0a8540415dd" LastKnownName="featureList : List&lt;IFeature&gt;" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="67f027e4-691a-4551-9272-6c810aafda22" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="839fc4c1-bc27-4338-ab8c-edcafb2aac19" LastKnownName="this : MainForm" />
             </covered>
           </operandOccurrenceSpecification>
           <executionOccurrenceSpecification Id="3e8dfed9-f51e-46b8-898c-461cc6d2acfe" name="ExecutionOccurrenceSpecification">

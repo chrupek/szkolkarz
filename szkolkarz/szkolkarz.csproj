@@ -202,9 +202,6 @@
     <Compile Include="V_FULL_SOWN_LOG.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm_mainMap_Click.sequencediagram.layout">
-      <DependentUpon>MainForm_mainMap_Click.sequencediagram</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="view\DetailsInformation.resx">
       <DependentUpon>DetailsInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,7 +219,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config" />
-    <None Include="MainForm_mainMap_Click.sequencediagram" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ADM_PLANTS.datasource" />
     <None Include="Properties\DataSources\ADM_SOWN_LOG.datasource" />

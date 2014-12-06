@@ -72,28 +72,23 @@ namespace szkolkarz.forms.main
             Application.Exit();
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void infoStripButton_Click(object sender, EventArgs e)
         {
-            if (!this.Cursor.Equals(Cursors.Cross))
+            if (this.Cursor.Equals(Cursors.Cross))
+            {
+                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
+                this.Cursor = Cursors.Arrow;
+                this.mainMap.Cursor = Cursors.Hand;
+
+                infoON = false;
+            }
+            else
             {
                 mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.Select;
                 this.mainMap.Cursor = Cursors.Cross;
                 this.Cursor = Cursors.Cross;
 
                 infoON = true;
-
-            }
-            else
-            {
-                mainMap.FunctionMode = DotSpatial.Controls.FunctionMode.None;
-                this.Cursor = Cursors.Arrow;
-                this.mainMap.Cursor = Cursors.Hand;
-                infoON = false;
             }
         }
 
@@ -119,7 +114,6 @@ namespace szkolkarz.forms.main
                 {
                     featureList = selectedFeature.ToFeatureList();
                     List<int> rows = featureList.ConvertAll(f => (int) f.Fid);
-                    //String rowId = featureList[0].Fid.ToString(); //get selected row id
 
                     List<V_FULL_SOWN_LOG> queryResult = dbController.getSownHistory(rows);
                     detailsInfoWindow.loadDataToGridView(queryResult);
@@ -127,7 +121,7 @@ namespace szkolkarz.forms.main
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Błąd pobierania danych z bazy", "Błąd!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Błąd pobierania danych z bazy", "BŁĄD", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     ErrorLoger.writeErrorToFile(ex);
                 }
 
