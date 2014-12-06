@@ -221,7 +221,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ADM_PLANTS.datasource" />
     <None Include="Properties\DataSources\ADM_SOWN_LOG.datasource" />

@@ -41,6 +41,7 @@
           </Key>
           <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="ARTICLE" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
         </EntityType>
         <EntityType Name="ADM_CERTIFICATE">
           <Key>
@@ -63,7 +64,6 @@
           </Key>
           <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="TAPE_ID" Type="int" Nullable="false" />
-          <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
           <Property Name="ADM_CERTIFICATE_ARTICLE_REF_ID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
@@ -182,6 +182,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ARTICLE" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="ADM_CERTIFICATE_ARTICLE_REF" Relationship="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_ARTICLE" ToRole="ADM_CERTIFICATE_ARTICLE_REF" />
         </EntityType>
         <EntityType Name="ADM_CERTIFICATE">
@@ -209,7 +210,6 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
-          <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ADM_CERTIFICATE_ARTICLE_REF_ID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="ADM_CERTIFICATE_ARTICLE_REF" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_SOWN_LOG" ToRole="ADM_CERTIFICATE_ARTICLE_REF" />
         </EntityType>
@@ -304,6 +304,7 @@
               <MappingFragment StoreEntitySet="ADM_ARTICLE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ARTICLE" ColumnName="ARTICLE" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -329,7 +330,6 @@
               <MappingFragment StoreEntitySet="ADM_SOWN_LOG">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
-                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
                 <ScalarProperty Name="ADM_CERTIFICATE_ARTICLE_REF_ID" ColumnName="ADM_CERTIFICATE_ARTICLE_REF_ID" />
               </MappingFragment>
             </EntityTypeMapping>

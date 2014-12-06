@@ -21,6 +21,7 @@ namespace szkolkarz
     
         public int ID { get; set; }
         public string ARTICLE { get; set; }
+        public System.DateTime YEAR { get; set; }
     
         public virtual ICollection<ADM_CERTIFICATE_ARTICLE_REF> ADM_CERTIFICATE_ARTICLE_REF { get; set; }
     }

@@ -554,7 +554,7 @@
         <referencesInternal>
           <reference
             Id="87e37f4e-7a85-4232-9414-7a715219c1a9"
-            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FF:%2Fworkspace%2FSzkolkarz%2Fpackages%2FEntityFramework.6.1.1%2Flib%2Fnet40%2FEntityFramework.dll Namespace%3DSystem.Data.Entity Type%3DDbContext"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fchrupek%2Fworkspace%2Fszkolkarz%2Fpackages%2FEntityFramework.6.1.1%2Flib%2Fnet40%2FEntityFramework.dll Namespace%3DSystem.Data.Entity Type%3DDbContext"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>

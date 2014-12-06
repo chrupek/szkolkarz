@@ -16,7 +16,6 @@ namespace szkolkarz
     {
         public int ID { get; set; }
         public int TAPE_ID { get; set; }
-        public System.DateTime YEAR { get; set; }
         public int ADM_CERTIFICATE_ARTICLE_REF_ID { get; set; }
     
         public virtual ADM_CERTIFICATE_ARTICLE_REF ADM_CERTIFICATE_ARTICLE_REF { get; set; }
