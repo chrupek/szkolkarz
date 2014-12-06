@@ -12,13 +12,16 @@ namespace szkolkarz
     using System;
     using System.Collections.Generic;
     
-    public partial class ADM_SOWN_LOG
+    public partial class ADM_CERTIFICATE
     {
-        public int ID { get; set; }
-        public int TAPE_ID { get; set; }
-        public System.DateTime YEAR { get; set; }
-        public int ADM_CERTIFICATE_ARTICLE_REF_ID { get; set; }
+        public ADM_CERTIFICATE()
+        {
+            this.ADM_CERTIFICATE_ARTICLE_REF = new HashSet<ADM_CERTIFICATE_ARTICLE_REF>();
+        }
     
-        public virtual ADM_CERTIFICATE_ARTICLE_REF ADM_CERTIFICATE_ARTICLE_REF { get; set; }
+        public int ID { get; set; }
+        public string CERTIFICATE { get; set; }
+    
+        public virtual ICollection<ADM_CERTIFICATE_ARTICLE_REF> ADM_CERTIFICATE_ARTICLE_REF { get; set; }
     }
 }

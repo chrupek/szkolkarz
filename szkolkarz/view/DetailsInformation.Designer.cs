@@ -35,9 +35,9 @@
             this.sownLogDataGridView = new System.Windows.Forms.DataGridView();
             this.vFULLSOWNLOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tAPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.keyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRODUCTIONNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yEARDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aRTICLEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cERTIFICATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -84,9 +84,9 @@
             this.sownLogDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sownLogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tAPEIDDataGridViewTextBoxColumn,
-            this.keyDataGridViewTextBoxColumn,
-            this.pRODUCTIONNODataGridViewTextBoxColumn,
-            this.yEARDataGridViewTextBoxColumn});
+            this.yEARDataGridViewTextBoxColumn,
+            this.aRTICLEDataGridViewTextBoxColumn,
+            this.cERTIFICATEDataGridViewTextBoxColumn});
             this.sownLogDataGridView.DataSource = this.vFULLSOWNLOGBindingSource;
             this.sownLogDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sownLogDataGridView.Location = new System.Drawing.Point(0, 0);
@@ -106,26 +106,26 @@
             this.tAPEIDDataGridViewTextBoxColumn.Name = "tAPEIDDataGridViewTextBoxColumn";
             this.tAPEIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // keyDataGridViewTextBoxColumn
-            // 
-            this.keyDataGridViewTextBoxColumn.DataPropertyName = "key";
-            this.keyDataGridViewTextBoxColumn.HeaderText = "Artukuł";
-            this.keyDataGridViewTextBoxColumn.Name = "keyDataGridViewTextBoxColumn";
-            this.keyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pRODUCTIONNODataGridViewTextBoxColumn
-            // 
-            this.pRODUCTIONNODataGridViewTextBoxColumn.DataPropertyName = "PRODUCTION_NO";
-            this.pRODUCTIONNODataGridViewTextBoxColumn.HeaderText = "Nr świadectwa";
-            this.pRODUCTIONNODataGridViewTextBoxColumn.Name = "pRODUCTIONNODataGridViewTextBoxColumn";
-            this.pRODUCTIONNODataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // yEARDataGridViewTextBoxColumn
             // 
             this.yEARDataGridViewTextBoxColumn.DataPropertyName = "YEAR";
-            this.yEARDataGridViewTextBoxColumn.HeaderText = "Rok obsiania";
+            this.yEARDataGridViewTextBoxColumn.HeaderText = "Rok";
             this.yEARDataGridViewTextBoxColumn.Name = "yEARDataGridViewTextBoxColumn";
             this.yEARDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // aRTICLEDataGridViewTextBoxColumn
+            // 
+            this.aRTICLEDataGridViewTextBoxColumn.DataPropertyName = "ARTICLE";
+            this.aRTICLEDataGridViewTextBoxColumn.HeaderText = "Artykuł";
+            this.aRTICLEDataGridViewTextBoxColumn.Name = "aRTICLEDataGridViewTextBoxColumn";
+            this.aRTICLEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cERTIFICATEDataGridViewTextBoxColumn
+            // 
+            this.cERTIFICATEDataGridViewTextBoxColumn.DataPropertyName = "CERTIFICATE";
+            this.cERTIFICATEDataGridViewTextBoxColumn.HeaderText = "Świadectwo";
+            this.cERTIFICATEDataGridViewTextBoxColumn.Name = "cERTIFICATEDataGridViewTextBoxColumn";
+            this.cERTIFICATEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // DetailsInformation
             // 
@@ -150,10 +150,12 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.DataGridView sownLogDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tAPEIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn keyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTIONNODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tAPEIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yEARDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aRTICLEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cERTIFICATEDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource vFULLSOWNLOGBindingSource;
     }
 }

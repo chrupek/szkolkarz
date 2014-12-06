@@ -12,10 +12,19 @@ namespace szkolkarz
     using System;
     using System.Collections.Generic;
     
-    public partial class ADM_PLANTS
+    public partial class ADM_CERTIFICATE_ARTICLE_REF
     {
+        public ADM_CERTIFICATE_ARTICLE_REF()
+        {
+            this.ADM_SOWN_LOG = new HashSet<ADM_SOWN_LOG>();
+        }
+    
         public int ID { get; set; }
-        public short ADM_TEXT_RESOURCE_ID { get; set; }
-        public string PRODUCTION_NO { get; set; }
+        public int ADM_CERTIFICATE_ID { get; set; }
+        public int ADM_ARTICLE_ID { get; set; }
+    
+        public virtual ADM_ARTICLE ADM_ARTICLE { get; set; }
+        public virtual ADM_CERTIFICATE ADM_CERTIFICATE { get; set; }
+        public virtual ICollection<ADM_SOWN_LOG> ADM_SOWN_LOG { get; set; }
     }
 }

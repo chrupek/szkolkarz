@@ -14,9 +14,10 @@ namespace szkolkarz
     
     public partial class V_FULL_SOWN_LOG
     {
+        public int ID { get; set; }
         public int TAPE_ID { get; set; }
         public System.DateTime YEAR { get; set; }
-        public string key { get; set; }
-        public string PRODUCTION_NO { get; set; }
+        public string ARTICLE { get; set; }
+        public string CERTIFICATE { get; set; }
     }
 }

@@ -117,7 +117,7 @@
       <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Symbology.Forms">
-      <HintPath>D:\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
+      <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Symbology.Forms.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Topology">
       <HintPath>..\..\..\..\..\progi\DotSpatial 1.2 Extended\DotSpatial.Topology.dll</HintPath>
@@ -148,13 +148,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADM_PLANTS.cs">
+    <Compile Include="ADM_ARTICLE.cs">
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADM_CERTIFICATE.cs">
+      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADM_CERTIFICATE_ARTICLE_REF.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ADM_SOWN_LOG.cs">
-      <DependentUpon>SzkolkarzModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADM_TEXT_RESOURCE.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>
     </Compile>
     <Compile Include="core\DBController.cs" />
@@ -218,7 +221,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.Config" />
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ADM_PLANTS.datasource" />
     <None Include="Properties\DataSources\ADM_SOWN_LOG.datasource" />

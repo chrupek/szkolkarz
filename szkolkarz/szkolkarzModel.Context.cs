@@ -25,9 +25,10 @@ namespace szkolkarz
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<ADM_PLANTS> ADM_PLANTS { get; set; }
+        public DbSet<ADM_ARTICLE> ADM_ARTICLE { get; set; }
+        public DbSet<ADM_CERTIFICATE> ADM_CERTIFICATE { get; set; }
+        public DbSet<ADM_CERTIFICATE_ARTICLE_REF> ADM_CERTIFICATE_ARTICLE_REF { get; set; }
         public DbSet<ADM_SOWN_LOG> ADM_SOWN_LOG { get; set; }
-        public DbSet<ADM_TEXT_RESOURCE> ADM_TEXT_RESOURCE { get; set; }
         public DbSet<SEC_AUDIT_LOG> SEC_AUDIT_LOG { get; set; }
         public DbSet<SEC_ERROR_LOG> SEC_ERROR_LOG { get; set; }
         public DbSet<sysdiagram> sysdiagrams { get; set; }

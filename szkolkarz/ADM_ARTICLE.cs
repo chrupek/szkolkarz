@@ -12,9 +12,16 @@ namespace szkolkarz
     using System;
     using System.Collections.Generic;
     
-    public partial class ADM_TEXT_RESOURCE
+    public partial class ADM_ARTICLE
     {
-        public short ID { get; set; }
-        public string KEY { get; set; }
+        public ADM_ARTICLE()
+        {
+            this.ADM_CERTIFICATE_ARTICLE_REF = new HashSet<ADM_CERTIFICATE_ARTICLE_REF>();
+        }
+    
+        public int ID { get; set; }
+        public string ARTICLE { get; set; }
+    
+        public virtual ICollection<ADM_CERTIFICATE_ARTICLE_REF> ADM_CERTIFICATE_ARTICLE_REF { get; set; }
     }
 }

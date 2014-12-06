@@ -6,44 +6,65 @@
     <edmx:StorageModels>
       <Schema Namespace="szkolkarzModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="szkolkarzModelStoreContainer">
-          <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.Store.ADM_PLANTS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ADM_ARTICLE" EntityType="szkolkarzModel.Store.ADM_ARTICLE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ADM_CERTIFICATE" EntityType="szkolkarzModel.Store.ADM_CERTIFICATE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ADM_CERTIFICATE_ARTICLE_REF" EntityType="szkolkarzModel.Store.ADM_CERTIFICATE_ARTICLE_REF" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.Store.ADM_SOWN_LOG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ADM_TEXT_RESOURCE" EntityType="szkolkarzModel.Store.ADM_TEXT_RESOURCE" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.Store.SEC_AUDIT_LOG" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.Store.SEC_ERROR_LOG" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="sysdiagrams" EntityType="szkolkarzModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="V_FULL_SOWN_LOG" EntityType="szkolkarzModel.Store.V_FULL_SOWN_LOG" store:Type="Views" store:Schema="dbo" store:Name="V_FULL_SOWN_LOG">
             <DefiningQuery>SELECT 
+      [V_FULL_SOWN_LOG].[ID] AS [ID], 
       [V_FULL_SOWN_LOG].[TAPE_ID] AS [TAPE_ID], 
       [V_FULL_SOWN_LOG].[YEAR] AS [YEAR], 
-      [V_FULL_SOWN_LOG].[key] AS [key], 
-      [V_FULL_SOWN_LOG].[PRODUCTION_NO] AS [PRODUCTION_NO]
+      [V_FULL_SOWN_LOG].[ARTICLE] AS [ARTICLE], 
+      [V_FULL_SOWN_LOG].[CERTIFICATE] AS [CERTIFICATE]
       FROM [dbo].[V_FULL_SOWN_LOG] AS [V_FULL_SOWN_LOG]</DefiningQuery>
           </EntitySet>
+          <AssociationSet Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE" Association="szkolkarzModel.Store.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE">
+            <End Role="ADM_CERTIFICATE" EntitySet="ADM_CERTIFICATE" />
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF" Association="szkolkarzModel.Store.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF">
+            <End Role="ADM_ARTICLE" EntitySet="ADM_ARTICLE" />
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF" Association="szkolkarzModel.Store.FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF">
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
+          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="ADM_PLANTS">
+        <EntityType Name="ADM_ARTICLE">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
-          <Property Name="ADM_TEXT_RESOURCE_ID" Type="smallint" Nullable="false" />
-          <Property Name="PRODUCTION_NO" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ARTICLE" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ADM_CERTIFICATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CERTIFICATE" Type="nvarchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="ADM_CERTIFICATE_ARTICLE_REF">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ADM_CERTIFICATE_ID" Type="int" Nullable="false" />
+          <Property Name="ADM_ARTICLE_ID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="ADM_SOWN_LOG">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="TAPE_ID" Type="int" Nullable="false" />
           <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
-          <Property Name="ADM_PLANT_ID" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ADM_TEXT_RESOURCE">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="smallint" Nullable="false" />
-          <Property Name="KEY" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ADM_CERTIFICATE_ARTICLE_REF_ID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
           <Key>
@@ -80,53 +101,117 @@
       -->
         <EntityType Name="V_FULL_SOWN_LOG">
           <Key>
+            <PropertyRef Name="ID" />
             <PropertyRef Name="TAPE_ID" />
             <PropertyRef Name="YEAR" />
-            <PropertyRef Name="key" />
-            <PropertyRef Name="PRODUCTION_NO" />
+            <PropertyRef Name="ARTICLE" />
+            <PropertyRef Name="CERTIFICATE" />
           </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="TAPE_ID" Type="int" Nullable="false" />
           <Property Name="YEAR" Type="smalldatetime" Nullable="false" />
-          <Property Name="key" Type="nvarchar" Nullable="false" MaxLength="100" />
-          <Property Name="PRODUCTION_NO" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="ARTICLE" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CERTIFICATE" Type="nvarchar" Nullable="false" MaxLength="10" />
         </EntityType>
+        <Association Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE">
+          <End Role="ADM_CERTIFICATE" Type="szkolkarzModel.Store.ADM_CERTIFICATE" Multiplicity="1" />
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.Store.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_CERTIFICATE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ADM_CERTIFICATE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF">
+          <End Role="ADM_ARTICLE" Type="szkolkarzModel.Store.ADM_ARTICLE" Multiplicity="1" />
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.Store.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_ARTICLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ADM_ARTICLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF">
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.Store.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="1" />
+          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.Store.ADM_SOWN_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_SOWN_LOG">
+              <PropertyRef Name="ADM_CERTIFICATE_ARTICLE_REF_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="szkolkarzModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityContainer Name="szkolkarzEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="ADM_PLANTS" EntityType="szkolkarzModel.ADM_PLANTS" />
+          <EntitySet Name="ADM_ARTICLE" EntityType="szkolkarzModel.ADM_ARTICLE" />
+          <EntitySet Name="ADM_CERTIFICATE" EntityType="szkolkarzModel.ADM_CERTIFICATE" />
+          <EntitySet Name="ADM_CERTIFICATE_ARTICLE_REF" EntityType="szkolkarzModel.ADM_CERTIFICATE_ARTICLE_REF" />
           <EntitySet Name="ADM_SOWN_LOG" EntityType="szkolkarzModel.ADM_SOWN_LOG" />
-          <EntitySet Name="ADM_TEXT_RESOURCE" EntityType="szkolkarzModel.ADM_TEXT_RESOURCE" />
           <EntitySet Name="SEC_AUDIT_LOG" EntityType="szkolkarzModel.SEC_AUDIT_LOG" />
           <EntitySet Name="SEC_ERROR_LOG" EntityType="szkolkarzModel.SEC_ERROR_LOG" />
           <EntitySet Name="sysdiagrams" EntityType="szkolkarzModel.sysdiagram" />
           <EntitySet Name="V_FULL_SOWN_LOG" EntityType="szkolkarzModel.V_FULL_SOWN_LOG" />
+          <AssociationSet Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF" Association="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF">
+            <End Role="ADM_ARTICLE" EntitySet="ADM_ARTICLE" />
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE" Association="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE">
+            <End Role="ADM_CERTIFICATE" EntitySet="ADM_CERTIFICATE" />
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF" Association="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF">
+            <End Role="ADM_CERTIFICATE_ARTICLE_REF" EntitySet="ADM_CERTIFICATE_ARTICLE_REF" />
+            <End Role="ADM_SOWN_LOG" EntitySet="ADM_SOWN_LOG" />
+          </AssociationSet>
         </EntityContainer>
-        <EntityType Name="ADM_PLANTS">
+        <EntityType Name="ADM_ARTICLE">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
-          <Property Name="ADM_TEXT_RESOURCE_ID" Type="Int16" Nullable="false" />
-          <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ARTICLE" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ADM_CERTIFICATE_ARTICLE_REF" Relationship="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_ARTICLE" ToRole="ADM_CERTIFICATE_ARTICLE_REF" />
+        </EntityType>
+        <EntityType Name="ADM_CERTIFICATE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CERTIFICATE" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ADM_CERTIFICATE_ARTICLE_REF" Relationship="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE" FromRole="ADM_CERTIFICATE" ToRole="ADM_CERTIFICATE_ARTICLE_REF" />
+        </EntityType>
+        <EntityType Name="ADM_CERTIFICATE_ARTICLE_REF">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADM_CERTIFICATE_ID" Type="Int32" Nullable="false" />
+          <Property Name="ADM_ARTICLE_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADM_ARTICLE" Relationship="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_CERTIFICATE_ARTICLE_REF" ToRole="ADM_ARTICLE" />
+          <NavigationProperty Name="ADM_CERTIFICATE" Relationship="szkolkarzModel.FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE" FromRole="ADM_CERTIFICATE_ARTICLE_REF" ToRole="ADM_CERTIFICATE" />
+          <NavigationProperty Name="ADM_SOWN_LOG" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_CERTIFICATE_ARTICLE_REF" ToRole="ADM_SOWN_LOG" />
         </EntityType>
         <EntityType Name="ADM_SOWN_LOG">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
           <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="ADM_PLANT_ID" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="ADM_TEXT_RESOURCE">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int16" Nullable="false" />
-          <Property Name="KEY" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ADM_CERTIFICATE_ARTICLE_REF_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ADM_CERTIFICATE_ARTICLE_REF" Relationship="szkolkarzModel.FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF" FromRole="ADM_SOWN_LOG" ToRole="ADM_CERTIFICATE_ARTICLE_REF" />
         </EntityType>
         <EntityType Name="SEC_AUDIT_LOG">
           <Key>
@@ -160,28 +245,82 @@
         </EntityType>
         <EntityType Name="V_FULL_SOWN_LOG">
           <Key>
+            <PropertyRef Name="ID" />
             <PropertyRef Name="TAPE_ID" />
             <PropertyRef Name="YEAR" />
-            <PropertyRef Name="key" />
-            <PropertyRef Name="PRODUCTION_NO" />
+            <PropertyRef Name="ARTICLE" />
+            <PropertyRef Name="CERTIFICATE" />
           </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="TAPE_ID" Type="Int32" Nullable="false" />
           <Property Name="YEAR" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="key" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
-          <Property Name="PRODUCTION_NO" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="ARTICLE" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CERTIFICATE" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
         </EntityType>
+        <Association Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE_ARTICLE_REF">
+          <End Role="ADM_ARTICLE" Type="szkolkarzModel.ADM_ARTICLE" Multiplicity="1" />
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_ARTICLE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ADM_ARTICLE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ADM_CERTIFICATE_ARTICLE_REF_ADM_CERTIFICATE">
+          <End Role="ADM_CERTIFICATE" Type="szkolkarzModel.ADM_CERTIFICATE" Multiplicity="1" />
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_CERTIFICATE">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ADM_CERTIFICATE_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ADM_SOWN_LOG_ADM_CERTIFICATE_ARTICLE_REF">
+          <End Role="ADM_CERTIFICATE_ARTICLE_REF" Type="szkolkarzModel.ADM_CERTIFICATE_ARTICLE_REF" Multiplicity="1" />
+          <End Role="ADM_SOWN_LOG" Type="szkolkarzModel.ADM_SOWN_LOG" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADM_CERTIFICATE_ARTICLE_REF">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ADM_SOWN_LOG">
+              <PropertyRef Name="ADM_CERTIFICATE_ARTICLE_REF_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="szkolkarzModelStoreContainer" CdmEntityContainer="szkolkarzEntities">
-          <EntitySetMapping Name="ADM_PLANTS">
-            <EntityTypeMapping TypeName="szkolkarzModel.ADM_PLANTS">
-              <MappingFragment StoreEntitySet="ADM_PLANTS">
+          <EntitySetMapping Name="ADM_ARTICLE">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_ARTICLE">
+              <MappingFragment StoreEntitySet="ADM_ARTICLE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="ADM_TEXT_RESOURCE_ID" ColumnName="ADM_TEXT_RESOURCE_ID" />
-                <ScalarProperty Name="PRODUCTION_NO" ColumnName="PRODUCTION_NO" />
+                <ScalarProperty Name="ARTICLE" ColumnName="ARTICLE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADM_CERTIFICATE">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_CERTIFICATE">
+              <MappingFragment StoreEntitySet="ADM_CERTIFICATE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CERTIFICATE" ColumnName="CERTIFICATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADM_CERTIFICATE_ARTICLE_REF">
+            <EntityTypeMapping TypeName="szkolkarzModel.ADM_CERTIFICATE_ARTICLE_REF">
+              <MappingFragment StoreEntitySet="ADM_CERTIFICATE_ARTICLE_REF">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ADM_CERTIFICATE_ID" ColumnName="ADM_CERTIFICATE_ID" />
+                <ScalarProperty Name="ADM_ARTICLE_ID" ColumnName="ADM_ARTICLE_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -191,15 +330,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
                 <ScalarProperty Name="YEAR" ColumnName="YEAR" />
-                <ScalarProperty Name="ADM_PLANT_ID" ColumnName="ADM_PLANT_ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ADM_TEXT_RESOURCE">
-            <EntityTypeMapping TypeName="szkolkarzModel.ADM_TEXT_RESOURCE">
-              <MappingFragment StoreEntitySet="ADM_TEXT_RESOURCE">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="KEY" ColumnName="KEY" />
+                <ScalarProperty Name="ADM_CERTIFICATE_ARTICLE_REF_ID" ColumnName="ADM_CERTIFICATE_ARTICLE_REF_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -238,10 +369,11 @@
           <EntitySetMapping Name="V_FULL_SOWN_LOG">
             <EntityTypeMapping TypeName="szkolkarzModel.V_FULL_SOWN_LOG">
               <MappingFragment StoreEntitySet="V_FULL_SOWN_LOG">
+                <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="TAPE_ID" ColumnName="TAPE_ID" />
                 <ScalarProperty Name="YEAR" ColumnName="YEAR" />
-                <ScalarProperty Name="key" ColumnName="key" />
-                <ScalarProperty Name="PRODUCTION_NO" ColumnName="PRODUCTION_NO" />
+                <ScalarProperty Name="ARTICLE" ColumnName="ARTICLE" />
+                <ScalarProperty Name="CERTIFICATE" ColumnName="CERTIFICATE" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
