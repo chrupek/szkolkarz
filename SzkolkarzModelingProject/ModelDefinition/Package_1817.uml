@@ -549,6 +549,47 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="61c08140-d563-41ee-b6bb-ef391bdb8de6"
+            isDerived="false"
+            sourceEndRoleName="ADM_SOWN_LOG"
+            targetEndRoleName="szkolkarzEntities"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="342a129c-05f0-45d4-85ad-f9108105d1b3"
+              LastKnownName="szkolkarzEntities"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42593d25-eb8b-4241-8cc9-4d8f6ca9be5c"
+                  name="ADM_SOWN_LOG"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="889474d9-64bb-4fac-b5df-f4d937542163"
+                  name="szkolkarzEntities"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="6e2c4e23-b679-4c59-bb0a-0078612e40b2"
@@ -2327,6 +2368,84 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="2a3c6639-7407-4ed3-9ffa-f81dfbae71eb"
+            isDerived="false"
+            sourceEndRoleName="V_FULL_SOWN_LOG"
+            targetEndRoleName="szkolkarzEntities"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="342a129c-05f0-45d4-85ad-f9108105d1b3"
+              LastKnownName="szkolkarzEntities"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="009c6d4b-4b39-427b-92f3-1f4292c6407c"
+                  name="V_FULL_SOWN_LOG"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13a8b3ed-78de-4d80-a2ca-5a7ef001166d"
+                  name="szkolkarzEntities"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7d3eb67-efa8-42c8-b13f-fb4c3ce7b7d8"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dc901167-7a77-495f-b004-7512e6066846"
+              LastKnownName="DBController"
+              LastKnownLocation="Package_1820.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="044ecfc9-8fc7-4f52-ab99-3d8370acf977"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6db9b2a0-ecda-45ee-aab4-e20223ecd24f"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="05d4fd2b-fd6d-4e00-b225-e4fab7fa1e3a"
@@ -4073,6 +4192,46 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="4abcc2c7-8cf7-4e11-8349-aac979746bbf"
+            isDerived="false"
+            sourceEndRoleName="ADM_ARTICLE"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="342a129c-05f0-45d4-85ad-f9108105d1b3"
+              LastKnownName="szkolkarzEntities"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="201bff2f-faf9-4470-ac0b-4fc0f83f479d"
+                  name="ADM_ARTICLE"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3f5e6454-290a-4d4c-8c89-8d4a01404c61"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="9a5029c5-ea10-4969-ad3f-c5acef2716d3"
@@ -4496,6 +4655,47 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="27fd6cda-aeca-48fa-963b-f79c604fc240"
+            isDerived="false"
+            sourceEndRoleName="ADM_CERTIFICATE"
+            targetEndRoleName="szkolkarzEntities"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="342a129c-05f0-45d4-85ad-f9108105d1b3"
+              LastKnownName="szkolkarzEntities"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a999d532-6bb1-4034-946f-dad604f997ef"
+                  name="ADM_CERTIFICATE"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97189dee-f800-4159-958a-31c77f8f8114"
+                  name="szkolkarzEntities"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="2c26e543-9fa1-4b80-80a7-7d08b3bbdd7d"
@@ -4845,6 +5045,45 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="d534dfe5-b61d-43d9-aea9-0c84a3b4c4de"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="342a129c-05f0-45d4-85ad-f9108105d1b3"
+              LastKnownName="szkolkarzEntities"
+              LastKnownLocation="Package_1817.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="380c0c0a-700b-49fe-ae8e-389c166ba952"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e608386-7155-4927-b2bb-279071770e18"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="0f2f1835-0457-473b-940e-8e737c8f038f"
