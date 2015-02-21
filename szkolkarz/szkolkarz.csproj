@@ -130,6 +130,9 @@
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -162,6 +165,7 @@
     </Compile>
     <Compile Include="core\DBController.cs" />
     <Compile Include="core\utils\ErrorLoger.cs" />
+    <Compile Include="core\utils\Exporter.cs" />
     <Compile Include="core\utils\TranslationManager.cs" />
     <Compile Include="SEC_AUDIT_LOG.cs">
       <DependentUpon>SzkolkarzModel.tt</DependentUpon>

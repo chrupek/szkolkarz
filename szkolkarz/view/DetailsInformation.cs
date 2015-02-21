@@ -29,5 +29,10 @@ namespace szkolkarz.view
     
         }
 
+        private void eksportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
