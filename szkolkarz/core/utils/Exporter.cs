@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Office.Interop.Excel; 
+using Microsoft.Office.Interop.Excel;
+using ExporterObjects;
 
 namespace szkolkarz.core.utils
 {
@@ -10,49 +11,18 @@ namespace szkolkarz.core.utils
     {
         public void exportToExcel(List<V_FULL_SOWN_LOG> dataToExport)
         {
-            string data = null;
-            int i = 0;
-            int j = 0; 
-
-            Application xlApp ;
-            Workbook xlWorkBook = new Workbook();
-            Worksheet xlWorkSheet ;
-
-            xlApp = new Application();
-            xlWorkSheet = (Worksheet)xlWorkBook.Worksheets.get_Item(1);
-
-            for (i = 0; i <= dataToExport.Count - 1; i++)
-            {
-                    data = dataToExport.ElementAt(i).ToString();
-                    xlWorkSheet.Cells[i + 1, j + 1] = data;
-            }
-
-            xlWorkBook.SaveAs("file.xls", XlFileFormat.xlWorkbookNormal, XlSaveAsAccessMode.xlExclusive);
-            xlWorkBook.Close(true);
-            xlApp.Quit();
-
-            releaseObject(xlWorkSheet);
-            releaseObject(xlWorkBook);
-            releaseObject(xlApp);
-
-            System.Windows.Forms.MessageBox.Show("Excel file created , you can find the file c:\\csharp.net-informations.xls");
+            ExportList<V_FULL_SOWN_LOG> export = new ExportList<V_FULL_SOWN_LOG>();
+            export.PathTemplateFolder = "/Exports";
+            string fileName = "raport_" + DateTime.Now.ToString();
+            export.ExportTo(dataToExport, ExportToFormat.Excel2007, fileName);
         }
 
-        private void releaseObject(object obj)
+        public void exportToPDF(List<V_FULL_SOWN_LOG> dataToExport)
         {
-            try
-            {
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
-                obj = null;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                GC.Collect();
-            }
+            ExportList<V_FULL_SOWN_LOG> export = new ExportList<V_FULL_SOWN_LOG>();
+            export.PathTemplateFolder = "/Exports";
+            string fileName = "raport_"+DateTime.Now.ToString();
+            export.ExportTo(dataToExport, ExportToFormat.PDFtextSharpXML, fileName);
         }
             
    }
